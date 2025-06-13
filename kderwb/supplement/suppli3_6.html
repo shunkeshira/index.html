@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+72ルール
+</h3>
+
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">　利子率$i=100r$（パーセント表示）で元金が$2$倍になる年数$n$は，
+\[
+n=\dfrac{72}{i}
+\]
+で近似できることを示しなさい．ただし，$\log_{}{2}\approx 0.69$とする．
+</p>
+
+<Div Align="left">【解答】</Div>
+　元金を$a$とすると，$a(1+r)^n=2a$なので
+\[
+(1+r)^n=2
+\]
+が成立する．両辺の対数をとると，
+
+\begin{align}
+n\log_{}{(1+r)}&
+=\log_{}{2}\\
+n&=\dfrac{\log_{}{2}}{\log_{}{(1+r)}}\\
+&\approx\dfrac{\log_{}{2}}{r}\\
+&\approx\dfrac{0.69}{r}\\
+&= \dfrac{69}{100r}＝\dfrac{69}{i}．\\
+\end{align}
+
+　従って本来は$69$ルールなのだが，約数の多い$72$を用いると目の子算が容易いので，
+\[
+n\approx \dfrac{72}{i}
+\]
+を用いるのが慣例．
+
+
+<Div Align="right">【解答終】</Div>
+
+<hr>
+<Div Align="left">【メモ】</Div>
+　$f(x)\approx f(1)+f^{\prime}(1)(x-1)$なので，
+$f(x)=\log_{}{x}$に対し，$f(1)=0, f^{\prime}(1)=1$より，
+\[
+\log_{}{(1+r)}\approx r
+\]
+を使った．なので，72ルールは$r\approx 0$に対して適用可能な法則．
+<Div Align="left">【メモ終】</Div>
+
+
+<hr>
+
+<Div Align="left">【Further Reading】</Div>
+丹野忠晋『経済数学入門−初歩から一歩ずつ−』日本評論社（2017）<br>
+沢木耕太郎『危機の宰相』文春文庫（2008）
+<hr>
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

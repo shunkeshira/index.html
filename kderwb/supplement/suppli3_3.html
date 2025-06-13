@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+月までの距離
+</h3>
+<p>
+『経出るワークブック』例題3.14の解答の誤りの修正
+</p>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">厚さ1ミリの紙を倍々に折っていった場合，38回では月まで届く距離にならないことを示しなさい．常用対数を利用し，$2^{38}$ と $2^5\times 10^{10}$の大小を比較して答えなさい。
+ ただし地球から月までの距離は、最大で406,700km、最小で356,400kmとする。また$\log_{10}2=0.3010$とする．
+</p>
+
+<Div Align="left">【解答】</Div>
+ \begin{align*}
+ \log_{10}2^{38}&=38\times 0.3010=11.438\\
+  \log_{10}(2^5\times 10^{10})&=5\times 0.3010+10=11.505
+ \end{align*}
+ 
+ したがって，
+ $2^{38} < 2^5\times 10^{10}=320,000,000,000 \;{\rm mm}$
+ 
+ \begin{align*}
+2^{38}\; {\rm mm}<320,000,000,000\; {\rm mm}&\Leftrightarrow 2^{38}\; {\rm mm}<320,000,000\;{\rm m}\\[2mm]
+&\Leftrightarrow 2^{38}\; {\rm mm}<320,000\; {\rm km}\\[2mm]
+&\Leftrightarrow 2^{38}\; {\rm mm}<32万 {\rm km}%\\[2mm]
+%\end{eqnarray*}
+\end{align*}
+  となり，最小の356,400kmに届かない．
+
+<Div Align="right">【解答終】</Div>
+
+
+<hr>
+
+<p>
+『経出るワークブック』問3.35（1）の詳解
+</p>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">厚さ1ミリの紙を倍々に折っていったらわずか39回で月まで届く距離になることを示しなさい．その際，常用対数を利用し，$2^{39}$ と $2\times 3^3\times 10^{10}$の大小を比較して答えなさい．
+ ただし地球から月までの距離は、最大で406,700km、最小で356,400kmとする。また$\log_{10}2=0.3010,
+ \log_{10}3=0.4771$とする．
+</p>
+
+<Div Align="left">【解答】</Div>
+ \begin{align*}
+ \log_{10}2^{39}&=39\times 0.3010=11.739\\
+  \log_{10}(2\times 3^3\times 10^{10})&=0.3010+3\times 0.4771+10=11.7323
+ \end{align*}
+ 
+ したがって，
+ $2^{39} >2\times 3^3\times 10^{11}=540,000,000,000 \;{\rm mm}$
+ 
+ \begin{align*}
+2^{39}\; {\rm mm}>540,000,000,000\; {\rm mm}&\Leftrightarrow 2^{39}\; {\rm mm}>540,000,000\;{\rm m}\\[2mm]
+&\Leftrightarrow 2^{39}\; {\rm mm}>540,000\; {\rm km}\\[2mm]
+&\Leftrightarrow 2^{39}\; {\rm mm}>54万 {\rm km}%\\[2mm]
+%\end{eqnarray*}
+\end{align*}
+  となり，最大の406,700kmを大きく越える．
+
+<Div Align="right">【解答終】</Div>
+
+<hr>
+<Div Align="left">【謝辞】</Div>
+<p>
+例題3.14の解答の誤りと修正案をご教示くださった，広島修道大学の小川健先生に感謝致します．
+</p>
+<hr>
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

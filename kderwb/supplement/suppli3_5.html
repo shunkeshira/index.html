@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+双曲割引（単利による割引）と指数割引（複利による割引）の逆転現象：連続時間（2015.11.26作成）
+</h3>
+<p>
+$c$円を単利，利子率$R$で割引くと$\dfrac{c}{(1+Rt)}$円，
+複利，利子率$r$で割引くと
+$ce^{-rt}$円であるが，両者の逆転現象を示す．
+</p>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">　$\dfrac{1}{(1+Rt)}$ と $e^{-rt}$ の大小を考察しなさい．
+</p>
+
+<Div Align="left">【解答】</Div>
+$R>r$とする
+\[
+f(t)=(1+Rt)-e^{rt}
+\]
+
+とおく．微分すると $f^{\prime}(t)=R-re^{rt}$ なので，$1$階条件を求めると，
+$t=\dfrac{1}{r}\log_{}{\dfrac{R}{r}}$．
+$2$階微分は，$f^{\prime\prime}(t)=-r^2e^{rt}<  0 $ なので，ここで最大値をとる．最大値を計算すると，$R\approx r$ に対し
+
+\begin{align}
+f\Bigl(\dfrac{1}{r}\log_{}{\dfrac{R}{r}}\Bigr)&
+=\Bigl(1+\dfrac{R}{r}\log_{}{\dfrac{R}{r}}\Bigr)-e^{\log_{}{\dfrac{R}{r}}}\\
+&=\Bigl(1+\dfrac{R}{r}\log_{}{\dfrac{R}{r}}-{\dfrac{R}{r}}\Bigr)\\
+&>1-{\dfrac{R}{r}}>0．
+\end{align}
+
+【註】
+$\dfrac{1}{r}\log_{}{\dfrac{R}{r}} < t $では減少関数で，
+$\lim_{t\to \infty}(1+Rt)-e^{rt}= -\infty$ なのでいずれ，$f(t)<0$となる．
+<br>
+まとめると$f>0$ の領域：$f(0)=0 \nearrow \max_{t}f(t)>0 \searrow f< 0$ の領域．
+\begin{align}
+ f>0  の領域：&  \dfrac{1}{(1+Rt)} < e^{-rt} \\
+ f<0  の領域：&  \dfrac{1}{(1+Rt)} > e^{-rt} .
+\end{align}
+となり，逆転現象が起きる．
+
+<Div Align="center"><IMG SRC="gyakuten.jpg" width=400></Div>
+
+<Div Align="right">【解答終】</Div>
+
+
+<hr>
+
+<Div Align="left">【Further Reading】</Div>
+池田新介『自滅する選択』東洋経済（2012）第3章
+<hr>
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

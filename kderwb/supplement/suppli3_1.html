@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+貯蓄の積立に関する理解度
+</h3>
+<p>
+『経出る』p.56脚註には，金融広報中央委員会のアンケートが取り上げられている．『経出る』で触れられているのは「子どものくらしとお金に関する調査」だが，ここでは「金融に関する消費者アンケート調査」（$20$歳以上の男女対象）からつぎのアンケートを取り上げたい．
+</p>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">同じ年の A さんと B さんがいます．A さんは 25 歳のとき，銀行に毎年 20 万円ずつ預 入し始めましたが，B さんはしていません．50 歳になったとき，B さんは退職後の生活 に備えてお金が必要だと気付き,銀行に毎年 40 万円ずつ預入し始めましたが，A さんの 預入は相変わらず毎年 20 万円ずつのままです．さて，2 人が 75 歳になったとき，どちらが多くのお金 (預金残高) をもっているでしょうか．
+</p>
+
+平成15年に行われた，第2回調査の結果は以下の通り．
+
+<ol>
+<li>2 人とも同額を預入したので,同額を保有している（8.7％）</li>
+<li>A さん．長期にわたって貯蓄して運用されているから（71.3）</li>
+<li>B さん．1年間の貯蓄額が A さんより多いから（2.9％）</li>
+<li>よくわからない（16.7％）</li>
+</ol>
+
+回答はそこそこの正答率だろう．本問ではこの事実を検証したい．
+
+<hr>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　毎年 $a$ 円を $2n$ 年積み立てたAさんの預金残高を $S_A$ とし，
+毎年 $2a$ 円を $n$ 年積み立てたBさんの預金残高を $S_B$ とする．このとき， $S_A \geq S_B$ となることを示しなさい．ただし利子率を $r$ とする．
+</p>
+
+<Div Align="left">【解答】</Div>
+<UL>
+<LI>Aさん：
+\[
+\begin{array}{rcccccccccc}
+S_{A}&=&a&+&a(1+r)&+&\cdots&+&a(1+r)^{2n-1}& & \\
+(1+r)S_{A}&=& & &a(1+r)&+&\cdots&+&a(1+r)^{2n-1}&+&a(1+r)^{2n}\\\hline
+rS_{A}&=&-a& & & & & & &+&a(1+r)^{2n}
+\end{array}
+\]
+
+\begin{equation}
+S_{A}=\frac{ \ a \ }{r}\Bigl\{(1+r)^{2n}-1\Bigr\}.
+\end{equation}
+</LI>
+<LI>Bさん：
+\[
+\begin{array}{rcccccccccc}
+S_{B}&=&2a&+&2a(1+r)&+&\cdots&+&2a(1+r)^{n-1}& & \\
+(1+r)S_{A}&=& & &2a(1+r)&+&\cdots&+&2a(1+r)^{n-1}&+&2a(1+r)^{n}\\\hline
+rS_{B}&=&-2a& & & & & & &+&2a(1+r)^{n}
+\end{array}
+\]
+
+\begin{equation}
+S_{B}=\frac{ \ 2a \ }{r}\Bigl\{(1+r)^{n}-1\Bigr\}.
+\end{equation}
+</LI>
+
+<LI>
+$S_A \geq S_B$ の確認：
+
+\begin{align}
+S_A \geq S_B&\Longleftrightarrow (1+r)^{2n}-1\geq 2(1+r)^{n}-2\\[2ex]
+&\Longleftrightarrow (1+r)^{2n}+1\geq 2(1+r)^{n}\\[2ex]
+&\Longleftrightarrow (1+r)^{n}+\dfrac{1}{(1+r)^{n}}\geq 2\\[2ex]
+\end{align}
+最後の不等式は，$相加平均 \geq 相乗平均$ の関係式から直ちにしたがう．ちなみに等号が成立するのは，$(1+r)^{n}=\dfrac{1}{(1+r)^{n}}$ のときだから，$r=0$ のときである．
+</LI>
+
+</UL>
+
+
+<Div Align="right">【解答終】</Div>
+
+
+<hr>
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

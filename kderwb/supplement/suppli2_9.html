@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+シュタッケルベルク均衡
+</h3>
+
+
+
+<hr>
+
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　　　ある財の市場を企業$1$と企業$2$が支配しており，市場全体の需要曲線と各企業の費用関数がそれぞれ次のように与えられている．
+\begin{align*}
+d&=40-p\\
+c_1&=20x_1\\
+c_2&=24x_2
+\end{align*}
+
+ここで，$d$は需要量，$p$は価格，$c_1$は企業$1$の総費用，$x_1$は企業$1$の生産量，$c_2$は企業$2$の総費用，$x_2$は企業$2$の生産量を表す．
+$2$つの企業が競争している．企業$1$が先手，企業$2$が後手で，生産量を戦略として競争したとき，シュタッケルベルク均衡における利潤と価格はいくらか．
+</p>
+
+<Div Align="left">【解答】</Div>
+逆需要関数は
+\[
+p=40-d
+\]
+である．
+
+<UL>
+<LI>ステップ$1$</LI>
+企業$2$の利潤は
+\[
+{\pi}_2(x_1,x_2)=(40-(x_1+x_2))x_2-24x_2=-x_2^2+(16-x_1)x_2
+\]
+であるので，$1$階条件を用いると，最適反応は
+\[
+x_2=R_2(x_1)=\dfrac{16-x_1}{2}
+\]
+となる．
+<LI>ステップ$2$</LI>
+これを見越して企業$1$は最適な生産量$x_1$を選ぶ．
+企業$1$の利潤は
+\begin{eqnarray*}
+{\pi}_1(x_1,R_2(x_1))&=&\Bigl(40-(x_1+R_2(x_1))\Bigr)x_1-20x_1\\
+&=&\Bigl(40-(x_1+\dfrac{16-x_1}{2})\Bigr)x_1-20x_1\\
+&=&\dfrac{-1}{2}x_1^2+12x_1
+\end{eqnarray*}
+$1$階条件を用いると
+\[
+x_1=12
+\]
+となる．したがってシュタッケルベルク解は
+\begin{eqnarray*}
+x_1&=&12\\
+x_2&=&\dfrac{16-12}{2}=2
+\end{eqnarray*}
+となり，その時の価格は
+\[
+p=40-(12+2)=26
+\]
+となる．
+
+
+
+利潤は
+\begin{eqnarray*}
+{\pi}_1&=&\dfrac{-1}{2}12^2+12\times 12=72\\
+{\pi}_2&=&-2^2+(16-12)\times 2=4
+\end{eqnarray*}
+である．
+</UL>
+
+<Div Align="right">【解答終】</Div>
+
+
+<hr>
+
+
+【Further Reading】
+神取道宏『ミクロ経済学の力』日本評論社（2014）<br>
+
+<hr>
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

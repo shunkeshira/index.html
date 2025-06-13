@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+二段階値付けによる価格差別
+</h3>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">ケータイ電話の複雑な料金体系は価格差別による利潤最大化行動ととらえることができる．本問は簡単なケースについて，価格差別の効果を検証する．
+</p>
+
+
+<hr>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】（やや難&#9825がんばろう）．<br>
+ 南洋の島特産のフルーツ あまあまフルーツを生産できるのは遠藤農園だけである．今年は$100$kg生産し，$1,000$円／kgで土産品店に卸した．今はめずらしさもあって高く売れたあまあまフルーツだが，出荷量が増えると，ものめずらしさも段々失せて行くため，価格を下げないと売れなくなる．農協の理事の昇は，出荷量が今より$1$kg増える毎に，値段を今の$1,000$円から$2$円は引き下げないと売れないと言っている．このとき，次の問に答えなさい．
+</p>
+
+<OL>
+<LI>$x$ と $p$ の関係式（需要関数と逆需要関数を求めなさい）を求めなさい．
+</LI><br>
+<LI>収入 $y=px$となることから，$y$ を $p$ の式で表しなさい．</LI><br>
+<LI>価格 $p$ で売り切ったので，潜在需要を掘り起こすため価格を $p \rightarrow p^{\prime}$ に値下げすることにした．値下げすることによってあらたに売れる数量 $x^{\prime}-x$ を
+$p$ と $p^{\prime}$ の式で表しなさい．また新たに発生した収入 $y^{\prime}$ を
+$p$ と $p^{\prime}$ の式で表しなさい．必要があれば下図を参考にしなさい．
+</LI><br>
+<LI>総収入$y+y^{\prime}$を最大にする値決めを，次の手順に従って求めなさい．</LI><br>
+<ol type=a>
+<li>$y^{\prime}$を最大にする$p^{\prime}$を求めなさい．</li><br>
+<li>$y+y^{\prime}$を$p$の式で表しなさい．</li><br>
+<li>$y+y^{\prime}$を最大にする$p$を求めなさい．</li><br>
+</ol>
+</OL>
+
+<Div Align="left"><IMG SRC="nidannkai_kakaku.jpg" width=400></Div>
+
+
+
+
+<Div Align="left">【解答】</Div>
+
+<OL>
+<LI>$p=1000-2(x-100)=-2x+1200$（逆需要関数）．したがって，$x=-\dfrac{1}{2}p+600$（需要関数）
+</LI><br>
+<LI>収入 $y=px=p\left(-\dfrac{1}{2}p+600\right)$．</LI><br>
+<LI>
+\[
+\begin{array}{cccl}
+&x^{\prime}&=&-\dfrac{1}{2}p^{\prime}+600\\[1ex]
+-&x&=&-\dfrac{1}{2}p+600\\\hline
+&x^{\prime}-x&=&-\dfrac{1}{2}(p^{\prime}-p)
+\end{array}
+\]
+また，$y^{\prime}=p^{\prime}(x^{\prime}-x)=p^{\prime}\left(-\dfrac{1}{2}(p^{\prime}-p)\right)=-\dfrac{1}{2}(p^{\prime})^2+\dfrac{1}{2}p^{\prime}p$
+</LI><br>
+<LI>総収入$y+y^{\prime}$を最大にする値決め</LI><br>
+<ol type=a>
+<li>$y^{\prime}=-\dfrac{1}{2}(p^{\prime})^2+\dfrac{1}{2}p^{\prime}p$ なので横軸切片は，$p^{\prime}=0, p$．したがって，$p^{\prime}=\dfrac{1}{2}p$ のとき最大値 $\dfrac{1}{8}p^2$ となる．</li><br>
+<li>$y+y^{\prime}=\left(-\dfrac{1}{2}p^2+600p\right)+\dfrac{1}{8}p^2=
+-\dfrac{3}{8}p^2+600p$．</li><br>
+<li>$y+y^{\prime}=-\dfrac{3}{8}p\left(p-1600\right)$ なので横軸切片は，
+$p=0, 1600$．したがって，$p=800$ のとき収入最大で
+$y+y^{\prime}=-\dfrac{3}{8}800\left(800-1600\right)=240,000$ となる．なお，この場合の二段階目の値付けは，$p^{\prime}=\dfrac{1}{2}\times 800=400$ である．</li><br>
+</ol>
+</OL>
+
+
+<Div Align="right">【解答終】</Div>
+
+
+<hr>
+<Div Align="left">【メモ】</Div>
+ケータイ電話の価格差別については，『オイコノミア ぼくらの希望の経済学』朝日新聞出版（2014）Part4で．
+<Div Align="right">【メモ終】</Div>
+<hr>
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

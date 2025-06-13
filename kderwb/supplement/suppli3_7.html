@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+実質金利
+</h3>
+
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">　$r$を名目金利，$f$をインフレ率としたとき，実質金利$r_0$を求めなさい．また$f\approx 0$のとき，
+\[
+r_0\approx r-f
+\]
+で近似できることを示しなさい．
+</p>
+
+<Div Align="left">【解答】</Div>
+　ある商品の現在の価格を$p$円，
+とすると現在の$a$円の購買力は$\dfrac{a}{p}$である．
+名目金利が$r$なのだから，現在の$a$円は将来の$a(1+r)$円になる．またインフレ率が$f$なのだから将来の価格は$p(1+f)$円となる．
+従って将来の購買力は$\dfrac{a(1+r)}{p(1+f)}$である．
+実質金利を使えば将来の購買力は$\dfrac{a(1+r_0)}{p}$となる．
+従って，三者の利率には次の関係が成立する．
+\[
+(1+r_0)=\dfrac{1+r}{1+f}．
+\]
+$r_0$について解くと，
+
+\begin{align}
+r_0&
+=\dfrac{1+r}{1+f}-1=\dfrac{(1+r)-(1+f)}{1+f}\\
+&=\dfrac{r-f}{1+f}\\
+&\approx r-f（f\approx 0 のとき）\\
+\end{align}
+
+
+
+
+<Div Align="right">【解答終】</Div>
+
+<hr>
+<Div Align="left">【メモ】</Div>
+　最後の近似式は，$(1+r_0)=\dfrac{1+r}{1+f}$の両辺の対数をとって，
+\[
+\log_{}{(1+r_0)}=\log_{}{(1+r)}-\log_{}{(1+f)}
+\]
+とした後，
+$x\approx 0$のとき，
+\[
+\log_{}{(1+x)}\approx x
+\]
+となる関係を使っても得られる．
+<Div Align="right">【メモ終】</Div>
+
+
+<hr>
+
+<Div Align="left">【Further Reading】</Div>
+デービッド・Ｇ・ルーエンバーガー『金融工学入門』日本経済新聞社（2002）<br>
+佐野三郎『証券アナリストのための数学・統計学入門』ビジネス教育出版社（2015）
+<hr>
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

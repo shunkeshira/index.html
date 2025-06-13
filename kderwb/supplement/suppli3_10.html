@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+不等式　$e^{rt}\geq (1+r)^t$（『経出る』図3.6）
+</h3>
+
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">　不等式　
+\[
+e^{rt}\geq (1+r)^t
+\]
+が成り立つことを示しなさい．
+</p>
+
+<Div Align="left">【解答１】</Div>
+\[
+e^{rt}=\Bigl(\lim_{k\to \infty}\Bigl(1+\dfrac{r}{k}\Bigr)^{k}\Bigr)^t
+=\lim_{k\to \infty}\Bigl(1+\dfrac{r}{k}\Bigr)^{kt}
+\]
+なので，
+$\Bigl(1+\dfrac{r}{k}\Bigr)^{k}$が，$k$について単調増加であることを示せば，
+$\Bigl(1+\dfrac{r}{k}\Bigr)^{k}\geq \Bigl(1+\dfrac{r}{1}\Bigr)^{1}=(1+r)$
+より，
+\[
+\Bigl(1+\dfrac{r}{k}\Bigr)^{kt}\geq (1+r)^t
+\]
+を得るので，
+$k\to \infty$とすればよい．単調増加であることを示すためには，一般化された相加相乗平均の不等式
+\[
+\dfrac{a_1+a_2+\cdots +a_{k+1}}{k+1} 
+\geq \sqrt[k+1]{a_1a_2\cdots a_{k+1}}
+\]
+を使う．$a_1=a_2=\cdots ＝a_k=\dfrac{k+r}{k}, a_{k+1}=1$として，不等式を使うと，
+\begin{align}
+\dfrac{\dfrac{k+r}{k}k+1}{k+1}&\geq
+\sqrt[k+1]{\Bigl(\dfrac{k+r}{k}\Bigr)^k}\\
+\Bigl(\dfrac{k+1+r}{k+1}\Bigr)^{k+1}
+&\geq \Bigl(\dfrac{k+r}{k}\Bigr)^k\\
+\Bigl(1+\dfrac{r}{k+1}\Bigr)^{k+1}
+&\geq \Bigl(1+\dfrac{r}{k}\Bigr)^k
+\end{align}
+を得る．
+<Div Align="right">【解答１終】</Div>
+
+
+<hr>
+
+<Div Align="left">【解答２】</Div>
+　$f(t)=\dfrac{e^{rt}}{(1+r)^t}$とおいたとき，$f(t)\geq 1$であることを示せばよい．準備として$r>0$に対し，$g(r)=r-\log_{}{1+r} > 0$であることを示す．
+\[
+g^{\prime}(r)=1-\dfrac{1}{1+r}=\dfrac{r}{1+r} > 0
+\]
+より，$g(r)$は単調増加．従って$r>0$に対し，$g(r) > g(0)=0$．一方，
+\begin{align}
+f^{\prime}(t)&=\dfrac{re^{rt}(1+r)^t
+-e^{rt}(1+r)^t\log_{}{1+r}}{(1+r)^{2t}}\\
+&=\dfrac{e^{rt}}{(1+r)^{t}}\bigl(r-\log_{}{1+r}\bigr) > 0
+\end{align}
+なので，$f(t)$は単調増加．従って$t>0$に対し，$f(t) > f(0)=1$を得る．
+<Div Align="right">【解答２終】</Div>
+
+
+<hr>
+
+<p>
+<Div Align="left">【メモ】</Div>
+『経出る』図3.6は以下の通り．$r=0.05$で描かれている．
+<Div Align="center"><IMG SRC="fig3-6.png" width=300>
+<IMG SRC="fig3-7.png" width=300></Div>
+<Div Align="right">【メモ終】</Div>
+</p>
+
+<hr>
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

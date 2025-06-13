@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+$2$次方程式とニュートン法
+</h3>
+
+
+
+<hr>
+<p>
+　方程式$f(x)=0$の近似解を求めるために使われるのがニュートン法である．解に近い任意の$x_0$からスタートし，$x_k$が計算されたとし，$x_{k+1}$を
+\[
+x_{k+1}=x_k-\dfrac{f(x_k)}{f^{\prime}(x_k)}
+\]
+で定義し反復を重ねることで近似解を得る．
+</p>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　$2$次方程式
+\[
+100x^2-25x-84=0．
+\]
+に対して，$x_0=1$から始めて，反復を$2$回行い近似解を得なさい．
+</p>
+
+<Div Align="left">【解答】</Div>
+$f^{\prime}(x)=200x-25$．
+<h5>$1$回目の反復</h5>
+<ul>
+<li>
+$f(x_0)=100-25-84=-9$
+</li><br>
+<li>
+$f^{\prime}(x_0)=200-25=175$
+</li><br>
+<li>
+$x_1=1-\dfrac{-9}{175}=\dfrac{184}{175}\approx 1.051428$
+</li><br>
+</ul>
+
+<h5>$2$回目の反復</h5>
+<ul>
+<li>
+$f(x_1)=100\Bigl(\dfrac{184}{175}\Bigr)^2-
+25\Bigl(\dfrac{184}{175}\Bigr)-84=
+\dfrac{8100}{175^2}$
+</li><br>
+<li>
+$f^{\prime}(x_1)=200\Bigl(\dfrac{184}{175}\Bigr)-25=
+\Bigl(\dfrac{32425}{175}\Bigr)$
+</li><br>
+<li>
+$x_2=\dfrac{184}{175}-
+\dfrac{8100}{175^2}\cdot\dfrac{175}{32425}
+=\dfrac{5958100}{5674375}
+\approx 1.050001$
+</li><br>
+</ul>
+
+<Div Align="right">【解答終】</Div>
+
+
+<hr>
+<Div Align="left">【メモ】</Div>
+　真の解は$x=1.05$である．<A HREF="http://www3.u-toyama.ac.jp/shira/kderwb/supplement/suppli2_5.html">ここ</A>を参照（内部収益率を求めるためにニュートン法が使われることがある）．
+<Div Align="right">【メモ終】</Div>
+
+【Further Reading】
+デービッド・Ｇ・ルーエンバーガー『金融工学入門』日本経済新聞社（2002）<br>
+
+<hr>
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+
