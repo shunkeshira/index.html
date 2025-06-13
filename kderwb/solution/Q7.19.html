@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻める解答例：7.19</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの解答例">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,解答例,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：問7.19解答例</H1>
+
+<hr>
+
+<Div Align="left">【解答 7.19】</Div>
+
+<UL>
+<LI>【Step1】ラグランジュ関数を作ると，
+$
+{\cal{L}}(x_1,x_2,x_3,\lambda)=(x_1)^{\alpha}(x_2)^{\beta}(x_3)^{\gamma}+\lambda\left(I-p_1x_1-p_2x_2-p_3x_3\right).
+$
+</LI><br>
+
+<LI>【Step2】 各変数で偏微分してイコールゼロとおくと，
+
+\[
+\left\{
+\begin{array}{lll}
+0=\displaystyle \frac{\partial\cal{L}}{\partial x_1}
+={\alpha}(x_1)^{\alpha -1}(x_2)^{\beta}(x_3)^{\gamma}-{\lambda}p_1
+&
+\rightarrow {\lambda}p_1={\alpha}(x_1)^{\alpha -1}(x_2)^{\beta}(x_3)^{\gamma}
+&\qquad (1)\\[2ex]
+0=\displaystyle \frac{\partial\cal{L}}{\partial x_2}
+={\beta}(x_1)^{\alpha}(x_2)^{\beta -1}(x_3)^{\gamma}-{\lambda}p_2
+&
+\rightarrow {\lambda}p_2= {\beta}(x_1)^{\alpha}(x_2)^{\beta -1}(x_3)^{\gamma}
+&\qquad (2)\\[2ex]
+0=\displaystyle \frac{\partial\cal{L}}{\partial x_3}
+={\gamma}(x_1)^{\alpha}(x_2)^{\beta}(x_3)^{\gamma -1}-{\lambda}p_3
+&
+\rightarrow {\lambda}p_3= {\gamma}(x_1)^{\alpha}(x_2)^{\beta}(x_3)^{\gamma -1}
+&\qquad (3)\\[2ex]
+0=I-p_1x_1-p_2x_2-p_3x_3& & \qquad (4)
+\end{array}
+\right.
+\]
+</LI><br>
+
+<LI>【Step3】 あとは工夫して解く．
+<ul>
+<li>$(1) \div (2)$ から 
+$\dfrac{\alpha}{\beta}x_1^{-1}x_2=\dfrac{p_1}{p_2} \Longrightarrow 
+x_2=\dfrac{\beta p_1}{\alpha p_2}x_1$</li>
+<br>
+<li>$(1) \div (3)$ から 
+$\dfrac{\alpha}{\gamma}x_1^{-1}x_3=\dfrac{p_1}{p_3} \Longrightarrow 
+x_3=\dfrac{\gamma p_1}{\alpha p_3}x_1$</li><br>
+<li>
+$(4)$ に代入すると，
+$p_1x_1+p_2\dfrac{\beta p_1}{\alpha p_2}x_1+p_3\dfrac{\gamma p_1}{\alpha p_3}x_1=I  \Longrightarrow \dfrac{\alpha + \beta +\gamma}{\alpha}p_1x_1=I$
+</li><br>
+<li>$x_1=\dfrac{\alpha}{\alpha + \beta +\gamma}\dfrac{I}{p_1}$</li><br>
+<li>$x_2=
+\dfrac{\beta p_1}{\alpha p_2}\dfrac{\alpha}{\alpha + \beta +\gamma}\dfrac{I}{p_1}
+=\dfrac{\beta}{\alpha + \beta +\gamma}\dfrac{I}{p_2}$</li><br>
+<li>
+$x_3=
+\dfrac{\gamma p_1}{\alpha p_3}\dfrac{\alpha}{\alpha + \beta +\gamma}\dfrac{I}{p_1}
+=\dfrac{\gamma}{\alpha + \beta +\gamma}\dfrac{I}{p_3}$</li><br>
+</ul>
+
+
+ゆえに最適解は，$(x_1,x_2,x_3)=\left(
+\dfrac{\alpha}{\alpha + \beta +\gamma}\dfrac{I}{p_1},
+\dfrac{\beta}{\alpha + \beta +\gamma}\dfrac{I}{p_2},
+\dfrac{\gamma}{\alpha + \beta +\gamma}\dfrac{I}{p_3}
+\right)$．
+
+</LI>
+</UL>
+<br>
+
+
+
+<Div Align="right">【問 7.19 終わり】</Div>
+
+
+<hr>
+
+<A HREF="./solution.html">解答例一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

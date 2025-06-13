@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻める解答例：7.22</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの解答例">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,解答例,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：問7.22解答例</H1>
+
+<hr>
+
+<Div Align="left">【解答 7.22】</Div>
+
+<OL>
+<LI>
+連立方程式，
+\[
+\left\{
+\begin{align}
+x+2y&=10　\cdots (1)\\[1ex]
+x^2+y^2&=20　\cdots (2)
+\end{align}
+\right.
+\]
+を解く．$(1)$ より，$x=10-2y$．これを $(2)$ に代入して，
+$(10-2y)^2+y^2=20 \Leftrightarrow 5y^2 - 40y +80=0 \Leftrightarrow y^2-8y+16=0 \Leftrightarrow (y-4)^2=0$ から，$y=4, x=2$．
+</LI>
+<br>
+
+<LI>
+$１．$の解がラグランジュ乗数法の解であることを示す．
+</LI>
+<UL>
+<LI>【Step1】ラグランジュ関数を作ると，
+$
+{\cal{L}}(x,y,\lambda)=x^2+y^2+\lambda\left(10-x-2y\right).
+$
+</LI><br>
+
+<LI>【Step2】 各変数で偏微分してイコールゼロとおくと，
+
+\[
+\left\{
+\begin{array}{lll}
+0=\displaystyle \frac{\partial\cal{L}}{\partial x}
+=2x-{\lambda}
+&
+\rightarrow x=\dfrac{{\lambda}}{2}
+&\qquad (3)\\[2ex]
+0=\displaystyle \frac{\partial\cal{L}}{y}
+=2y-2{\lambda}
+&
+\rightarrow y={\lambda}
+&\qquad (4)\\[2ex]
+0=10-x-2y& & \qquad (5)
+\end{array}
+\right.
+\]
+</LI><br>
+
+<LI>【Step3】 あとは工夫して解く．
+<ul>
+<li>$(3), (4)$ を $(5)$ に代入すると， 
+$10-\dfrac{\lambda}{2}-2{\lambda}=0$, ゆえに $\lambda =4$．
+</li>
+<br>
+<li>$(3)$ から，$x=2$</li><br>
+<li>$(4)$ から，$y=4$</li><br>
+</ul>
+
+ゆえに最適解は，$(x,y)=\left(2, 4\right)$ であるが，これは連立方程式
+\[
+\left\{
+\begin{align}
+x+2y&=10\\[1ex]
+x^2+y^2&=20
+\end{align}
+\right.
+\]
+の解でもある．
+
+</LI>
+<br>
+
+<LI>
+図説は下図の通り．最適解で接している．実際，
+$\begin{pmatrix}
+\displaystyle \frac{\partial f}{\partial x}(2,4)\\
+\displaystyle \frac{\partial f}{\partial y}(2,4)
+\end{pmatrix}
+=
+\begin{pmatrix}
+2\\
+8
+\end{pmatrix}
+$
+，
+$\begin{pmatrix}
+\displaystyle \frac{\partial g}{\partial x}(2,4)\\
+\displaystyle \frac{\partial g}{\partial y}(2,4)
+\end{pmatrix}
+=
+\begin{pmatrix}
+1\\
+2
+\end{pmatrix}
+$
+　 ∴　
+$
+\begin{pmatrix}
+2\\
+8
+\end{pmatrix}
+=4
+\begin{pmatrix}
+1\\
+2
+\end{pmatrix}
+$
+．
+</LI>
+<br>
+
+<Div Align="left"><IMG SRC="fig_Q.7.22.jpg" width=600></Div>
+</UL>
+<br>
+
+
+
+
+<LI>
+$(6,2)$ がラグランジュ乗数法の解ではないことを示す．
+$\begin{pmatrix}
+\displaystyle \frac{\partial f}{\partial x}(6,2)\\
+\displaystyle \frac{\partial f}{\partial y}(6,2)
+\end{pmatrix}
+=
+\begin{pmatrix}
+12\\
+4
+\end{pmatrix}
+$
+，
+$\begin{pmatrix}
+\displaystyle \frac{\partial g}{\partial x}(6,2)\\
+\displaystyle \frac{\partial g}{\partial y}(6,2)
+\end{pmatrix}
+=
+\begin{pmatrix}
+1\\
+2
+\end{pmatrix}
+$
+　 ∴　
+$
+\begin{pmatrix}
+12\\
+4
+\end{pmatrix}
+\neq \lambda
+\begin{pmatrix}
+1\\
+2
+\end{pmatrix}
+$
+．
+</LI>
+
+</OL>
+<Div Align="right">【問 7.22 終わり】</Div>
+
+
+
+
+<hr>
+<Div Align="left">【メモ】</Div>
+<p>本紙では小問3.でラグランジュ乗数法の解でないことを調べる，解候補として
+$(x,y)=(3,2)$ を指示したが，そもそもこれは制約式 $x+2y=10$ を満たさないので，論外．制約式を満たす解のことを，実行可能解というが，本問では，そもそも実行可能解ではないものを指示してしまった，うっかりミス．</p>
+<Div Align="right">【メモ 終わり】</Div>
+
+<hr>
+
+<A HREF="./solution.html">解答例一覧へ</A><br>
+（2015.12.18）修正
+
+
+</BODY>
+
+
+
+</HTML>
+
+

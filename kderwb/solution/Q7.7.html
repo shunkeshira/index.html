@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻める解答例：7.7</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの解答例">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,解答例,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：問7.7解答例</H1>
+
+<hr>
+
+<Div Align="left">【解答 7.7】</Div>
+
+<UL>
+<LI>制約式を移項して，左辺が関数の形になるよう書きかえる．
+$g(x,y)=4x+y-24=0$
+</LI>
+<br>
+
+<LI>偏微分して，ならべて，おまじないの $\times \lambda$ を $\displaystyle {\partial g}$ の上に書く．
+
+
+\[
+\begin{array}{cc}
+ &\times\lambda\\
+\displaystyle \frac{\partial f}{\partial x}(x,y)
+=\dfrac{1}{2}x^{-\frac{1}{2}}y^{\frac{1}{2}} & \displaystyle  \frac{\partial g}{\partial x}(x,y)=4\\[2ex]
+\displaystyle \frac{\partial f}{\partial y}(x,y)
+=\dfrac{1}{2}x^{\frac{1}{2}}y^{-\frac{1}{2}}  & \displaystyle  \frac{\partial g}{\partial y}(x,y)=1\\[2ex]
+\end{array}
+\]
+
+</LI>
+<br>
+
+
+
+<LI>おまじないの $\lambda$ を $\displaystyle {\partial g}$ にかけ込んで 
+$0,=,-$ で式の間をつなぐ．制約式も忘れずに加える．これで $3$ 変数の連立方程式が計 $2+1=3$ 個できる．
+
+\[
+\left\{
+\begin{array}{ll}
+0=\dfrac{1}{2}x^{-\frac{1}{2}}y^{\frac{1}{2}} - 4\lambda &\qquad (1)\\[1ex]
+0=\dfrac{1}{2}x^{\frac{1}{2}}y^{-\frac{1}{2}} - \lambda &\qquad (2)\\[1ex]
+0=4x+y-24&\qquad (3)
+\end{array}
+\right.
+\]
+</LI>
+<br>
+
+<LI>勇気を出してこの連立方程式を作ってさえしまえば，あとは解くだけ．
+
+$(1)\div (2)$から$x^{-1}y=4$．
+ゆえに$y=4x$．これを$(3)$に代入して
+$4x+4x-24=0$．
+ゆえに$x=3, y=12$と求まる．
+以上より，最適解は$(x,y)=(3,12)$．ちなみに $(2)$ から，
+$\lambda =\dfrac{1}{2}\times (3)^{\frac{1}{2}}(12)^{\frac{1}{2}}
+=\dfrac{1}{2}\times (36)^{\frac{1}{2}}=3$．
+</LI>
+<br>
+
+</UL>
+
+
+
+
+
+<Div Align="right">【問 7.7 終わり】</Div>
+
+
+<hr>
+
+<A HREF="./solution.html">解答例一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

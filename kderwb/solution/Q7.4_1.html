@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻める解答例：7.4(1)</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの解答例">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,解答例,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：問7.4(1)解答例</H1>
+
+<hr>
+
+<Div Align="left">【解答 7.4(1)】</Div>
+<UL>
+<LI>
+【Step 1】偏微分する．
+\begin{align}
+\dfrac{\partial f}{\partial x}(x,y)&=\dfrac{1}{2}x^{-\frac{1}{2}}y^{\frac{2}{3}}-1
+\\
+\dfrac{\partial f}{\partial y}(x,y)&=\dfrac{2}{3}x^{\frac{1}{2}}y^{-\frac{1}{3}}-2
+\end{align}
+</LI><br>
+
+<LI>
+【Step 2】$1$階条件から導かれる方程式は，
+
+\[
+\left\{\begin{align}
+\dfrac{1}{2}x^{-\frac{1}{2}}y^{\frac{2}{3}}&=1　\cdots　(1)\\
+\dfrac{2}{3}x^{\frac{1}{2}}y^{-\frac{1}{3}}&=2　\cdots　(2)
+\end{align}
+\right.
+\]
+$(1)\div (2)$ を作ると $3x^{-1}y=2$．ゆえに $y=\dfrac{2}{3}x$．(1) に代入すると 
+$\dfrac{1}{2}x^{-\frac{1}{2}}\left(\dfrac{2}{3}\right)^{\frac{2}{3}}x^{\frac{2}{3}}
+=\dfrac{1}{2}x^{\frac{1}{6}}\left(\dfrac{2}{3}\right)^{\frac{2}{3}}=1\Longleftrightarrow 
+x^{\frac{1}{6}}=2\times \left(\dfrac{3}{2}\right)^{\frac{2}{3}}$．
+ゆえに，$x=2^6\times \left(\dfrac{3}{2}\right)^{\frac{2}{3}\times 6}=2^2\times 3^4$．$y=\dfrac{2}{3}\times 2^2\times 3^4=2^3\times 3^3$．
+以上より， $(x,y)=(2^2\times 3^4,2^3\times 3^3)$ が$1$階条件を満たす．
+</LI><br>
+
+
+</UL>
+
+
+
+<Div Align="right">【問 7.4(1) 終わり】</Div>
+
+<hr>
+<Div Align="left">【メモ】</Div>
+<OL>
+<LI>$(x,y)=(2^23^4,2^33^3)$ は最大解でも最小解でもない．それは次の数値例から確認できる．</LI>
+<ul>
+<li><font color=red>$f(2^23^4, 2^33^3)$</font>$=
+(2^23^4)^{\frac{1}{2}}(2^33^3)^{\frac{2}{3}}-2^23^4-2\cdot 2^33^3
+=2^33^4-2^23^4-2^43^3=2^23^3(2\times 3-3^2-2^2)=2^23^3(6-3-4)=
+-(2^23^3)$</li>
+<li>$f(2^23^4, 2^63^3)=
+(2^23^4)^{\frac{1}{2}}(2^63^3)^{\frac{2}{3}}-2^23^4-2\cdot 2^63^3
+=2^53^4-2^23^4-2^73^3=2^23^3(2^33-3-2^53)
+=2^23^3(24-3-96)=-75(2^23^3)$</li>
+<li>$f(0, 0)=0$</li>
+まとめると，$f(2^23^2, 2^63^3)$ < 
+<font color=red>$f(2^23^4, 2^33^3)$</font>$ < $f(0, 0)．
+</ul>
+</LI>
+<br>
+<LI>
+気づいたのは second derivative test（『経出るの範囲外） を行ったのがきっかけ．<br>
+\[
+\left|
+\begin{array}{cc}
+\dfrac{{\partial}^2 f}{\partial x^2}(x,y) & 
+\dfrac{{\partial}^2 f}{\partial y \partial x}(x,y)\\
+\dfrac{{\partial}^2 f}{\partial x \partial y}(x,y) &
+\dfrac{{\partial}^2 f}{\partial y^2}(x,y) \\
+\end{array}
+\right|
+=
+\left|
+\begin{array}{cc}
+\dfrac{-1}{4}x^{-\frac{3}{2}}y^{\frac{3}{2}} & 
+\dfrac{1}{3}x^{-\frac{1}{2}}y^{-\frac{1}{2}} \\
+\dfrac{1}{3}x^{-\frac{1}{2}}y^{-\frac{1}{2}} &
+\dfrac{-2}{9}x^{\frac{1}{2}}y^{-\frac{3}{4}} \\
+\end{array}
+\right|
+=\dfrac{1}{18}x^{-1}y^{-\frac{2}{3}}-\dfrac{1}{9}x^{-1}y^{-\frac{2}{3}} < 0
+\]
+となり，second derivative test　失格である．
+</LI>
+<br>
+
+<LI>やや見づらいが$(2^23^4, 2^33^3)=(324,216)$が鞍点になっているのが分かる．<br>
+
+<Div Align="center"><IMG SRC="Q_7.4_saddle.pt.jpg" width=400></Div>
+
+</LI><br>
+
+<LI>本問は本来，問7.5にもってくればよかった．</LI>
+
+</OL>
+
+<Div Align="right">【メモ終】</Div>
+
+
+
+<hr>
+
+<A HREF="./solution.html">解答例一覧へ</A>
+
+<Div Align="right">（2015.12.17更新）</Div>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

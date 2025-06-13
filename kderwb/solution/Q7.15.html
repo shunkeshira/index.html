@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻める解答例：7.15</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの解答例">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,解答例,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：問7.15解答例</H1>
+
+<hr>
+
+<Div Align="left">【解答 7.15】</Div>
+
+<UL>
+<LI>【Step1】ラグランジュ関数を作ると，
+$
+{\cal{L}}(L,K,\lambda)=wL+rK+\lambda\left(x-L^{\frac{1}{2}}K^{\frac{1}{2}}\right).
+$
+</LI><br>
+
+<LI>【Step2】 各変数で偏微分してイコールゼロとおくと，
+
+\[
+\left\{
+\begin{array}{lll}
+0=\displaystyle \frac{\partial\cal{L}}{\partial L}
+=\displaystyle w - \frac{\lambda}{2}L^{-\frac{1}{2}}K^{\frac{1}{2}}
+&
+\displaystyle\rightarrow w= \frac{\lambda}{2}L^{-\frac{1}{2}}K^{\frac{1}{2}}
+&\qquad (1)\\[2ex]
+0=\displaystyle \frac{\partial\cal{L}}{\partial K}
+=\displaystyle r - \frac{\lambda}{2}L^{\frac{1}{2}}K^{-\frac{1}{2}}
+&
+\displaystyle\rightarrow r=\frac{\lambda}{2}L^{\frac{1}{2}}K^{-\frac{1}{2}} 
+&\qquad (2)\\[2ex]
+0=x-L^{\frac{1}{2}}K^{\frac{1}{2}}& & \qquad (3)
+\end{array}
+\right.
+\]
+</LI><br>
+
+<LI>【Step3】 あとは工夫して解く．
+
+$(1)\div (2)$を辺々で行う．右辺の変形に指数法則をうまく使う．
+
+\begin{align*}
+\displaystyle \frac{w}{r}
+&=\bigl(L^{-\frac{1}{2}}K^{\frac{1}{2}}\bigr)
+\bigl(L^{\frac{1}{2}}K^{-\frac{1}{2}}\bigr)^{-1}\\
+&=\bigl(L^{-\frac{1}{2}}K^{\frac{1}{2}}\bigr)
+\bigl(L^{-\frac{1}{2}}K^{\frac{1}{2}}\bigr)\\
+&=L^{-1}K=\frac{K}{L}
+\end{align*}
+
+
+ゆえに$ K=\dfrac{w}{r}L$となる．これを$(3)$式に代入すると，
+$\displaystyle x-L^{\frac{1}{2}}\left(\dfrac{w}{r}L\right)^{\frac{1}{2}}=0$から，
+$L=\left(\dfrac{r}{w}\right)^{\frac{1}{2}}x$を得る．
+また，$K=\dfrac{w}{r}\left(\dfrac{r}{w}\right)^{\frac{1}{2}}x=
+\left(\dfrac{w}{r}\right)^{\frac{1}{2}}x$．
+最適解は$\displaystyle (L,K)=
+\left(\left(\dfrac{r}{w}\right)^{\frac{1}{2}}x,
+\left(\dfrac{w}{r}\right)^{\frac{1}{2}}x\right)$となる．
+
+
+</LI>
+<br>
+
+<LI>　最適値関数は
+\begin{align}
+C(w,r,x)&=w\left(\dfrac{r}{w}\right)^{\frac{1}{2}}x
++r\left(\dfrac{w}{r}\right)^{\frac{1}{2}}x\\
+&=(wr)^{\frac{1}{2}}x+(rw)^{\frac{1}{2}}x\\
+&=2(wr)^{\frac{1}{2}}x.
+\end{align}
+</LI>
+</UL>
+
+
+<Div Align="right">【問 7.15 終わり】</Div>
+
+<Div Align="left">（2015.11.28修正）</Div>
+
+
+<hr>
+
+<A HREF="./solution.html">解答例一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

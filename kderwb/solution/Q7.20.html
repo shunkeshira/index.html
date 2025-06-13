@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻める解答例：7.20</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの解答例">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,解答例,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：問7.20解答例</H1>
+
+<hr>
+
+<Div Align="left">【解答 7.20】</Div>
+
+<UL>
+<LI>【Step1】ラグランジュ関数を作ると，
+$
+{\cal{L}}(x_1,x_2,x_3,\lambda)={\alpha}\log_{}{x_1}+{\beta}\log_{}{x_2}+{\gamma}\log_{}{x_3}+\lambda\left(I-p_1x_1-p_2x_2-p_3x_3\right).
+$
+</LI><br>
+
+<LI>【Step2】 各変数で偏微分してイコールゼロとおくと，
+
+\[
+\left\{
+\begin{array}{lll}
+0=\displaystyle \frac{\partial\cal{L}}{\partial x_1}
+=\dfrac{\alpha}{x_1}-{\lambda}p_1
+&
+\rightarrow p_1x_1=\dfrac{\alpha}{{\lambda}}
+&\qquad (1)\\[2ex]
+0=\displaystyle \frac{\partial\cal{L}}{\partial x_2}
+=\dfrac{\beta}{x_2}-{\lambda}p_2
+&
+\rightarrow p_2x_2=\dfrac{\beta}{{\lambda}}
+&\qquad (2)\\[2ex]
+=\dfrac{\gamma}{x_3}-{\lambda}p_3
+&
+\rightarrow p_3x_3=\dfrac{\gamma}{{\lambda}}
+&\qquad (3)\\[2ex]
+0=I-p_1x_1-p_2x_2-p_3x_3& & \qquad (4)
+\end{array}
+\right.
+\]
+</LI><br>
+
+<LI>【Step3】 あとは工夫して解く．
+<ul>
+<li>$(1), (2), (3)$ を $(4)$ に代入すると， 
+$\dfrac{\alpha}{\lambda}+\dfrac{\beta}{\lambda}+\dfrac{\gamma}{\lambda}=I  \Longrightarrow \lambda=\dfrac{\alpha + \beta +\gamma}{I}$
+</li>
+<br>
+<li>$(1)$ から，$x_1=\dfrac{\alpha}{p_1\lambda}
+=\dfrac{\alpha}{\alpha + \beta +\gamma}\dfrac{I}{p_1}$</li><br>
+<li>$(2)$ から，$x_2=\dfrac{\beta}{p_2\lambda}
+=\dfrac{\beta}{\alpha + \beta +\gamma}\dfrac{I}{p_2}$</li><br>
+<li>$(3)$ から，$x_3=\dfrac{\gamma}{p_3\lambda}
+=\dfrac{\gamma}{\alpha + \beta +\gamma}\dfrac{I}{p_3}$</li><br>
+</ul>
+
+ゆえに最適解は，$(x_1,x_2,x_3)=\left(
+\dfrac{\alpha}{\alpha + \beta +\gamma}\dfrac{I}{p_1},
+\dfrac{\beta}{\alpha + \beta +\gamma}\dfrac{I}{p_2},
+\dfrac{\gamma}{\alpha + \beta +\gamma}\dfrac{I}{p_3}
+\right)$．
+
+</LI>
+<br>
+</UL>
+
+
+<Div Align="right">【問 7.20 終わり】</Div>
+
+<hr>
+
+<Div Align="left">【メモ】</Div>
+『経出る』練習問題7.3の解説にあるように，【問 7.19】と【問 7.20】は同値な問題．実際
+<UL>
+<LI>【問 7.19】の目的関数：
+$u(x_1,x_2,x_3)=(x_1)^{\alpha}(x_2)^{\beta}(x_3)^{\gamma}$</LI>
+<LI>【問 7.20】の目的関数：
+$v(x_1,x_2,x_3)={\alpha}\log_{}{x_1}+{\beta}\log_{}{x_2}+{\gamma}\log_{}{x_3}$</LI>
+</UL>
+
+は，それぞれに単調変換を施すと，他方がでてくる．具体的には，
+<UL>
+<LI>【問 7.19】の目的関数：
+$\log_{}{u(x_1,x_2,x_3)}=\log_{}{(x_1)^{\alpha}(x_2)^{\beta}(x_3)^{\gamma}}
+={\alpha}\log_{}{x_1}+{\beta}\log_{}{x_2}+{\gamma}\log_{}{x_3}$</LI>
+<LI>【問 7.20】の目的関数：
+$e^{v(x_1,x_2,x_3)}=e^{{\alpha}\log_{}{x_1}+{\beta}\log_{}{x_2}+{\gamma}\log_{}{x_3}}
+=e^{\log_{}{(x_1)^{\alpha}(x_2)^{\beta}(x_3)^{\gamma}}}=(x_1)^{\alpha}(x_2)^{\beta}(x_3)^{\gamma}$</LI>
+</UL>
+（ここで $e^{\log_{}{x}}=x$ を使った）．したがって，$u$ と $v$ の大小関係は同値である．
+
+<Div Align="right">【メモ終わり】</Div>
+
+
+<hr>
+（2015.12.07修正）<br>
+<A HREF="./solution.html">解答例一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

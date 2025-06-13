@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻める解答例：7.16</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの解答例">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,解答例,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：問7.16解答例</H1>
+
+<hr>
+
+<Div Align="left">【解答 7.16】</Div>
+
+<UL>
+<LI>【Step1】ラグランジュ関数を作ると，
+$
+{\cal{L}}(x,L,K,\lambda)=px-(wL+rK)+\lambda\left(x-L^{\frac{1}{3}}K^{\frac{1}{3}}\right).
+$
+</LI><br>
+
+<LI>【Step2】 各変数で偏微分してイコールゼロとおくと，
+
+\[
+\left\{
+\begin{array}{lll}
+0=\displaystyle \frac{\partial\cal{L}}{\partial x}
+= p + \lambda
+&
+\displaystyle\rightarrow p= -\lambda
+&\qquad (1)\\[2ex]
+0=\displaystyle \frac{\partial\cal{L}}{\partial L}
+=\displaystyle -w - \frac{\lambda}{3}L^{-\frac{2}{3}}K^{\frac{1}{3}}
+&
+\displaystyle\rightarrow w= -\frac{\lambda}{3}L^{-\frac{2}{3}}K^{\frac{1}{3}}
+&\qquad (2)\\[2ex]
+0=\displaystyle \frac{\partial\cal{L}}{\partial K}
+=\displaystyle -r - \frac{\lambda}{3}L^{\frac{1}{3}}K^{-\frac{2}{3}}
+&
+\displaystyle\rightarrow r=-\frac{\lambda}{3}L^{\frac{1}{3}}K^{-\frac{2}{3}} 
+&\qquad (3)\\[2ex]
+0=x-L^{\frac{1}{3}}K^{\frac{1}{3}}& & \qquad (4)
+\end{array}
+\right.
+\]
+</LI><br>
+
+<LI>【Step3】 あとは工夫して解く．$p=-\lambda$ を $(2), (3)$に代入すると，
+
+
+\begin{align*}
+\displaystyle w
+&=\frac{p}{3}L^{-\frac{2}{3}}K^{\frac{1}{3}}\\
+r&=\frac{p}{3}L^{\frac{1}{3}}K^{-\frac{2}{3}} 
+\end{align*}
+
+\begin{align*}
+\displaystyle w^2r
+&=\left(\frac{p}{3}L^{-\frac{2}{3}}K^{\frac{1}{3}}\right)^2
+\left(\frac{p}{3}L^{\frac{1}{3}}K^{-\frac{2}{3}}\right)
+=\dfrac{p^3}{27}L^{-1}\Longrightarrow L=\dfrac{p^3}{27w^2r}\\
+wr^2&=\left(\frac{p}{3}L^{-\frac{2}{3}}K^{\frac{1}{3}}\right)
+\left(\frac{p}{3}L^{\frac{1}{3}}K^{-\frac{2}{3}}\right)^2
+=\dfrac{p^3}{27}K^{-1}\Longrightarrow K=\dfrac{p^3}{27wr^2}
+\end{align*}
+
+
+これを$(3)$式に代入すると，
+$x=\left(\dfrac{p^3}{27wr^2}\right)^{\frac{1}{3}}
+\left(\dfrac{p^3}{27w^2r}\right)^{\frac{1}{3}}
+=\dfrac{p^2}{9wr}$を得る．
+最適解は$\displaystyle (x,L,K)=
+\left(\dfrac{p^2}{9wr},
+\dfrac{p^3}{27w^2r},
+\dfrac{p^3}{27wr^2}
+\right)$となる．
+
+
+</LI>
+</UL>
+<br>
+
+
+
+<Div Align="right">【問 7.16 終わり】</Div><br>
+（2015.12.18修正）
+
+
+<hr>
+
+<A HREF="./solution.html">解答例一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+
