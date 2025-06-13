@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻める解答例：問 4.25</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの解答例">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,解答例,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：問 4.25</H1>
+
+<hr>
+
+
+
+<Div Align="left">【解答 4.25】</Div>
+
+
+\[
+\begin{array}{|c||c|c|c|}
+\hline
+時間軸& CF & DF & PV \\ \hline
+第0年&-P
+&  {\delta}=\dfrac{1}{\bigl(1+0.05\bigr)^0}& -P\\ \hline
+第1年&500,000 
+&  {\delta}=\dfrac{1}{\bigl(1+0.05\bigr)^1}& \dfrac{500,000 }{\bigl(1.05\bigr)^1}\\ \hline
+第2年&500,000  
+&  {\delta}=\dfrac{1}{\bigl(1+0.05\bigr)^2}& \dfrac{500,000 }{\bigl(1.05\bigr)^2}\\ \hline
+第3年&500,000  
+&  {\delta}=\dfrac{1}{\bigl(1+0.05\bigr)^3}& \dfrac{500,000 }{\bigl(1.05\bigr)^3}\\ \hline
+第4年&500,000 
+&  {\delta}=\dfrac{1}{\bigl(1+0.05\bigr)^4}& \dfrac{500,000 }{\bigl(1.05\bigr)^4}\\ \hline
+第5年&500,000 
+&  {\delta}=\dfrac{1}{\bigl(1+0.05\bigr)^5}& \dfrac{500,000}{\bigl(1.05\bigr)^5}\\ \hline
+第6年&500,000 
+&  {\delta}=\dfrac{1}{\bigl(1+0.05\bigr)^6}& \dfrac{500,000}{\bigl(1.05\bigr)^6}\\ \hline
+第7年&500,000 
+&  {\delta}=\dfrac{1}{\bigl(1+0.05\bigr)^7}& \dfrac{500,000}{\bigl(1.05\bigr)^7}\\ \hline
+第8年&500,000 
+&  {\delta}=\dfrac{1}{\bigl(1+0.05\bigr)^8}& \dfrac{500,000}{\bigl(1.05\bigr)^8}\\ \hline
+第9年&500,000 
+&  {\delta}=\dfrac{1}{\bigl(1+0.05\bigr)^9}& \dfrac{500,000}{\bigl(1.05\bigr)^9}\\ \hline
+第10年&500,000 
+&  {\delta}=\dfrac{1}{\bigl(1+0.05\bigr)^{10}}& \dfrac{500,000}{\bigl(1.05\bigr)^{10}}\\ \hline
+\end{array}
+\]
+
+右列の総和=0から $P$ と $1.05P$は．
+\begin{align}
+P&= \dfrac{500,000 }{\bigl(1.05\bigr)^1}+ \dfrac{500,000 }{\bigl(1.05\bigr)^2}+\cdots + \dfrac{500,000 }{\bigl(1.05\bigr)^{10}}\\
+1.05P&= 500,000+ \dfrac{500,000 }{\bigl(1.05\bigr)^1}+\cdots + \dfrac{500,000 }{\bigl(1.05\bigr)^{9}}
+\end{align}
+
+したがって，
+$0.05P=500,000-\dfrac{500,000 }{\bigl(1.05\bigr)^{10}}$ より，
+$P=\left(500,000-\dfrac{500,000 }{\bigl(1.05\bigr)^{10}}\right)\div 0.05=3,860,867$ 円 
+
+
+
+
+
+
+
+<Div Align="right">【問 4.25終わり】</Div>
+
+
+
+
+
+<hr>
+
+<A HREF="./solution.html">解答例一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

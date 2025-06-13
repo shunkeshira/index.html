@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻める解答例：問 4.28</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの解答例">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,解答例,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：問 4.28</H1>
+
+<hr>
+
+
+
+<Div Align="left">【解答 4.28】</Div>
+
+Time Line Technique を用いる．
+<OL>
+<LI>
+\[
+\begin{array}{|c||c|c|c|}
+\hline
+時間軸& CF & DF & PV \\ \hline
+第0年&-100
+&  {\delta}=\dfrac{1}{\bigl(1+r\bigr)^0}& -100\\ \hline
+第1年&10 
+&  {\delta}=\dfrac{1}{\bigl(1+r\bigr)^1}& \dfrac{10}{\bigl(1+r\bigr)^1}\\ \hline
+第2年&100+10 
+&  {\delta}=\dfrac{1}{\bigl(1+r\bigr)^2}& \dfrac{110}{\bigl(1+r\bigr)^2}\\ \hline
+\end{array}
+\]
+
+右列の総和=0から，
+\[
+0=-100+\dfrac{10}{\bigl(1+r\bigr)^1}+\dfrac{110}{\bigl(1+r\bigr)^2}
+\]
+
+$1+r=x$ とおき，上式を書き換えると
+
+\[
+100x^2-10x-110=0.
+\]
+
+解の公式から計算すると，
+\begin{align}
+x&=\dfrac{10+\sqrt{10^2-4\times 100 \times (-110)}}{2\times 100}\\
+&=\dfrac{10+\sqrt{44100}}{200}=\dfrac{10+\sqrt{(210)^2}}{200}=1.1
+\end{align}
+なので，$r=0.1=10\%$．解の公式によらなくても，
+因数分解 $100x^2-10x-110=(100x-110)(x+1)$ からもあきらか．
+
+<p>
+例題4.23が本問の理論的裏付け．
+</p>
+
+</LI>
+<br>
+
+
+<LI>
+\[
+\begin{array}{|c||c|c|c|}
+\hline
+時間軸& CF & DF & PV \\ \hline
+第0年&-95
+&  {\delta}=\dfrac{1}{\bigl(1+r\bigr)^0}& -95\\ \hline
+第1年&5 
+&  {\delta}=\dfrac{1}{\bigl(1+r\bigr)^1}& \dfrac{5}{\bigl(1+r\bigr)^1}\\ \hline
+第2年&100+5 
+&  {\delta}=\dfrac{1}{\bigl(1+r\bigr)^2}& \dfrac{105}{\bigl(1+r\bigr)^2}\\ \hline
+\end{array}
+\]
+
+右列の総和=0から，
+\[
+0=-95+\dfrac{5}{\bigl(1+r\bigr)^1}+\dfrac{105}{\bigl(1+r\bigr)^2}
+\]
+
+$1+r=x$ とおき，上式を書き換えると
+
+\[
+95x^2-5x-105=0.
+\]
+
+解の公式から計算すると，
+\begin{align}
+x&=\dfrac{5+\sqrt{5^2-4\times 95 \times (-105)}}{2\times 95}\\
+&=\dfrac{5+\sqrt{39925}}{190}=1.0779
+\end{align}
+なので，$r=0.0779=7.79\%$．
+
+
+</LI>
+<br>
+
+<LI>
+\[
+\begin{array}{|c||c|c|c|}
+\hline
+時間軸& CF & DF & PV \\ \hline
+第0年&-80
+&  {\delta}=\dfrac{1}{\bigl(1+r\bigr)^0}& -80\\ \hline
+第1年&0 
+&  {\delta}=\dfrac{1}{\bigl(1+r\bigr)^1}& \dfrac{0}{\bigl(1+r\bigr)^1}\\ \hline
+第2年&100 
+&  {\delta}=\dfrac{1}{\bigl(1+r\bigr)^2}& \dfrac{100}{\bigl(1+r\bigr)^2}\\ \hline
+\end{array}
+\]
+
+右列の総和=0から，
+\[
+0=-80+0+\dfrac{100}{\bigl(1+r\bigr)^2}
+\]
+
+$1+r=x$ とおき，上式を書き換えると
+
+\[
+80x^2-100=0.
+\]
+
+
+\begin{align}
+x&=\sqrt{\dfrac{100}{80}}\\
+&=1.1180
+\end{align}
+なので，$r=0.1180=11.80\%$．
+
+
+</LI>
+<br>
+
+</OL>
+
+
+
+
+<Div Align="right">【問 4.28終わり】</Div>
+
+<hr>
+
+<p>
+（２）の本紙の解答例では，ぶっきらぼうに，あやまった値【5.16％】が記載されていたが，うっかりミス．利回りが $5.16\%$ になるような価格は，
+</p>
+
+\[
+P=\dfrac{5}{\bigl(1+0.0516\bigr)^1}+\dfrac{105}{\bigl(1+0.0516\bigr)^2}\approx 99.70 円．
+\]
+
+<p>
+ちなみにうっかりミスの原因は次の計算．
+$\dfrac{\sqrt{39925}}{190}\approx1.0516$
+</p>
+
+<hr>
+
+<A HREF="./solution.html">解答例一覧へ</A><br>
+（2015.12.19）修正
+
+
+</BODY>
+
+
+
+</HTML>
+
+

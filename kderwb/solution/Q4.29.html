@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻める解答例：問4.29</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの解答例">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,解答例,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：問4.29解答例</H1>
+
+<hr>
+
+<p>
+本問は『経出る』練習問題4.7（pp.107-108）の別解でもある．
+</p>
+
+<Div Align="left">【解答 4.29】</Div>
+
+市場利子率 $r$ ，クーポンレート  $r$ ，額面 $F$ ，償還期間 $T$ の利付債の割引現在価値 $PV$ は
+
+\begin{eqnarray}
+PV&=&\dfrac{rF}{1+r}+\dfrac{rF}{(1+r)^2}+\cdots + \dfrac{rF+F}{(1+r)^T}\\
+&=&\dfrac{rF}{1+r}+\dfrac{rF}{(1+r)^2}+\cdots + \dfrac{rF}{(1+r)^T}+\dfrac{F}{(1+r)^T}
+\end{eqnarray}
+
+ここで，$S=\dfrac{rF}{1+r}+\dfrac{rF}{(1+r)^2}+\cdots + \dfrac{rF}{(1+r)^T}$ とし，$(1+r)S-S$ を計算すると，
+
+\[
+\begin{array}{crcccccccccccc}
+&(1+r)S&=&rF&+&\dfrac{rF}{1+r}&+&\dfrac{rF}{(1+r)^2}&+&\cdots&+&\dfrac{rF}{(1+r)^{T-1}}&&\\
+- \ ) & S&=&&&\dfrac{rF}{1+r}&+&\dfrac{rF}{(1+r)^2}&+&\cdots&+&\dfrac{rF}{(1+r)^{T-1}}&+&\dfrac{rF}{(1+r)^{T}}\\\hline
+&rS&=&rF&&&&&&&&&-&\dfrac{rF}{(1+r)^{T}}
+\end{array}
+\]
+
+ゆえに $S=F-\dfrac{F}{(1+r)^{T}}$ となり，$PV=S+\dfrac{F}{(1+r)^{T}}
+=F-\dfrac{F}{(1+r)^{T}}+\dfrac{F}{(1+r)^{T}}=F$ ，すなわち，割引現在価値は償還額と等しくなる．
+
+<Div Align="right">【問 4.29終わり】</Div>
+
+<hr>
+【別解】$S=\dfrac{rF}{1+r}+\dfrac{rF}{(1+r)^2}+\cdots + \dfrac{rF}{(1+r)^T}$ は，初項$\dfrac{rF}{1+r}$，公比$\dfrac{1}{1+r}$ の等比数列の和．従って等比数列の和の公式から，
+\[
+S=\dfrac{rF}{1+r}\times\dfrac{1-\left(\dfrac{1}{1+r}\right)^T}{1-\dfrac{1}{1+r}}
+=\dfrac{rF}{1+r}\times\dfrac{1+r}{r}\times \left( 1-\dfrac{1}{(1+r)^T}\right)
+=F-\dfrac{F}{(1+r)^{T}}.
+\]
+
+
+
+<hr>
+
+<LI><A HREF="./solution.html">解答例一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

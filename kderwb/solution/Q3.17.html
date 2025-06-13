@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻める解答例：問 3.17</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの解答例">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,解答例,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：問 3.17</H1>
+
+<hr>
+
+
+
+<Div Align="left">【解答 3.17】</Div>
+<p>
+これは経済学（ラグランジュ乗数法）で使います．効用関数がコブ・ダグラス型のとき．
+</p>
+<OL>
+<LI>
+<p>
+$
+\left\{\begin{array}{ll}
+x^{-\frac{1}{3}}y^{\frac{2}{3}} =2& (1) \\
+x^{\frac{2}{3}}y^{-\frac{1}{3}} =3& (2) 
+\end{array}
+\right.
+$
+</p>
+
+辺々を割り算する．
+
+\begin{align*}
+左辺&=(x^{-\frac{1}{3}}y^{\frac{2}{3}} )\div (x^{\frac{2}{3}}y^{-\frac{1}{3}} )\\[2ex]
+&=(x^{-\frac{1}{3}}y^{\frac{2}{3}} )(x^{\frac{2}{3}}y^{-\frac{1}{3}} )^{-1}\\[2ex]
+&=(x^{-\frac{1}{3}}y^{\frac{2}{3}} )(x^{-\frac{2}{3}}y^{\frac{1}{3}} )\\[2ex]
+&=x^{-\frac{1}{3}}x^{-\frac{2}{3}}y^{\frac{2}{3}} y^{\frac{1}{3}} \\[2ex]
+&=x^{-\frac{2}{3}-\frac{1}{3}}y^{\frac{2}{3}+\frac{1}{3}} \\[2ex]
+&=x^{-1}y=\dfrac{2}{3}\\[2ex]
+&=右辺.
+\end{align*}
+
+したがって$y=\dfrac{2}{3}x$となってこれを$1$本目の式に戻すことで $x^{-\frac{1}{3}}\left(\dfrac{2}{3}x\right)^{\frac{2}{3}}=
+\left(\dfrac{2}{3}\right)^{\frac{2}{3}}x^{\frac{1}{3}}=2$となる．
+ゆえに$\left(\dfrac{2}{3}\right)^{2}x=2^3$ と変形して，ようやく $x=18, y=12$ を得る．
+</LI>
+
+<LI>
+<p>
+$
+\left\{
+\begin{array}{ll}
+\displaystyle 2=\frac{\ 1 \ }{3}\lambda L^{-\frac{2}{3}}{K}^{\frac{2}{3}}
+& (1)\\[2ex]
+\displaystyle 3= \frac{\ 2 \ }{3}\lambda L^{\frac{1}{3}}{K}^{-\frac{1}{3}}
+& (2)\\[2ex]
+\displaystyle 4=L^{\frac{1}{3}}{K}^{\frac{2}{3}}& (3)
+\end{array}
+\right.
+$
+</p>
+
+変数は$L,K,\lambda$の$3$つであることに注意する．$(1)$と$(2)$の辺々を割り算する．
+
+\begin{align*}
+\dfrac{2}{3}
+&=\frac{1}{3}\times\frac{3}{2}\bigl(L^{-\frac{2}{3}}{K}^{\frac{2}{3}}\bigr)
+\bigl(L^{\frac{1}{3}}{K}^{-\frac{1}{3}} \bigr)^{-1}\\[2mm]
+&=\frac{1}{2}\bigl(L^{-\frac{2}{3}}{K}^{\frac{2}{3}}\bigr)
+\bigl(L^{-\frac{1}{3}}{K}^{\frac{1}{3}} \bigr)\\[2mm]
+&=\frac{1}{2}\bigl(L^{-\frac{2}{3}}{L}^{-\frac{1}{3}}\bigr)
+\bigl(L^{\frac{2}{3}}{K}^{\frac{1}{3}} \bigr)\\[2mm]
+&=\frac{1}{2}L^{-1}K
+\end{align*}
+
+
+ゆえに$\displaystyle K=\frac{4}{3}L$となる．これを$(3)$式に代入すると，
+$L^{\frac{1}{3}}\left(\dfrac{4}{3}L\right)^{\frac{2}{3}}=4$から，$L=4\times (4)^{-\frac{2}{3}}\times 3^{\frac{2}{3}}=2^{\frac{2}{3}}3^{\frac{2}{3}}$が求まる．
+これから，$K=\dfrac{4}{3}L=2^{\frac{8}{3}}3^{-\frac{1}{3}}$
+
+さらに$(1)$式から，
+$\displaystyle \lambda = 
+2\times 3\times \left(2^{\frac{2}{3}}3^{\frac{2}{3}}\right)^{\frac{2}{3}}
+\left(2^{\frac{8}{3}}3^{-\frac{1}{3}}\right)^{-\frac{2}{3}}
+=2^{1+\frac{4}{9}-\frac{16}{9}}\times 
+3^{1+\frac{4}{9}+\frac{2}{9}}=2^{-\frac{1}{3}}3^{\frac{5}{3}}$．
+うへぇ$(^>-^<;)$じたばた．
+
+<LI>
+<p>
+$
+\left\{\begin{array}{ll}
+x^{\alpha -1}y^{ \beta} =p& (1) \\
+x^{\alpha}y^{\beta-1} =q& (2) 
+\end{array}
+\right.
+$
+</p>
+
+辺々を割り算する．
+
+\begin{align*}
+左辺&=(x^{\alpha -1}y^{\beta} )\div (x^{\alpha}y^{{\beta-1}} )\\[2ex]
+&=(x^{\alpha -1}y^{\beta} )(x^{\alpha}y^{{\beta-1}} )^{-1}\\[2ex]
+&=(x^{\alpha -1}y^{\beta})(x^{-{\alpha}}y^{1-\beta} )\\[2ex]
+&=x^{\alpha -1}x^{-{\alpha}}y^{\beta}y^{1-\beta} \\[2ex]
+&=x^{\alpha -1-\alpha}y^{\beta+1-\beta} \\[2ex]
+&=x^{-1}y=\dfrac{p}{q}\\[2ex]
+&=右辺.
+\end{align*}
+
+
+
+したがって$y=\dfrac{p}{q}x$となって，これを$1$本目の式に戻すことで 
+$x^{\alpha -1}\left(\dfrac{p}{q}x\right)^{\beta}=
+\left(\dfrac{p}{q}\right)^{\beta}x^{\alpha + \beta -1}=p$となる．
+ここからさらに計算を重ねて，
+$x=\left(p^{1-\beta}q^{\beta}\right)^{\frac{1}{\alpha +\beta -1}}$，
+$y=\left(p^{\alpha}q^{1-\alpha}\right)^{\frac{1}{\alpha +\beta -1}}$
+を得る．
+
+<p>
+詳しい計算は次の通り：
+$\left(\dfrac{p}{q}\right)^{\beta}x^{\alpha + \beta -1}=p$ から，
+$x^{\alpha + \beta -1}=pp^{-\beta}q^{\beta}=p^{1-\beta}q^{\beta}$．
+ゆえに，$x=\left(p^{1-\beta}q^{\beta}\right)^{\frac{1}{\alpha +\beta -1}}$．<br>
+さらに $y=\dfrac{p}{q}x$ なのだから，
+$y=pq^{-1}\left(p^{1-\beta}q^{\beta}\right)^{\frac{1}{\alpha +\beta -1}}
+=\left(p^{\frac{\alpha +\beta -1}{\alpha +\beta -1}}
+p^{\frac{1-\beta}{\alpha +\beta -1}}
+q^{-\frac{\alpha +\beta -1}{\alpha +\beta -1}}
+q^{\frac{\beta}{\alpha +\beta -1}}\right)
+=
+\left(p^{\alpha}q^{1-\alpha}\right)^{\frac{1}{\alpha +\beta -1}}$
+</p>
+</LI>
+
+
+
+<br>
+
+<LI>
+<p>
+$
+\left\{
+\begin{array}{ll}
+\displaystyle \lambda p={\alpha}L^{{\alpha}-1}{K}^{\beta}
+&(1)\\[2ex]
+\displaystyle \lambda q= {\beta}L^{\alpha}{K}^{{\beta}-1}
+&(2)\\[2ex]
+\displaystyle I=pL+q{K}&(3)
+\end{array}
+\right.
+$
+</p>
+
+変数は$L,K,\lambda$の$3$つであることに注意する．$(1)$と$(2)$の辺々を割り算する．
+
+\begin{align*}
+\dfrac{p}{q}
+&=\frac{\alpha}{\beta}\bigl(L^{\alpha-1}{K}^{\beta}\bigr)
+\bigl(L^{\alpha}{K}^{1-\beta} \bigr)^{-1}\\[2mm]
+&=\frac{\alpha}{\beta}\bigl(L^{\alpha-1}{K}^{\beta}\bigr)
+\bigl(L^{-\alpha}{K}^{1-\beta} \bigr)\\[2mm]
+&=\frac{\alpha}{\beta}\bigl(L^{\alpha-1}{L}^{-\alpha}\bigr)
+\bigl(K^{\beta}{K}^{1-\beta} \bigr)\\[2mm]
+&=\frac{\alpha}{\beta}L^{-1}K
+\end{align*}
+
+したがって$K=\dfrac{p\beta}{q\alpha}L$となって，これを$3$本目の式に代入すると，$pL+q\dfrac{p\beta}{q\alpha}L=\dfrac{\alpha + \beta}{\alpha}pL=I$ より，$L=\dfrac{\alpha}{\alpha + \beta}\dfrac{I}{p}$．したがって
+$K=\dfrac{p\beta}{q\alpha}L=
+\dfrac{p\beta}{q\alpha}\dfrac{\alpha}{\alpha + \beta}\dfrac{I}{p}
+=\dfrac{\alpha}{\alpha + \beta}\dfrac{I}{q}$となる．$(1)$式から
+$\lambda = \dfrac{\alpha}{p}
+\left(\dfrac{\alpha}{\alpha + \beta}\dfrac{I}{p}\right)^{\alpha-1}
+\left(\dfrac{\beta}{\alpha + \beta}\dfrac{I}{q}\right)^{\beta}
+=\dfrac{\alpha}{p}
+\left(\dfrac{\alpha}{\alpha + \beta}\dfrac{I}{p}\right)^{-1}
+\left(\dfrac{\alpha}{\alpha + \beta}\dfrac{I}{p}\right)^{\alpha}
+\left(\dfrac{\beta}{\alpha + \beta}\dfrac{I}{q}\right)^{\beta}
+=\dfrac{\alpha + \beta}{I}
+\left(\dfrac{\alpha}{\alpha + \beta}\dfrac{I}{p}\right)^{\alpha}
+\left(\dfrac{\beta}{\alpha + \beta}\dfrac{I}{q}\right)^{\beta}$
+
+となる．
+</LI>
+
+<br>
+
+<p>
+1．は『経出る』練習問題7.1の類題です．4．は『ワークブック』では同じ計算を例題7.4でやっています．
+</p>
+
+</OL>
+
+<Div Align="right">【問 3.17終わり】</Div>
+
+
+
+<hr>
+
+<A HREF="./solution.html">解答例一覧へ</A><br>
+（2015.12.18）修正
+
+
+</BODY>
+
+
+
+</HTML>
+
+
