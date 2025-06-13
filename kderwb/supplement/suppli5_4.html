@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+凹関数・凸関数
+</h3>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【『経出る』命題６（Second Derivative Test）】<br>
+(1)　関数 $f$ が常に $f^{\prime\prime}(x) \leq 0$ を満たすとき，$f$ は凹関数である．<br>
+(2)　関数 $f$ が常に $f^{\prime\prime}(x) \geq 0$ を満たすとき，$f$ は凸関数である．
+</OL>
+</p>
+
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　Second Derivative Test を使って以下の関数が凹関数なのか凸関数なのか調べなさい．<br>
+(1)　$f(x)=\log_{}{x}（x > 0）$<br>
+(2)　$f(x)=e^{x}$<br>
+(3)　$f(x)=e^{x^2}$<br>
+(4)　$f(x)=x^s（x > 0）$<br>
+</p>
+
+<Div Align="left">【解答】</Div>
+(1)　$f^{\prime}(x)=\dfrac{1}{x}$，$f^{\prime\prime}(x)=-\dfrac{1}{x^2}< 0$ より，凹関数．<br><br>
+(2)　$f^{\prime}(x)=e^x$，$f^{\prime\prime}(x)=e^x > 0$ より，凸関数．<br><br>
+(3)　$f^{\prime}(x)=2xe^{x^2}$，$f^{\prime\prime}(x)=2e^{x^2}+4x^2e^{x^2}
+=2e^{x^2}(1+2x^2) > 0$ より，凸関数．<br><br>
+(4)　$f^{\prime}(x)=sx^{s-1}$，$f^{\prime\prime}(x)=s(s-1)x^{s-2}$ より，次のように場合分けできる．
+\begin{align}
+1 < s  　のとき & 凸関数\\[2ex]
+0 < s < 1  　のとき & 凹関数\\[2ex]
+s < 0  　のとき & 凸関数\\[2ex]
+\end{align}
+<Div Align="right">【解答終】</Div>
+
+<hr>
+<Div Align="left">【Further Reading】</Div>
+福島雅夫『非線形最適化の基礎』朝倉書店（2001）<br>
+渡辺隆一『凸解析』培風館（昭和61年）
+
+
+<hr>
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

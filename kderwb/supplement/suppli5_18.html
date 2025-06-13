@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+債券ポートフォリオのデュレーションとイミュニゼーション
+</h3>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">債券は利子率が変動することによって，債券価格も変動するリスクにさらされる．本問は利付債についてそのリスクの指標であるデュレーションがどうあれば，利子率の変動リスクから逃れうるのかを示す．
+</p>
+
+Time Line Technique を次のように改変したものの，最右辺の和を価格$P$で割ったものをマコーレーのボンド・デュレーションといい $D$ であらわす．
+\[
+\begin{array}{ccccc}
+年 & \hspace{4mm}CF\hspace{4mm} & \hspace{4mm}DF\hspace{4mm} & \hspace{4mm}PV\hspace{4mm} & \hspace{4mm}PV\times 年\hspace{4mm}\\ \hline
+0 & -P &/ 1 & 0  & 0\\
+1 &CF_1& / (1+r)^1& \dfrac{CF_1}{(1+r)^1}& \dfrac{1\times CF_1}{(1+r)^1}\\
+2 &CF_2& / (1+r)^2&  \dfrac{CF_2}{(1+r)^2}& \dfrac{2\times CF_2}{(1+r)^2}\\
+\vdots &\vdots& \vdots&\vdots &\vdots \\
+n &CF_n& / (1+r)^n & \dfrac{CF_n}{(1+r)^n}& \dfrac{n\times (CF_n)}{(1+r)^n}\\
+\end{array}
+\]
+
+したがって，
+\begin{align}
+D&=\left\{\frac{CF_1}{(1+r)^1}+\frac{2CF_2}{(1+r)^2}+\cdots +\frac{nCF_n}{(1+r)^n}\right\}/P=\dfrac{\sum_{k=1}^{n}kPV_k}{P}
+\end{align}
+ である（$PV_k$は$k$年のCFの現在価値）．
+
+\begin{align}
+P&=P(r)=\frac{CF_1}{(1+r)^1}+\frac{CF_2}{(1+r)^2}+\cdots +\frac{CF_n}{(1+r)^n}\\
+P^{\prime}(r)&=-\frac{CF_1}{(1+r)^2}-\frac{2CF_2}{(1+r)^3}-\cdots -\frac{nCF_n}{(1+r)^{n+1}}
+\end{align}
+であることから，
+
+\[
+D=-\dfrac{P^{\prime}(r)}{P(r)}(1+r)
+\]
+となる．
+
+<hr>
+
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　債券$B$の$n$年後の将来価値$FV$が，利子率$r$の変動にさらされない条件を求めなさい．
+</p>
+
+<Div Align="left">【解答】</Div>
+　題意の条件を満たすためには，$B$の価格$P(r)$が償還$n$年の割引債と一致するようにすればよい．$P(r)=\dfrac{F}{(1+r)^n}$．なので，$P(r)(1+r)^n=constant$なのだから両辺を微分して，
+\[
+P^{\prime}(r)(1+r)^n+nP(r)(1+r)^{n-1}=0
+\]
+より，
+\[
+n=-\dfrac{P^{\prime}(r)}{P(r)}(1+r)=D
+\]
+を得る．
+<Div Align="right">【解答終】</Div>
+
+
+
+
+
+
+<hr>
+<Div Align="left">【メモ】</Div>
+投資期間$n$と，デュレーション$D$をポートフォリオによって一致させる投資戦略をイミュニゼーションという．<A HREF="http://www3.u-toyama.ac.jp/shira/kderwb/supplement/suppli4_14.html">ここ</A>も参照．
+<Div Align="right">【メモ終】</Div>
+
+【Further Reading】 青沼・岩城『EXCELで学ぶファイナンス３ 債券・金利・為替』きんざい（平成14年）
+<hr>
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

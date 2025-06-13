@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+正の内部収益率
+</h3>
+
+
+
+<hr>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　多期間にわたって，キャッシュ・フローをもたらす投資機会は，キャッシュ・フロー$CF_1,CF_2, \ldots ,CF_n$の合計額が，初期の投資額（$=I$）を上回るとき，正の内部収益率をもたらすことを示しなさい．
+</p>
+
+<Div Align="left">【解答】</Div>
+Time Line Technique の表から，
+\[
+\begin{array}{cccc}
+年 & \hspace{4mm}CF\hspace{4mm} & \hspace{4mm}DF\hspace{4mm} & \hspace{4mm}PV\hspace{4mm}\\ \hline
+0 & -I &/ 1 & -I  \\
+1 &CF_1& / (1+r)^1& \dfrac{CF_1}{(1+r)}\\
+2 &CF_2& / (1+r)^2& \dfrac{CF_2}{(1+r)^2}\\
+\vdots &\vdots& \vdots&\vdots  \\
+n &CF_n& / (1+r)^n & \dfrac{CF_n}{(1+r)^n}\\
+\end{array}
+\]
+であるので，内部収益率は$r$についての方程式，
+
+\[
+-I+\dfrac{CF_1}{(1+r)}+\dfrac{CF_2}{(1+r)^2}+\cdots +\dfrac{CF_n}{(1+r)^n}=0
+\]
+
+の解である．ここで関数$f(x)$を次式で定義する．
+
+\[
+f(x)=-I+CF_1x+CF_2x^2+\cdots CF_nx^n．
+\]
+
+このとき，投資額$I$をキャッシュ・フローの合計額$CF_1+CF_2+\cdots CF_n$が上回るのだから，
+
+\begin{align}
+f(0)&=-I < 0\\[2ex]
+f(1)&=-I+CF_1+CF_2+\cdots CF_n > 0
+\end{align}
+
+となる．従って「中間値の定理」から，$f(c)=0$となる$0 < c < 1$が存在する．
+$r=\dfrac{1}{c}-1$が求める方程式の解，即ち内部収益率
+（$0 < c < 1$なのだから$\dfrac{1}{c}>1$となり，$r>0$は容易に確認できる）である．
+
+<Div Align="right">【解答終】</Div>
+
+
+<hr>
+<Div Align="left">【メモ】</Div>
+「中間値の定理」は『経出る』でも『ワークブック』でも取り上げていないが既知とした．<A HREF="https://mathtrain.jp/tyukan">参考『高校数学の美しい物語』</A>
+<Div Align="right">【メモ終】</Div>
+
+【Further Reading】
+デービッド・Ｇ・ルーエンバーガー『金融工学入門』日本経済新聞社（2002）<br>
+
+<hr>
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

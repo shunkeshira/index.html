@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+税収最大化
+</h3>
+
+
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">
+財市場を考える．
+需要曲線が$D(p)=a_0-a_1p$，供給曲線が$S(p)=bp$であるとする．
+単位あたりの税収を$t$円とした時，政府の税収最大化条件を求めなさい．
+</p>
+
+<Div Align="left">【解答】</Div>
+税を考えない場合，市場均衡条件は$D(p)=S(p)$より，
+\begin{eqnarray*}
+p^*&=&\dfrac{a_0}{a_1+b}\\
+D^*&=&S^*=a_0-a_1p^*=a_0-\dfrac{a_1a_0}{a_1+b}=\dfrac{a_0b}{a_1+b}
+\end{eqnarray*}
+税が課せられると供給者の受取額がが$p-t$となるので，市場均衡条件は$D(p)=S(p-t)$となって，
+\begin{eqnarray*}
+\hat{p}&=&\dfrac{a_0}{a_1+b}+\dfrac{b}{a_1+b}=p^*+\dfrac{b}{a_1+b}\\
+\hat{D}&=&S^*=a_0-a_1(p^*+\dfrac{b}{a_1+b})=a_0-a_1p^*-\dfrac{a_1bt}{a_1+b}
+=D^*-\dfrac{a_1bt}{a_1+b}
+\end{eqnarray*}
+従って政府の税収は，
+\[
+T(t)=\hat{D}(t)t=D^*t-\dfrac{a_1bt^2}{a_1+b}
+\]
+となり，$1$階条件
+\[
+T^{\prime}(t)=D^*-\dfrac{2a_1bt}{a_1+b}=0
+\]
+より，
+\[
+t=D^*\dfrac{a_1+b}{2a_1b}
+\]
+が得られる．
+なお，
+\[
+T^{\prime\prime}(t)=-\dfrac{2a_1b}{a_1+b}<0
+\]
+なので，ここで最大であることも確かめられる．
+<Div Align="right">【解答終】</Div>
+
+<hr>
+
+
+
+<Div Align="left">【Further Reading】</Div>
+M. Hoy , J . Livernois, C. McKenna, R Rees and T. Stengos, Mathematics for Economics second edition,
+The MIT Press（2001）<br>
+<hr>
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

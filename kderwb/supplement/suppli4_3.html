@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+級数の収束・発散（セントペテルスブルグの逆説）
+</h3>
+
+
+<hr>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問１】　次の級数の収束・発散を判定しなさい．
+\[
+\sum_{k=1}^{\infty}2^k\times \dfrac{1}{2^k}．
+\]
+</p>
+
+<Div Align="left">【解答】</Div>
+
+\[
+\sum_{k=1}^{\infty}2^k\times \dfrac{1}{2^k}=1+1+\cdots =\infty．
+\]
+
+なので $+\infty$ に発散する．
+
+<Div Align="right">【解答終】</Div>
+
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問２】　次の級数の収束・発散を判定しなさい．
+\[
+\sum_{k=1}^{\infty}\sqrt{2^k}\times \dfrac{1}{2^k}．
+\]
+</p>
+
+<Div Align="left">【解答】</Div>
+\[
+\sum_{k=1}^{t}\sqrt{2^k}\times \dfrac{1}{2^k}=
+\sum_{k=1}^{t}\dfrac{1}{\sqrt{2^k}}=
+\dfrac{1}{\sqrt{2}}\times \dfrac{1-\left(\dfrac{1}{\sqrt{2}}\right)^{t-1}}{1-\dfrac{1}{\sqrt{2}}}，
+\]
+なので，
+\begin{align}
+\sum_{k=1}^{\infty}\sqrt{2^k}\times \dfrac{1}{2^k}&=
+\dfrac{1}{\sqrt{2}}\times \dfrac{1-\displaystyle\lim_{t \to \infty}\left(\dfrac{1}{\sqrt{2}}\right)^{t-1}}{1-\dfrac{1}{\sqrt{2}}}\\[2ex]
+&=\dfrac{1}{\sqrt{2}}\times \dfrac{1}{\dfrac{\sqrt{2}-1}{\sqrt{2}}}\\[2ex]
+&=\dfrac{1}{\sqrt{2}-1}=\dfrac{1}{\sqrt{2}-1}\times \dfrac{\sqrt{2}+1}{\sqrt{2}+1}
+=\frac{\sqrt{2}+1}{2-1}={\sqrt{2}+1}．
+\end{align}
+
+<Div Align="right">【解答終】</Div>
+
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問３】　次の級数の収束・発散を判定しなさい．
+\[
+\sum_{k=1}^{\infty}\log_{10}{2^k}\times \dfrac{1}{2^k}．
+\]
+</p>
+
+<Div Align="left">【解答】</Div>
+\[
+S=\sum_{k=1}^{\infty}\log_{10}{2^k}\times \dfrac{1}{2^k}=
+\sum_{k=1}^{t}\dfrac{k}{2^k}
+\]
+なので，
+\[
+\begin{array}{ccccccc}
+S&=&\dfrac{\log_{10}{2}}{2}+&\dfrac{2\log_{10}{2}}{2^2}+
+&\dfrac{3\log_{10}{2}}{2^3}+&\cdots \\
+\dfrac{1}{2}S&=&&\dfrac{\log_{10}{2}}{2^2}+&\dfrac{2\log_{10}{2}}{2^3}+
+&\cdots &\\
+\end{array}
+\]
+の辺々を引き算すると，
+
+\begin{align}
+\dfrac{1}{2}S&=\sum_{k=1}^{\infty}\dfrac{\log_{10}{2}}{2^k}=
+\log_{10}{2}
+\dfrac{1-\displaystyle\lim_{t \to \infty}\left(\dfrac{1}{2}\right)^{t-1}}{1-\dfrac{1}{2}}\\[2ex]
+&=2\log_{10}{2}
+\end{align}
+
+したがって，収束しその値は，$4\log_{10}{2}$ である．
+
+
+
+
+<Div Align="right">【解答終】</Div>
+
+
+<hr>
+<Div Align="left">【メモ】</Div>
+本問は次のような賭けに対する期待効用の計算問題である．
+<UL>
+<LI>コイン投げを行う</LI>
+<LI>裏が出るまで投げ続けることができる．裏が出た時点で賭けは終了．</LI>
+<LI>それまでに表が出た回数 $k$ に応じて $2^k$ 円受け取る．</LI>
+</UL>
+問１は受け取る金額 $x$ に対する効用関数が $u(x)=x$ の場合を，問２は $u(x)=\sqrt{x}$ 円の場合を計算したものである．この賭けへの参加料はいくらなら支払うかという問に，期待効用の観点から答えると問１は期待値で答えることになり、その結果，参加費はどんなに大きくても合理的であるという，われわれの直感とことなる結果になる．そのためセントペテルスブルグのパラドックス（逆説）とよばれる．これに対する，説破が問２と問３である．収穫逓減な効用関数 $u(x)=\sqrt{x}$，$u(x)=\log_{10}{x}$ を考えることで，期待効用は有限の値になる．
+<Div Align="right">【メモ終】</Div>
+<hr>
+
+<Div Align="left">【Further Reading】</Div>
+高橋信夫『組織の中の決定理論』朝倉書店（1993）
+
+<hr>
+
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

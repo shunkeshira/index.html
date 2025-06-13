@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+最適化と算術平均，幾何平均，調和平均
+</h3>
+
+
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">
+(1)　$N$個のデータ，$x_1, x_2, \ldots , x_N$に対し．
+$m(x)=(x-x_1)^2+(x-x_2)^2+\cdots +(x-x_N)^2$とおく．
+$m(x)$の最小点を求めなさい．<br>
+(2)　$N$個のデータ，$x_1>0, x_2>0, \ldots , x_N>0$に対し．
+$g(x)=(\log_{}{x}-\log_{}{x_1})^2+(\log_{}{x}-\log_{}{x_2})^2
++\cdots (\log_{}{x}-\log_{}{x_N})^2$とおく．
+$g(x)$の$x>0$での最小点を求めなさい．<br>
+(3)　$N$個のデータ，$x_1, x_2, \ldots , x_N$に対し．
+$h(x)=\Bigl(\dfrac{1}{x}-\dfrac{1}{x_1}\Bigr)^2+
+\Bigl(\dfrac{1}{x}-\dfrac{1}{x_1}\Bigr)^2+\cdots +
+\Bigl(\dfrac{1}{x}-\dfrac{1}{x_N}\Bigr)^2$とおく．
+$h(x)$の最小点を求めなさい．
+</p>
+
+
+<Div Align="left">【解答】</Div>
+<ol>
+<li>
+\[
+m^{\prime}(x)=2(x-x_1)+2(x-x_2)+\cdots +2(x-x_N)=
+2\Bigl(Nx-\sum_{i=1}^{N}x_i\Bigr)
+\]
+なので，$1$解の条件から，$m=\dfrac{\sum_{i=1}^{N}x_i}{N}$
+（$x_1, x_2, \ldots , x_N$の算術平均）で最小となる．</li><br>
+<li>
+\begin{align}
+g(x)&=\Bigl(\log_{}{\dfrac{x}{x_1}}\Bigr)^2+
+\Bigl(\log_{}{\dfrac{x}{x_2}}\Bigr)^2+
+\cdots +\Bigl(\log_{}{\dfrac{x}{x_N}}\Bigr)^2\\
+g^{\prime}(x)&=\dfrac{2}{x}\log_{}{\dfrac{x}{x_1}}+
+\dfrac{2}{x}\log_{}{\dfrac{x}{x_2}}\cdots
+\dfrac{2}{x}\log_{}{\dfrac{x}{x_N}}=
+\dfrac{2}{x}\log_{}{\dfrac{x^N}{x_1x_2\cdots x_N}}
+\end{align}
+なので，$1$階の条件から，$\dfrac{x^N}{x_1x_2\cdots x_N}=1$．
+従って，$g=\sqrt[N]{x_1x_2\cdots x_N}$
+（$x_1, x_2, \ldots , x_N$の幾何平均）で最小となる．</li><br>
+<li>
+\begin{align}
+h^{\prime}(x)&=\dfrac{-2}{x^2}\Bigl(\dfrac{1}{x}-\dfrac{1}{x_1}\Bigr)+
+\dfrac{-2}{x^2}\Bigl(\dfrac{1}{x}-\dfrac{1}{x_2}\Bigr)+\cdots +
+\dfrac{-2}{x^2}\Bigl(\dfrac{1}{x}-\dfrac{1}{x_N}\Bigr)\\
+&=\dfrac{-2}{x^2}\Bigl(\dfrac{N}{x}-\dfrac{1}{x_1}-\dfrac{1}{x_2}-\dfrac{1}{x_N}\Bigr)
+\end{align}
+なので，$1$階の条件から，$\dfrac{1}{h}=\dfrac{1}{N}\Bigl(\dfrac{1}{x_1}+\dfrac{1}{x_2}+\cdots \dfrac{1}{x_N}\Bigr)$
+（$x_1, x_2, \ldots , x_N$の調和平均の逆数）で最小となる．
+</li>
+</ol>
+<Div Align="right">【解答終】</Div>
+
+
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+『経出る』4.4節 割引現在価値の和は，複利計算が前提．
+<A HREF="./suppli4_4.html">この問題</A>では単利による割引現在価値にした場合の評価式をあたえた．これを一般の双曲割引関数で現在価値に割引いたときの評価式をあたえる.
+（作成 2015.11.22）
+</h3>
+
+
+<hr>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問１】　次の級数の収束・発散を判定しなさい．
+\[
+（一般の双曲割引による割引現在価値の和）
+=\sum_{t=1}^{\infty} \dfrac{w}{(1+tr)^{\frac{\gamma}{r}}}．
+\]
+</p>
+
+<Div Align="left">【解答】</Div>
+
+\[
+\begin{align}
+\sum_{t=0}^{T} \dfrac{w}{(1+tr)^{\frac{\gamma}{r}}} &
+\leq \int_{0}^{T}\dfrac{w}{(1+tr)^{\frac{\gamma}{r}}}dt
+=\Bigl[\dfrac{w}{r-\gamma}\log_{}{(1+tr)^{\frac{r -\gamma}{r}}}\Bigr]^{T}_{0}\\
+&=\dfrac{w}{r-\gamma}\log_{}{(1+Tr)^{\frac{r -\gamma}{r}}}
++\dfrac{w}{\gamma -r}\\
+&=\dfrac{w}{r-\gamma}\log_{}{(1+Tr)^{1-\frac{\gamma}{r}}}
++\dfrac{w}{\gamma -r}
+\end{align}
+\]．
+
+<Div Align="center"><IMG SRC="parabolic_discount.jpg" width=400></Div>
+
+<Div Align="right">【解答終】</Div>
+
+
+
+<hr>
+
+
+
+一方で，次の評価式も得られる．
+\[
+\begin{align}
+\sum_{t=0}^{T} \dfrac{w}{(1+tr)^{\frac{\gamma}{r}}} 
+&=w+\sum_{t=1}^{T} \dfrac{w}{(1+tr)^{\frac{\gamma}{r}}}\\
+&\geq w+\int_{1}^{T}\dfrac{w}{(1+tr)^{\frac{\gamma}{r}}}dt
+=w+\Bigl[\dfrac{w}{r-\gamma}\log_{}{(1+tr)^{\frac{r -\gamma}{r}}}\Bigr]^{T}_{1}\\
+&=w+\dfrac{w}{r-\gamma}\log_{}{(1+Tr)^{\frac{r -\gamma}{r}}}-
+\dfrac{w}{r-\gamma}\log_{}{(1+r)^{\frac{r -\gamma}{r}}}\\
+&=\frac{w}{r-\gamma}\Bigl[1+\log_{}{(1+r)^{\frac{r -\gamma}{r}}}-\log_{}{(1+r)^{\frac{r-\gamma}{r}}}\Bigr]
+\end{align}
+\]．
+
+<Div Align="center"><IMG SRC="parabolic_discount_bis.jpg" width=400></Div>
+
+<hr>
+
+まとめると，
+\[
+\frac{w}{r-\gamma}\Bigl[1+\log_{}{(1+Tr)^{\frac{r -\gamma}{r}}}-\log_{}{(1+r)^{\frac{r-\gamma}{r}}}\Bigr]
+\leq 
+\sum_{t=0}^{T} \dfrac{w}{(1+tr)^{\frac{\gamma}{r}}} 
+\leq
+\dfrac{w}{r-\gamma}\log_{}{(1+Tr)^{\frac{r-\gamma}{r}}}
++\dfrac{w}{\gamma -r}\tag{1}
+\]
+
+<hr>
+$T  \to \infty$ とすると，
+$\lim_{T\to \infty}\dfrac{w}{r-\gamma}\log_{}{(1+Tr)^{\frac{r-\gamma}{r}}}
+=\dfrac{w}{r}\lim_{T\to \infty}(\log_{}{(1+Tr))}=\infty$，
+$\lim_{T\to \infty}\dfrac{w}{r-\gamma}\Bigl[\log_{}{(1+Tr)^{\frac{r -\gamma}{r}}}\Bigr]
+=\dfrac{w}{r}\lim_{T\to \infty}(\log_{}{(1+Tr))}=\infty
+$
+
+
+\[
+\displaystyle \sum_{t=0}^{\infty} \dfrac{w}{(1+tr)^{\frac{\gamma}{r}}} =\infty\]．
+
+
+<hr>
+
+<Div Align="left">【メモ】</Div>
+<UL>
+<LI>
+$\dfrac{w}{(1+tr)^{\frac{\gamma}{r}}}$は双曲割引関数の一般型（generalized hyperbolic discount function）．
+</LI>
+<LI>
+$r=\gamma$ のときの評価式が
+<A HREF="./suppli4_4.html">ここ</A>
+</LI>
+</UL>
+<Div Align="right">【メモ終】</Div>
+<hr>
+
+<Div Align="left">【Further Reading】</Div>
+多田洋介『行動経済学入門』日本経済新聞社（2003）
+
+<hr>
+
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

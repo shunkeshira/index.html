@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+logconvex関数（2017.03.29作成）
+</h3>
+
+
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">
+　$f(x) >0$ について，$\log{f(x)}$ が凸関数となるとき，logconvex という．
+<br><br>
+微分可能な関数 $f(x) >0$ がlogconvexならば，凸関数となることを示しなさい．
+</p>
+
+
+<Div Align="left">【解答】</Div>
+$g(x)=\log_{}{f(x)}$ とおくと，
+
+\[
+\begin{align}
+g^{\prime}(x)=&\dfrac{f^{\prime}(x)}{f(x)},\\
+g^{\prime\prime}(x)=&\dfrac{f^{\prime\prime}(x)f(x)-f^{\prime}(x)^2}{f(x)^2}.
+\end{align}
+\]
+$g(x)$ は凸関数なので，$g^{\prime\prime}(x)\geq 0$ がいえる．したがって 
+$f^{\prime\prime}(x)f(x)\geq f^{\prime}(x)^2 >0$ から $f^{\prime\prime}(x)>0$ がいえるので，$f(x)$ は凸関数．
+
+<Div Align="right">【解答終】</Div>
+
+<hr>
+$f(x)$ は単調増加な凸関数 $x\mapsto e^x$ と $\log_{}{f(x)}$ の合成関数とみれば，微分を使わなくても結論は直ちにしたがう．
+<hr>
+【Further Reading】
+J.V. Tiel, ‘Convex Analysis, An Introductory Text’, John Wiley and Sons（1984）．
+
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+凸関数の最小点=極小点
+</h3>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【『経出る』命題５（First Derivative Test）】<br>
+(1)　関数 $f$ が$f$ は凹関数のとき，$f^{\prime}(x^*) = 0$ ならば $f$ は $x=x^*$ で最大となる．<br>
+(2)　関数 $f$ が$f$ は凸関数のとき，$f^{\prime}(x^*) = 0$ ならば $f$ は $x=x^*$ で最小となる．<br>
+この事実は，次の凸関数の微分に関する不等式から直ちにいえる．凹関数 $f$ については $-f$ が凸関数であることから，ただの読み替え．
+</p>
+
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】いま $f$ が凸関数であるとき，$f^{\prime}(x^*) = 0$ ならば $f$ は $x=x^*$ で最小となることを示しなさい．
+</p>
+
+<Div Align="left">【解答】</Div>
+次の不等式が成立することを示す．
+\begin{align}
+f(x)-f(x^*)&\geq f^{\prime}(x^*)(x-x^*) \tag{1}
+\end{align}
+
+$f(x)$ が凸関数であることから，以下の一連の不等式の変形が行える．
+\begin{align}
+{\lambda}f(x)+(1-{\lambda})f(x^*)&\geq f({\lambda}x+(1-{\lambda})x^*)\\[2ex]
+{\lambda}\left(f(x)-f(x^*)\right)&\geq  f(x^*+{\lambda}(x-x^*))-f(x^*)\\[2ex]
+f(x)-f(x^*)&\geq \dfrac{\left( f(x^*+{\lambda}(x-x^*))-f(x^*)\right)(x-x^*)}{\lambda (x-x^*)}　\qquad ここで \lambda (x-x^*)=\varepsilon とおく\\[2ex]
+f(x)-f(x^*)&\geq \dfrac{f(x^*+{\varepsilon})-f(x^*)}{\varepsilon}(x-x^*)　\qquad ここで \lambda \to 0 すなわち，\varepsilon \to 0 とすればよい．\\[2ex]
+\end{align}
+
+この不等式から，$f^{\prime}(x^*) = 0$ ならば 
+$f(x)-f(x^*)\geq 0(x-x^*) =0$ より，$f(x) \geq f(x^*)$ すなわち，大域的最小解であることが言える．
+<Div Align="right">【解答終】</Div>
+
+<hr>
+<Div Align="left">【Further Reading】</Div>
+福島雅夫『非線形最適化の基礎』朝倉書店（2001）<br>
+
+
+<hr>
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

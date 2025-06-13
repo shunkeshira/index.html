@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+SIRモデルと漸化式
+</h3>
+
+
+
+<hr>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　ある都市における感染症の流行の推移を，$3$つの数列の漸化式で表した．漸化式は$n=1,2,3,\ldots $で成り立つものとする．
+
+\[
+\left\{\begin{align}
+S_{n+1}&=S_n-{\beta}S_nI_n\\
+I_{n+1}&=I_n+{\beta}S_nI_n-{\gamma}I_n\\
+R_{n+1}&=R_n+{\gamma}I_n
+\end{align}\right.
+\]
+
+ここで$S_n, I_n, R_n$はぞれぞれ，第$n$週における未感染者数，感染者数，回復者数を表す．
+$\beta$および$\gamma$は，それぞれ感染率，回復率を示し，$0< \beta < 1, 0< \gamma < 1$とする．
+また$S_1=N > 0, I_1=M > 0, R_1=0, {\beta}I_n < 1$とする．
+$\dfrac{{\beta}N}{\gamma}$を基本再生算数，$\dfrac{{\beta}S_n}{\gamma}$を第$n$週の実効再千生産数と呼ぶ．このとき次の問に答えよ．
+
+<OL>
+<LI> $S_n+I_n+ R_n$を求めよ．
+<LI>$\dfrac{{\beta}N}{\gamma} > 1$を仮定して，$I_n$のグラフを描け．
+</OL>
+
+<br>
+青山学院大学大学（2021）入試問題改変
+</p>
+
+<Div Align="left">【解答】</Div>
+<OL>
+<LI> $S_n+I_n+ R_n=N+M$は明らか．
+<LI>第$2$式から
+\[
+I_{n+1}=(1+{\beta}S_n-{\gamma})I_n
+\]
+である．感染初期には$S_n=N$としてよい．従って，
+\[
+I_{n+1}=(1+{\beta}N-{\gamma})I_n
+\]
+となるので，
+\[
+I_n=(1+{\beta}N-{\gamma})^{n-1}I_1
+\]
+である．したがって，$\dfrac{{\beta}N}{\gamma} > 1$だと感染者数は指数的に増加する．
+</OL>
+
+<Div Align="right">【解答終】</Div>
+
+
+
+
+<hr>
+<Div Align="left">【解答】</Div>
+<OL>
+<LI> $S_n+I_n+ R_n=N+M$は明らか．
+<LI>第$2$式から
+\[
+I_{n+1}=(1+{\beta}S_n-{\gamma})I_n
+\]
+である．感染初期には$S_n=N$としてよい．従って，
+\[
+I_{n+1}=(1+{\beta}N-{\gamma})I_n
+\]
+となるので，
+\[
+I_n=(1+{\beta}N-{\gamma})^{n-1}I_1
+\]
+である．したがって，$\dfrac{{\beta}N}{\gamma} > 1$だと感染者数は指数的に増加する．
+</OL>
+<Div Align="left">【メモ】</Div>
+この連立の漸化式は，手計算では解けないはずである．
+<Div Align="right">【メモ終】</Div>
+
+【Further Reading】 新居俊作<A HREF="https://www2.math.kyushu-u.ac.jp/~snii/SIR.pdf">コロナの感染拡大と終息の予測方法</A>
+<hr>
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

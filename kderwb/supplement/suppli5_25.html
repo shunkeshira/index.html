@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+定常的時間選好の割引関数
+</h3>
+
+割引関数$D(t)$（$t$は時間）に対して，$-\dfrac{D^{\prime}(t)}{D(t)}$を時間割引率という．
+\[
+-\dfrac{D^{\prime}(t)}{D(t)}\approx \dfrac{\dfrac{D(t+1)-D(t)}{1}}{D(t)}
+=-\dfrac{D(t+1)-D(t)}{D(t)}
+\]
+なので$1$単位時間待つことに対しての，待てる度合いの変化率を表している．
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">
+時間割引率が一定値$k$の割引関数$D(t)$を求めなさい．
+</p>
+
+<Div Align="left">【解答】</Div>
+\[
+\dfrac{D^{\prime}(t)}{D(t)}=-k
+\]
+であるので，
+\[
+\Bigl(\log_{}{D(t)}\Bigr)^{\prime}=-k
+\]
+したがって$\log_{}{D(t)}=-kt+C$（Cは定数）．これより，
+\[
+D(t)=e^{-kt+C}=ce^{-kt}.
+\]
+$c=e^{C}$とした．
+<Div Align="right">【解答終】</Div>
+
+<hr>
+
+<Div Align="left">【メモ】</Div>
+『経出る』5.8節にあるように，時間に応じて変化する関数$f(t)$に対して，
+その第$t$期における成長率はを$R(t)$とすると，時間が離散的に流れるならば
+\[
+R(t)=\dfrac{f(t+1)-f(t)}{f(t)}
+\]
+で考えられる．連続時間では時間感覚を$\varepsilon$とおいて$\varepsilon \to 0$とした極限として
+捉えることができる．ただし，離散時間と同様に成長率を考えると
+\[
+\lim_{\varepsilon \to 0}\dfrac{f(t+\varepsilon)-f(t)}{f(t)}=0
+\]
+となってしまう．そこで連続時間の場合は定義を変え，時間間隔で割り
+そこで$\varepsilon \to 0$とした極限として考える．つまり
+\[
+R(t)=\lim_{\varepsilon \to 0}\dfrac{f(t+\varepsilon)-f(t)}{f(t)}\times \dfrac{1}{\varepsilon}
+=\dfrac{f^{\prime}(t)}{f(t)}
+\]
+で成長率を定義したのと同じ考え方による．
+マイナスがついているのは$D(t+\varepsilon ) < D(t)$を調整するため．
+<hr>
+
+
+
+<Div Align="left">【Further Reading】</Div>
+大垣・田中『行動経済学』有斐閣（2014）<br>
+高橋泰城　<A HREF="https://note.com/taiki_takahashi/n/neda0ccf954b9"> note　行動経済学：定常的時間選好の数値積分</A>
+<hr>
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

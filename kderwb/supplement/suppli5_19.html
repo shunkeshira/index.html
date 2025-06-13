@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+債券価格曲線の形状
+</h3>
+
+
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　債券価格$P(r)$は利率$r$の関数として，減少凸関数であることを示しなさい．
+</p>
+
+<Div Align="left">【解答】</Div>
+　クーポン$C$，額面$F$，残存期間$n$の利付債は，利率$r$に対しその価格$P(r)$は，次式の通りになる．
+\[
+P(r)=\dfrac{C}{(1+r)}+\dfrac{C}{(1+r)^2}+\cdots +\dfrac{C+F}{(1+r)^n}
+\]
+微分すると，
+\[
+P^{\prime}(r)=-\dfrac{C}{(1+r)^2}-\dfrac{2C}{(1+r)^3}-\cdots -\dfrac{n(C+F)}{(1+r)^{n+1}} < 0
+\]
+
+なので，単調減少である．さらに$2$階微分すると，
+
+\[
+P^{\prime\prime}(r)=\dfrac{(1\times 2)C}{(1+r)^3}+\dfrac{(2\times 3)C}{(1+r)^4}+\cdots +\dfrac{n(n+1)(C+F)}{(1+r)^{n+2}} > 0
+\]
+なので，凸関数である．
+<Div Align="right">【解答終】</Div>
+
+
+
+
+
+
+<hr>
+<Div Align="left">【メモ】</Div>
+割引債に対しては$C=0$とすれば，同じ結論が得られる．
+<Div Align="right">【メモ終】</Div>
+
+<hr>
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

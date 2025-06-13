@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+割引債の価格の変動率
+</h3>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">債券は利子率が変動することによって，債券価格も変動するリスクにさらされる．本問は割引債についてそのリスクを考える．
+</p>
+
+<ul>
+<li>$r$：現在の利子率</li>
+<li>$\bar{r}$：変化後の利子率</li>
+<li>$P=P(r)$：現在の債券価格</li>
+<li>$\bar{P}=P(\bar{r})$：変化後の債券価格</li>
+<li>$\Delta r =\bar{r}-r $：利子率の変動値</li>
+<li>$\Delta P =\bar{P}-P $：債券価格の変動値</li>
+<li>$\dfrac{\Delta P}{P}$：価格の変動率</li>
+</ul>
+
+<hr>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　割引債の価格の変動率 $\dfrac{\Delta P}{P}$ を求めなさい．
+</p>
+
+<Div Align="left">【解答】</Div>
+Time Line Technique の表から，
+\[
+\begin{array}{cccc}
+年 & \hspace{4mm}CF\hspace{4mm} & \hspace{4mm}DF\hspace{4mm} & \hspace{4mm}PV\hspace{4mm}\\ \hline
+0 & -P &/ 1 & 0  \\
+1 &0& / (1+r)^1& 0\\
+2 &0& / (1+r)^2&  0\\
+\vdots &\vdots& \vdots&\vdots  \\
+n &F& / (1+r)^n & \dfrac{F}{(1+r)^n}\\
+\end{array}
+\]
+であるので，$P=\dfrac{F}{(1+r)^n}$，$\bar{P}=\dfrac{F}{(1+\bar{r})^n}$ である．したがって，
+
+\begin{align}
+\dfrac{\Delta P}{P}&=
+\dfrac{\dfrac{F}{(1+\bar{r})^n}-\dfrac{F}{(1+r)^n}}{\dfrac{F}{(1+r)^n}}\\[2ex]
+&=\left(\dfrac{1+r}{1+\bar{r}}\right)^n-1
+\end{align}
+
+となる．
+
+<Div Align="right">【解答終】</Div>
+
+
+<hr>
+<Div Align="left">【メモ】</Div>
+割引債の変動率は利子率と，償還年数だけで決まることがわかる．
+
+
+\[
+\begin{array}{ccccc}
+\displaystyle r>\bar{r} &\Leftrightarrow &\displaystyle\frac{1+r}{1+\bar{r}}>1 &\Leftrightarrow &\displaystyle \frac{\Delta P}{P} > 0：利子率が下がると価格は上昇\\[2ex]
+\displaystyle r<\bar{r} &\Leftrightarrow &\displaystyle\frac{1+r}{1+\bar{r}}<1 &\Leftrightarrow &\displaystyle \frac{\Delta P}{P} < 0：利子率が上がると価格は下落\\
+\end{array}
+\]
+
+<Div Align="right">【メモ終】</Div>
+<hr>
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

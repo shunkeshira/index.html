@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+利付債の価格の変動率（修正デュレーション）【『経出る』（練習問題5.10）】
+</h3>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">債券は利子率が変動することによって，債券価格も変動するリスクにさらされる．本問は利付債についてそのリスクを考える．
+</p>
+
+<ul>
+<li>$r$：現在の利子率</li>
+<li>$\bar{r}$：変化後の利子率</li>
+<li>$P=P(r)$：現在の債券価格</li>
+<li>$\bar{P}=P(\bar{r})$：変化後の債券価格</li>
+<li>$\Delta r =\bar{r}-r $：利子率の変動値</li>
+<li>$\Delta P =\bar{P}-P $：債券価格の変動値</li>
+<li>$\dfrac{\Delta P}{P}$：価格の変動率</li>
+</ul>
+
+Time Line Technique の表から，
+\[
+\begin{array}{cccc}
+年 & \hspace{4mm}CF\hspace{4mm} & \hspace{4mm}DF\hspace{4mm} & \hspace{4mm}PV\hspace{4mm}\\ \hline
+0 & -P &/ 1 & 0  \\
+1 &C& / (1+r)^1& \dfrac{C}{(1+r)^1}\\
+2 &C& / (1+r)^2&  \dfrac{C}{(1+r)^2}\\
+\vdots &\vdots& \vdots&\vdots  \\
+n &C+F& / (1+r)^n & \dfrac{C+F}{(1+r)^n}\\
+\end{array}
+\]
+であるので，$P=\dfrac{F}{(1+r)^n}$，$\bar{P}=\dfrac{F}{(1+\bar{r})^n}$ である．なので，
+
+\[
+\begin{array}{rcc}
+P(\bar{r})&=&\dfrac{C}{(1+\bar{r})^1}+\dfrac{C}{(1+\bar{r})^2}+\cdots +\dfrac{(C+F)}{(1+\bar{r})^n}\\
+-）P(r)&=&\dfrac{C}{(1+r)^1}+\dfrac{C}{(1+r)^2}+\cdots +\dfrac{(C+F)}{(1+r)^n}\\\hline
+\end{array}
+\]
+
+から正確な（使える）公式を導くのは難しそうだ．そこで，微分を使った近似公式を導く
+
+Time Line Technique を次のように改変したものの，最右辺の和を価格$P$で割ったものをマコーレーのボンド・デュレーションといい $D$ であらわす．
+\[
+\begin{array}{ccccc}
+年 & \hspace{4mm}CF\hspace{4mm} & \hspace{4mm}DF\hspace{4mm} & \hspace{4mm}PV\hspace{4mm} & \hspace{4mm}PV\times 年\hspace{4mm}\\ \hline
+0 & -P &/ 1 & 0  & 0\\
+1 &C& / (1+r)^1& \dfrac{C}{(1+r)^1}& \dfrac{1\times C}{(1+r)^1}\\
+2 &C& / (1+r)^2&  \dfrac{C}{(1+r)^2}& \dfrac{2\times C}{(1+r)^2}\\
+\vdots &\vdots& \vdots&\vdots &\vdots \\
+n &C+F& / (1+r)^n & \dfrac{C+F}{(1+r)^n}& \dfrac{n\times (C+F)}{(1+r)^n}\\
+\end{array}
+\]
+
+したがって，
+\[
+D=\left\{\frac{C}{(1+r)^1}+\frac{2C}{(1+r)^2}+\cdots +\frac{n(C+F)}{(1+r)^n}\right\}/P
+\]
+ である．また，$D$ を $1+r$ で割ったものを修正ボンド・デュレーションといい $D_{m}$ であらわす．
+
+<hr>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問１】　利子率の変化にともなう，利付債の価格変動率は次の式で近似できることを示しなさい．
+$\dfrac{\Delta P}{P}\approx -D_{m}\times\Delta r=-D_{m}(\bar{r}-r)$．
+</p>
+
+<Div Align="left">【解答】</Div>
+<UL>
+<LI>$\left(\dfrac{1}{(1+r)^k}\right)^{\prime}=\dfrac{-k}{(1+r)^{k+1}}$</LI><br>
+<LI>$P^{\prime}(r)=-
+\left\{\dfrac{C}{(1+r)^2}+\dfrac{2C}{(1+r)^3}+\cdots +\dfrac{n(C+F)}{(1+r)^{n+1}}\right\}$</LI><br>
+<LI>$\dfrac{\Delta P}{P}\approx \dfrac{P^{\prime}(r)\Delta r}{P}=
+-\left\{\dfrac{C}{(1+r)^2}+\dfrac{2C}{(1+r)^3}+\cdots +\dfrac{n(C+F)}{(1+r)^{n+1}}\right\}\Delta r/P
+=-\left\{\dfrac{C}{(1+r)^1}+\dfrac{2C}{(1+r)^2}+\cdots +\dfrac{n(C+F)}{(1+r)^{n}}\right\}\Delta r/P(1+r)
+=-D\Delta r/(1+r)=-D_{m}\Delta r$</LI><br>
+</UL>
+
+
+<Div Align="right">【解答終】</Div>
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問２】　$D_{m}=3.5$ のときに、利子率が $5\%$ から $6\%$ に変化すると、価格はどう変動（何％　上昇・下落）するか求めなさい．
+</p>
+
+<Div Align="left">【解答】</Div>
+$\dfrac{\Delta P}{P}\approx -D_{m}\times\Delta r=-3.5(6-5)=-3.5$ なので．約$3.5\%$下落する．
+
+
+
+
+<Div Align="right">【解答終】</Div>
+<hr>
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

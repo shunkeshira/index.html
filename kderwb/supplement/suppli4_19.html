@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+積立年数と常用対数
+</h3>
+
+
+
+<hr>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　年利$5$％で毎年$1$万円を積み立てる．総額が$20$万円を超えるのは何年後か求めなさい．
+ただし，$\log_{10}2=0.3010, \log_{10}3=0.4771,\log_{10}7=0.8450$としなさい．
+<br>
+上智大学（2018）入試問題より
+</p>
+
+<Div Align="left">【解答】</Div>
+$n$年後の積立額を$S$とすると，
+
+\[
+S=(1+0.05)^n+(1+0.05)^{n-1}+\cdots +(1+0.05)+1
+\]
+なので，
+\[
+1.05S=(1+0.05)^{n+1}+(1+0.05)^n+\cdots +(1+0.05)^2+(1+0.05)
+\]
+
+である．辺々引き算をすると，
+\[
+0.05S=(1+0.05)^{n+1}-1
+\]
+なので，
+\[
+S=20\Biggl(\Bigl(\frac{21}{20}\Bigr)^{n+1}-1\Biggr)\geq 20
+\]
+を解くのには，
+\[
+\Bigl(\frac{21}{20}\Bigr)^{n+1}\geq 2
+\]
+を解けばよい．
+両辺の常用対数を取ると，
+
+\[
+(n+1)\Bigl(\log_{10}7+\log_{10}3-\log_{10}10-\log_{10}2\Bigr)\geq \log_{10}2
+\]
+
+したがって，$\log_{10}2=0.3010, \log_{10}3=0.4771,\log_{10}7=0.8450$を使うと，
+
+\[
+0.0211(n+1)\geq 0.3010 \Rightarrow n+1 \geq 14.26
+\]
+
+より，$n\geq 13.26$となるので$14$年かかる．．
+
+<Div Align="right">【解答終】</Div>
+
+
+
+
+<hr>
+【Further Reading】 <A HREF="https://www.youtube.com/watch?v=lMMV1-umiFs">YOUTUBE鈴木貫太郎チャンネル</A>
+<hr>
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

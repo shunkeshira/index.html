@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+費用関数が$x^2$に比例する企業．
+</h3>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【『経出る』の問題（例題5.1）】<br>
+ある財を生産する企業の費用関数が $C(x)=x^2$ であるとする．この企業は市場価格を所与として生産量を決める（つまり，プライス・テイカーであるとする）．．．以下省略．
+</p>
+
+<ul>
+<li>$x^2$に比例する費用関数って現実的な問題としてあるの？
+<li>これに答えるために（半ば強引に作った）机上の問題（笑）
+</ul>
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問１】　コンビニチェーン「ハイソン」は拠点都市の中心から半径$x$ kmをカバーするように，店舗を配置すると，$px$だけ売上があるという．一方コストは面積に比例して$qx^2$ だけかかるという．「ハイソン」の最適な配置半径を求めなさい．
+</p>
+
+<Div Align="left">【解答】</Div>
+利潤を ${\pi}(x)$ とおくと，
+\[
+{\pi}(x)=px-qx^2
+\]
+と書ける．$1$階条件は，
+\[
+0={\pi}^{\prime}(x)=p-2qx．
+\]
+これを解いて，$x=\dfrac{p}{2q}$ が最適な配置半径．
+
+<Div Align="right">【解答終】</Div>
+
+<hr>
+
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問２】　ビールの卸売業者Ａ社では．「３分の１ルール」に従うと，返品率が出荷数$x$に比例した$rx$になる（従って返品数は$rx^2$）．出荷コストを$c_1$, 返品コストを$c_2$, 価格を$p$としたとき，最適な出荷数を求めなさい．
+</p>
+
+<Div Align="left">【解答】</Div>
+収入は $px$ で費用は $C(x)=c_1x+c_2rx^2$ なので，そのときの利潤を ${\pi}(x)$ とおくと，
+\[
+{\pi}(x)=px-c_1x-c_2rx^2
+\]
+と書ける．$1$階条件は，
+\[
+0={\pi}^{\prime}(x)=p-c_1-2c_2rx．
+\]
+これを解いて，$x=\dfrac{p-c_1}{2c_2r}$ が最適な出荷数．
+<Div Align="right">【解答終】</Div>
+
+<hr>
+<Div Align="left">【メモ】</Div>
+<UL>
+<LI>問１はコンビニ・チェーンの「ドミナント戦略」を意識して作った問題．経済学的に妥当な問題かどうかはさておき（笑）この他にも，面積に比例するコストを考えれば，費用関数が$x^2$に比例する例はいくつか作れそう．</LI>
+<LI>「３分の１ルール」については，NHKのクローズアップ現代<A HREF="http://www.nhk.or.jp/gendai/kiroku/detail_3436.html">「このままでは“もったいない”　
+〜動き出した食品ロス対策〜」</A>（2013.11.25放送）を参考にしてください．</LI>
+</UL>
+
+<Div Align="right">【メモ終】</Div>
+
+<hr>
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

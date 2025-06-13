@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+『経出る』4.4節 割引現在価値の和は，複利計算が前提．これを単利による割引現在価値にした場合の評価式.
+（作成 2015.11.22）
+</h3>
+
+
+<hr>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問１】　次の級数の収束・発散を判定しなさい．
+\[
+（単利による割引現在価値の和）=\sum_{t=1}^{\infty} \dfrac{w}{1+tr}．
+\]
+</p>
+
+<Div Align="left">【解答】</Div>
+
+\[
+\begin{align}
+\sum_{t=1}^{T} \dfrac{w}{1+tr} &\geq \int_{0}^{T}\dfrac{w}{1+tr}dt=\Bigl[\dfrac{w}{r}\log_{}{(1+tr)}\Bigr]^{T}_{0}\\
+&=\dfrac{w}{r}\log_{}{(1+Tr)} \to +\infty
+\end{align}
+\]
+
+なので $+\infty$ に発散する．
+
+<Div Align="center"><IMG SRC="parabolic_discount.jpg" width=400></Div>
+
+<Div Align="right">【解答終】</Div>
+
+
+
+<hr>
+<Div Align="left">【メモ】</Div>
+<UL>
+<LI>
+次の評価式も得られる．
+\[
+\dfrac{w}{r}\log_{}{(1+(T+1)r)}\geq \sum_{t=1}^{T} \dfrac{w}{1+tr} 
+\]
+<Div Align="center"><IMG SRC="parabolic_discount_bis.jpg" width=400></Div>
+</LI>
+<LI>
+関数$\dfrac{1}{1+tr}$を双曲割引関数という（たぶん）．
+</LI>
+<LI>
+関数$\dfrac{w}{r}\log_{}{(1+Tr)} $は一定の収入$w$があるときの連続時間での双曲割引による割引現在価値の和（たぶん）．
+</LI>
+</UL>
+<Div Align="right">【メモ終】</Div>
+<hr>
+
+<Div Align="left">【Further Reading】</Div>
+<A HREF="https://en.wikipedia.org/wiki/Hyperbolic_discounting">Wikipeadia Hyperbolic discounting</A>
+
+<hr>
+
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

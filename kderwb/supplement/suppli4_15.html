@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+積立金額
+</h3>
+
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">
+目標額$F$円とし，毎年$c$円を利率$r$で$n$年間積み立てるとすると，
+\[
+c= \dfrac{1}{r}\cdot\dfrac{F}{(1+r)^{n+1}-(1+r)}
+\]
+となることを示しなさい．
+</p>
+
+<Div Align="left">【解答】</Div>
+TLTの表から
+\[
+\renewcommand{\arraystretch}{2}
+\begin{array}{cccc}
+年 & CF& DF & PV\\ \hline
+0 & -c &/ (1+r)^0& \dfrac{-c}{(1+r)^0}  \\
+1 &-c& / (1+r)^1& \dfrac{-c}{(1+r)^1} \\
+2 &-c& / (1+r)^2&  \dfrac{-c}{(1+r)^2} \\
+\vdots &\vdots& \vdots&\vdots  \\
+n-1 &-c& / (1+r)^{n-1} & \dfrac{-c}{(1+r)^{n-1}} \\
+n &F& / (1+r)^{n} &\dfrac{F}{(1+r)^{n} }\\
+\end{array}
+\]
+出入りの辻褄あわせに，$NPV=0$とすると，
+\begin{align*}
+\dfrac{F}{(1+r)^{n}}&=\dfrac{c}{(1+r)^0} + \dfrac{c}{(1+r)^1}+\cdots +\dfrac{c}{(1+r)^{n-1}}\\
+F&=c(1+r)^{n}+c(1+r)^{n-1}+\cdots +c(1+r)^{1}．
+\end{align*}
+
+\[
+(1+r)F=c(1+r)^{n+1}+c(1+r)^{n}+\cdots +c(1+r)^{2}
+\]
+なので，辺々引き算することで，
+\begin{align*}
+rF&=c\Bigl\{(1+r)^{n+1}-(1+r)^{1}\Bigr\}\\
+c&= \dfrac{1}{r}\cdot\dfrac{F}{(1+r)^{n+1}-(1+r)}
+\end{align*}
+を得る．
+
+<Div Align="right">【解答終】</Div>
+
+
+
+
+
+
+<hr>
+
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

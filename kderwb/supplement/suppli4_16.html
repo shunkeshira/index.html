@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+複利最終利回りと単利最終利回り
+</h3>
+<p>
+　償還期間$T$，額面$F$，クーポン$C$，価格$P$の利付債の複利最終利回りとは，この債券のIRRのことをいう．すなわち，
+\[
+P=\dfrac{C}{(1+r)^1}+\dfrac{C}{(1+r)^2}+\cdots +\dfrac{C}{(1+r)^T}
+\]
+を満たす$r$が複利最終利回りである．一方，
+\[
+r_s=\dfrac{C+ (F-P)/T}{P}
+\]
+を単利最終利回りという．
+</p>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　
+\[
+F>P\Leftrightarrow r_s > r
+\]
+が成立することを示しなさい．
+</p>
+
+<hr>
+
+
+
+<Div Align="left">【解答】</Div>
+　まず，額面$F$を$P$と$C$と$r$を使って表す．
+\[
+P=\dfrac{C}{(1+r)^1}+\dfrac{C}{(1+r)^2}+\cdots +\dfrac{C}{(1+r)^{T}}+\dfrac{F}{(1+r)^{T}}
+\]
+なので，
+\begin{align*}
+F&=(1+r)^TP-C\bigl((1+r)^{T-1}+\cdots +(1+r)^1+1\bigr)\\
+&=(1+r)^TP-C\dfrac{(1+r)^T-1}{r}\\
+F-P&=\bigl((1+r)^T-1\bigr)P-C\dfrac{(1+r)^T-1}{r}\\
+&=\bigl((1+r)^T-1\bigr)\Bigl(P-\dfrac{C}{r}\Bigr)．
+\end{align*}
+
+$(1+r)^T-1>0$なのだから，
+\[
+F>P\Leftrightarrow P>\dfrac{C}{r}
+\]
+である．一方，単利最終利回りの定義式から，$F=P+r_sTP-CT$なので，
+\begin{align*}
+(1+r)^TP-C\dfrac{(1+r)^T-1}{r}&=P+r_sTP-CT\\
+(1+r)^TP-(1+Tr_s)P&=C\dfrac{(1+r)^T-1}{r}-CT\\
+\bigl((1+r)^T-(1+Tr_s)\bigr)P&=C\dfrac{(1+r)^T-(1+rT)}{r}\\
+\dfrac{(1+r)^T-(1+Tr_s)}{(1+r)^T-(1+rT)}P&=\dfrac{C}{r}\\
+\end{align*}
+ゆえに，
+\begin{align*}
+P-\dfrac{C}{r}&=\dfrac{(1+r)^T-(1+Tr)-(1+r)^T+(1+Tr_s)}{(1+r)^T-(1+rT)}\\
+&=\dfrac{(r_s-r)T}{(1+r)^T-(1+rT)}
+\end{align*}
+以上より，
+\[
+F>P\Leftrightarrow P >\dfrac{C}{r} \Leftrightarrow r_s >r
+\]
+を得る（$複利 > 単利$の不等式，$(1+r)^T-(1+rT)>0$を使った）．
+<Div Align="right">【解答終】</Div>
+
+
+
+
+
+
+<hr>
+<Div Align="left">【メモ】</Div>
+$F>P$のとき，アンダーパーであるという．従って，アンダーパーであることと，単利最終利回りが複利最終利回りを上回ることは，同値である．
+<Div Align="right">【メモ終】</Div>
+
+【Further Reading】 青沼・岩城『EXCELで学ぶファイナンス$3$　債券・金利・為替』きんざい（平成14年）
+<hr>
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+
