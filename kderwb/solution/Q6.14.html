@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻める解答例：問6.14</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの解答例">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,解答例,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：問6.14解答例</H1>
+
+<hr>
+
+<p>
+大学4年生のときにおそわった古川長太先生の講義ノートから．
+</p>
+
+<Div Align="left">【解答 6.14】</Div>
+
+<p>
+数学的帰納法による．
+</p>
+
+<OL>
+<LI>$N=2$ のとき $A$ が凸だから，凸集合の定義より自明．</LI>
+
+<LI>$N-1$個の任意の凸結合</LI>
+<p>
+$x_i\in A$，$0 \leq {\alpha}_i \leq 1$，$i=1,2,\ldots , N-1$，
+${\alpha}_1+{\alpha}_2+\cdots +{\alpha}_{N-1}=1$に対し
+\[
+{\alpha}_1x_1+{\alpha}_2x_2+\cdots +
+{\alpha}_{N-1}x_{N-1}\in A \tag{1}
+\]
+の成立を仮定する（帰納法の仮定）．
+</p>
+
+<LI>$N$個の凸結合</LI>
+<p>
+次式の変形を行う．
+</p>
+\[
+{\alpha}_1x_1+\cdots +{\alpha}_Nx_N=({1-{\alpha}_N})
+\left(\dfrac{{\alpha}_1x_1+\cdots +{\alpha}_{N-1}x_{N-1}}{1-{\alpha}_N}\right)+{\alpha}_Nx_N　\tag{2}
+\]
+<p>
+${\alpha}_1+\cdots +{\alpha}_{N-1}=1-{\alpha}_N$だから
+$\dfrac{{\alpha}_1+\cdots +{\alpha}_{N-1}}{1-{\alpha}_N}=1$，すなわち
+$\dfrac{{\alpha}_1x_1+\cdots +{\alpha}_{N-1}x_{N-1}}{1-{\alpha}_N}$は凸結合．帰納法の仮定(1)より$A$に含まれる．(2)式は$A$に含まれる２元の凸結合であることをしめしているので，やはり$A$に含まれる．
+</p>
+</OL>
+
+
+
+
+<Div Align="right">【問 6.14終わり】</Div>
+
+<hr>
+
+<p>
+【註】第３ステップで ${\alpha}_N=1$ のときを場合分けしなければいけないが，それは明らかなので省略した．
+</p>
+
+<LI><A HREF="./solution.html">解答例一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+
