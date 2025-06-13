@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+凸関数と微分
+</h3>
+
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　
+関数 $f:{\mathbb R}^n \to {\mathbb R}$ に対し，次は同値であることを示しなさい．<br>
+(1) $f(x)$は凸関数<br>
+(2) $f(y) \geq f(x) + \langle \nabla f(x), y-x \rangle$ for all $x,y$
+</p>
+
+
+<Div Align="left">【解答】</Div>
+(1) $\Rightarrow$ (2)<br>
+${\alpha}\in (0,1)$に対し，$f(x)$は凸関数なので，
+\[
+f(x+{\alpha}(y-x))-f(x)=f({\alpha}y+(1-{\alpha})x)-f(x)\leq {\alpha}f(y)+(1-{\alpha})f(x)-f(x)={\alpha}[f(y)-f(x)]
+\]
+なので，両辺を${\alpha}$で割り，${\alpha} \downarrow 0$とすればよい．<br>
+
+(1) $\Leftarrow$ (2)<br>
+$y_1, y_2$と${\alpha}\in (0,1)$に対し，$x={\alpha}y_1+(1-{\alpha})y_2$とおく．
+(2)式から，$f(y_i) \geq f(x) + \langle \nabla f(x), y_i-x \rangle$ for $i=1,2$
+が成り立つので，これらの凸結合から
+\[
+{\alpha}f(y_1)+(1-{\alpha})f(y_2)\geq f(x) + \langle \nabla f(x), {\alpha}y_1+(1-{\alpha})y_2 -x \rangle=f(x)
+=f( {\alpha}y_1+(1-{\alpha})y_2)
+\]
+が得られる．
+
+
+<Div Align="right">【解答終】</Div>
+
+<hr>
+
+<Div Align="left">【Further Reading】</Div>
+J.-B. Hiriart-Urruty, C. Lamaréchal, "Convex Analysis and Minimization Algorithms I", Springer (1993)<br>
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

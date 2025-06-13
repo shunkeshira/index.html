@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+準凸関数と微分
+</h3>
+
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　
+関数 $f:{\mathbb R}^n \to {\mathbb R}$ に対し，次は同値であることを示しなさい．<br>
+(1) $f(x)$は<A HREF="./suppli7_10.html">準凸関数</A><br>
+(2) 任意の$x,y$に対し，$f(y)\leq f(x)$ならば$\langle \nabla f(x), y-x \rangle \leq 0$
+</p>
+
+
+<Div Align="left">【解答】</Div>
+(1) $\Rightarrow$ (2)<br>
+任意の$x,y$に対し，一般性を失うことなく，$f(y)\leq f(x)$としてよい．${\alpha}\in (0,1)$に対し，$f(x)$は準凸関数なので，
+\[
+f(x+{\alpha}(y-x))=f({\alpha}y+(1-{\alpha})x)\leq f(x)
+\]
+従って
+\[
+f(x+{\alpha}(y-x))-f(x)\leq 0
+\]
+なので，両辺を${\alpha}$で割り，${\alpha} \downarrow 0$とすればよい．<br>
+
+(1) $\Leftarrow$ (2)<br>
+$f(y)\leq f(x)$ならば$\langle \nabla f(x), y-x \rangle \leq 0$を仮定する．
+$z={\alpha}y+(1-{\alpha})x$と置く．$f(z)>\max \{f(x),f(y)\}$と仮定して不合理を導く．<br>
+
+$g(t)=f(ty+(1-t)x)$を考える．
+$g(t)$は微分可能で，$g^{\prime}(t)=\langle \nabla f(ty+(1-t)x), y-x \rangle $である．<br>
+
+$g(0)=f(x), g(1)=f(y), g({\alpha})=g(z)$であって
+仮定より$g({\alpha})> g(0)$なので平均値の定理から，$\exists {\xi}_1 \in (0, {\alpha})$があって，
+\[
+g^{\prime}({\xi}_1)=\dfrac{g(\alpha)-g(0)}{\alpha}> 0
+\]
+$x_1={\xi}_1y+(1-{\xi}_1)x$と置くと，
+\[
+0< \langle \nabla f({\xi}_1y+(1-{\xi}_1)x), y-x \rangle \tag{1}
+\]
+
+また仮定より，$g({\alpha})> g(1)$なので平均値の定理から，$\exists {\xi}_2 \in ({\alpha},1)$があって，
+\[
+g^{\prime}({\xi}_2)=\dfrac{g(1)-g(\alpha)}{1-{\alpha}} < 0
+\]
+$x_2={\xi}_2y+(1-{\xi}_2)x$と置くと，
+\[
+0>  \langle \nabla f({\xi}_2y+(1-{\xi}_2)x), y-x \rangle \tag{2}
+\]
+
+ここで$f(z)\leq f(x_1)$ならば，$\langle \nabla f(x_1), z-x_1 \rangle \leq 0$となるはずだが，
+$z-x_1 =({\alpha}-{\xi}_1)(y-x)$なので，
+\[
+\langle \nabla f(x_1), ({\alpha}-{\xi}_1)(y-x)\rangle \leq 0
+\]
+となり，(1)に矛盾する．<br>
+
+また$f(z)\leq f(x_2)$ならば，$\langle \nabla f(x_2), z-x_2 \rangle \leq 0$となるはずだが，
+$z-x_2 =({\alpha}-{\xi}_2)(y-x)$なので，
+\begin{align*}
+\langle \nabla f(x_2), ({\alpha}-{\xi}_2)(y-x)\rangle &\leq 0\\
+\langle \nabla f(x_2), (y-x)\rangle &\geq 0\
+\end{align*}
+となり，(2)に矛盾する．
+
+
+
+<Div Align="right">【解答終】</Div>
+
+<hr>
+
+<Div Align="left">【Further Reading】</Div>
+福島雅夫『非線形最適化の基礎』 朝倉書店(2001)<br>
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

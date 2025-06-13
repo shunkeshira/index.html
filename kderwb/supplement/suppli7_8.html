@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+２期間消費モデルの最適消費：効用関数が$u=\log_{}{c_1}+{\delta}\log_{}{c_2}$【『経出る』練習問題7.7解説】
+</h3>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【『経出る』練習問題7.7解説】の解説にあるように，　2期間消費モデルの効用関数を $u(c_1, c_2)=c_1c_2$ 積の形から単調増加関数 $\log_{}{}$ を施した形でも，同一の答が出るはず．本問ではさらに将来消費の寄与分を割り引くケースとして，効用関数が $u=\log_{}{c_1}+{\delta}\log_{}{c_2}$ のケースを扱う．</p>
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　2期間消費モデルを考える．第１期の所得を $y_1$ ，第２期の所得を $y_2$，利子率を $r$ とする．第１期の消費額を $c_1$，第２期の消費額を $c_2$ とする．効用関数が $u(c_1, c_2)=\log_{}{c_1}+{\delta}\log_{}{c_2}$ であるとき，効用を最大化する最適消費額を求めなさい．</p>
+
+<Div Align="left">【解答】</Div>
+<UL>
+<LI>【問】<A HREF="./suppli6_2.html" target=blank>２期間消費モデル</A>のときとも，【問】<A HREF="./suppli7_7.html" target=blank>２期間消費モデルの最適消費：効用関数が$u=c_1c_2$</A>のときとも同様に，$2$ 期間を通じた予算制約は
+\[
+c_1+\dfrac{c_2}{1+r}=y_1+\dfrac{y_2}{1+r}
+\]
+となる．
+したがって，解くべき問題は，
+\begin{align}
+\max_{c_1>0,c_2>0}& u(c_1,c_2)=\log_{}{c_1}+{\delta}\log_{}{c_2}\\[2ex]
+s.t. & c_1+\dfrac{c_2}{1+r}=y_1+\dfrac{y_2}{1+r}
+\end{align}
+</LI><br>
+
+<LI>ラグランジュ関数を作ると，
+\[
+{\cal L}(c_1,c_2,\lambda )=\log_{}{c_1}+{\delta}\log_{}{c_2}+\lambda \left(y_1+\dfrac{y_2}{1+r}-
+\left(c_1+\dfrac{c_2}{1+r}\right)\right)．
+\]
+</LI><br>
+<LI>
+各変数で偏微分してイコールゼロとおくと，
+\[
+\begin{align}
+0=&\dfrac{\partial \cal L}{\partial c_1}=\frac{1}{c_1}-\lambda 
+\tag{1}\\[2ex]
+0=&\dfrac{\partial \cal L}{\partial c_2}=\frac{\delta}{c_2}-\dfrac{\lambda}{1+r}
+\tag{2}\\[2ex]
+0=&\dfrac{\partial \cal L}{\partial \lambda}=y_1+\dfrac{y_2}{1+r}-
+\left(c_1+\dfrac{c_2}{1+r}\right)\tag{3}
+\end{align}
+\]
+</LI><br>
+<LI>
+あとは工夫して解く．$(1)$ から $c_1=\dfrac{1}{\lambda}$，
+$(1)$ から $c_2=\dfrac{\delta(1+r)}{\lambda}$．これを(3)に代入すると，
+$\dfrac{1}{\lambda}+\dfrac{\delta}{\lambda}=y_1+\dfrac{y_2}{1+r}$となり，$\dfrac{1}{\lambda} =\dfrac{1}{1+\delta}\left(y_1+\dfrac{y_2}{1+r}\right)$ を得る．したがって，最適解は
+\begin{align}
+c_1&=\dfrac{1}{\lambda} =\dfrac{1}{1+\delta}\left(y_1+\dfrac{y_2}{1+r}\right)\tag{4}\\[2ex]
+c_2&=\dfrac{\delta (1+r)}{\lambda} =\dfrac{\delta (1+r)}{1+\delta}\left(y_1+\dfrac{y_2}{1+r}\right)\tag{5}\\[2ex]
+\end{align}
+となる．
+</LI><br>
+</UL>
+
+<Div Align="right">【解答終】</Div>
+
+<hr>
+<Div Align="left">【メモ】</Div>
+(4), (5) を比較すると，違いは，最初の分子部分の $1$ と $\delta(1+r)$．なので，現在消費 $c_1$ を重視するのか，将来消費 $c_2$ を重視するのかは次に見るように，割引率 $\delta$ と 利子率の割引因子 $\dfrac{1}{1+r}$ で場合分けできる．
+<UL>
+<LI>$\delta > \dfrac{1}{1+r}$ の場合：$\delta (1+r) > 1$ なので $c_2 > c_1$：将来消費を大きくする</LI><br>
+<LI>$\delta < \dfrac{1}{1+r}$ の場合：$\delta (1+r) < 1$ なので $c_2 < c_1$：現在消費を大きくする</LI>
+</UL>
+<Div Align="right">【メモ終】</Div>
+
+
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

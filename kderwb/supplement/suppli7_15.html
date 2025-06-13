@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+オイラーの定理の逆（作成：2015.11.24）
+</h3>
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　以下の$2$変数関数について
+$
+\dfrac{\partial f}{\partial x_1}(x_1,x_2)x_1+
+\dfrac{\partial f}{\partial x_2}(x_1,x_2)x_2
+$ を計算しなさい．
+<br>
+１．　$\displaystyle f(x_1,x_2)=x_1^{\frac{1}{3}}x_2^{\frac{2}{3}}$<br>
+２．　$\displaystyle f(x_1,x_2)=x_1^{\frac{3}{4}}x_2^{\frac{5}{4}}$<br>
+３．　$\displaystyle f(x_1,x_2)=x_1^{\alpha}x_2^{\beta}$<br>
+４．　$\displaystyle f(x_1,x_2)=x_1^3+x_1^2x_2+2x_1x_2^2$
+</p>
+
+
+<Div Align="left">【解答】</Div>
+<OL>
+<LI>$\dfrac{\partial f}{\partial x_1}(x_1,x_2)
+=\dfrac{1}{3}x_1^{-\frac{2}{3}}x_2^{\frac{2}{3}}，
+\dfrac{\partial f}{\partial x_1}(x_1,x_2)
+=\dfrac{2}{3}x_1^{\frac{1}{3}}x_2^{-\frac{2}{3}}$
+なので，
+$\dfrac{\partial f}{\partial x_1}(x_1,x_2)x_1+
+\dfrac{\partial f}{\partial x_2}(x_1,x_2)x_2
+=\dfrac{1}{3}x_1^{\frac{1}{3}}x_2^{\frac{2}{3}}
++\dfrac{2}{3}x_1^{\frac{1}{3}}x_2^{\frac{2}{3}}
+=x_1^{\frac{1}{3}}x_2^{\frac{2}{3}}=f(x_1,x_2)$：1次同次関数
+</LI>
+<br>
+<LI>$\dfrac{\partial f}{\partial x_1}(x_1,x_2)
+=\dfrac{3}{4}x_1^{-\frac{1}{4}}x_2^{\frac{5}{4}}，
+\dfrac{\partial f}{\partial x_1}(x_1,x_2)
+=\dfrac{5}{4}x_1^{\frac{3}{4}}x_2^{\frac{1}{4}}$
+なので，
+$\dfrac{\partial f}{\partial x_1}(x_1,x_2)x_1+
+\dfrac{\partial f}{\partial x_2}(x_1,x_2)x_2
+=\dfrac{3}{4}x_1^{\frac{3}{4}}x_2^{\frac{5}{4}}
++\dfrac{5}{4}x_1^{\frac{3}{4}}x_2^{\frac{5}{4}}
+=2x_1^{\frac{3}{4}}x_2^{\frac{5}{4}}=2f(x_1,x_2)$：2次同次関数
+</LI>
+<br>
+<LI>$\dfrac{\partial f}{\partial x_1}(x_1,x_2)
+=\alpha x_1^{\alpha -1}x_2^{\beta}，
+\dfrac{\partial f}{\partial x_1}(x_1,x_2)
+=\beta x_1^{\alpha}x_2^{\beta -1}$
+なので，
+$\dfrac{\partial f}{\partial x_1}(x_1,x_2)x_1+
+\dfrac{\partial f}{\partial x_2}(x_1,x_2)x_2
+=\alpha x_1^{\alpha}x_2^{\beta}
++\beta x_1^{\alpha}x_2^{\beta}
+=(\alpha +\beta )(x_1^{\alpha}x_2^{\beta})=(\alpha +\beta )f(x_1,x_2)$：
+$(\alpha +\beta )$次同次関数
+</LI>
+<br>
+<LI>$\dfrac{\partial f}{\partial x_1}(x_1,x_2)
+=3x_1^2+2x_1x_2+x^2_2，
+\dfrac{\partial f}{\partial x_1}(x_1,x_2)
+=x_1^2x_2+4x_1x_2$
+なので，
+$\dfrac{\partial f}{\partial x_1}(x_1,x_2)x_1+
+\dfrac{\partial f}{\partial x_2}(x_1,x_2)x_2
+=3x_1^3+3x_1^2x_2+6x_1x_2^2=3f(x_1,x_2)$：
+$3$次同次関数
+</LI>
+</OL>
+
+<Div Align="right">【解答終】</Div>
+<hr>
+<Div Align="left">【メモ】</Div>
+　本問は『ワークブック』
+<A HREF="http://www3.u-toyama.ac.jp/shira/kderwb/solution/Q7.24.html">
+問7.24</A>の確認問題．
+
+<Div Align="right">【メモ終】</Div>
+
+【Further Reading】
+M. Hoy et. al “Mathematics for Economics: second edition” The MIT Press（2001）Theorem 11.19<br>
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

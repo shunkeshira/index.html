@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+最適広告支出：コブ＝ダグラス関数
+</h3>
+
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">
+【問】　独占企業が次のような利潤式に直面しているとする．
+\[
+{\pi}(p,a)=pD(p,a)-cD(p,a)-ta
+\]
+ここで$D(p,a)$は逆需要関数，$c$は生産の限界費用，
+$t$は広告の$1$単位当たりの費用とする．
+需要関数がコブ＝ダグラス型，$D(p,a)=p^{-{\alpha}}a^{\beta}$であるとする．
+この時，需要の価格弾力性${{\epsilon}_d}$，および広告の価格弾力性${{\epsilon}_a}$
+を求めよ．
+</p>
+
+<Div Align="left">【解答】</Div>
+<A HREF="./suppli7_30.html">ドーフマン・スタイナーの最適広告費定理</A>から
+
+\[
+-\dfrac{{\epsilon}_a}{{\epsilon}_d}=\dfrac{ta}{pD(p,a)}
+\]
+
+であるが，
+\[
+\dfrac{\partial D}{\partial p}=-{\alpha}p^{-{\alpha}-1}a^{\beta}
+\]
+であるので，
+\[
+{{\epsilon}_d}=\dfrac{\dfrac{\partial D}{\partial p}p}{D(p,a)}=\dfrac{-{\alpha}p^{-{\alpha}-1}a^{\beta}p}{p^{-{\alpha}}a^{\beta}}=-{\alpha}
+\]
+
+また，
+\[
+\dfrac{\partial D}{\partial a}={\beta}p^{-{\alpha}}a^{{\beta}-1}
+\]
+であるので，
+\[
+{{\epsilon}_a}=\dfrac{\dfrac{\partial D}{\partial a}a}{D(p,a)}=\dfrac{{\beta}p^{-{\alpha}}a^{{\beta}-1}a}{p^{-{\alpha}}a^{\beta}}={\beta}
+\]
+
+従って，
+\[
+\dfrac{ta}{pD(p,a)}=-\dfrac{{\epsilon}_a}{{\epsilon}_d}=\dfrac{\beta}{\alpha}
+\]
+
+
+<Div Align="right">【解答終】</Div>
+
+<hr>
+<Div Align="left">【メモ】</Div>
+売上高$pD(p,a)$に占める広告支出$ta$の最適比率が一定値になることを示している．
+<Div Align="right">【メモ終】</Div>
+
+<hr>
+<Div Align="left">【Further Reading】</Div>
+Jean Tirole ‘The Theory of Industrial Organization’ The MIT Press（1988)<br>
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

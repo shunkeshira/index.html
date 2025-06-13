@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+消費者需要関数．
+</h3>
+
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　次の消費者の最大化問題を解くことにより，消費者需要関数を求めなさい．．
+\begin{align}
+\max_{x,y}& 　u(x,y)=x_1^{\alpha}x_2^{1-{\alpha}}\\[2ex]
+s.t.&　p_1x_1+p_2x_2=m
+\end{align}
+</p>
+
+<Div Align="left">【解答】</Div>
+<OL>
+<LI>ラグランジュ関数を作ると，
+\[
+{\cal L}(x_1,x_2,\lambda )=
+x_1^{\alpha}x_2^{1-{\alpha}}+{\lambda}[m-({p_1x_1+p_2x_2})]
+\]
+</LI><br>
+<LI>
+各変数で偏微分してイコールゼロとおくと，
+\[
+\left\{
+\begin{align}
+0=&{\alpha}x_1^{{\alpha}-1}x_2^{1-{\alpha}}-{\lambda}p_1
+\qquad (1)\\[2ex]
+0=&(1-{\alpha})x_1^{{\alpha}}x_2^{-{\alpha}}-{\lambda}p_2
+\qquad (2)\\[2ex]
+0=&m-({p_1x_1+p_2x_2})\qquad (3)
+\end{align}
+\right.
+\]
+</LI><br>
+<LI>
+あとは工夫して解く．$(1)\div(2)$ から，
+\[
+\dfrac{p_1}{p_2}=\dfrac{{\alpha}x_1^{{\alpha}-1}x_2^{1-{\alpha}}}{(1-{\alpha})x_1^{{\alpha}}x_2^{-{\alpha}}}
+\]
+\[
+\dfrac{p_1}{p_2}=\dfrac{{\alpha}x_2}{(1-{\alpha})x_1}
+\]
+\[
+x_2=\Biggl[\dfrac{(1-{\alpha})p_1}{{\alpha}p_2}\Biggr]x_1
+\]
+
+
+これを$(3)$に代入すると
+
+\[
+m-p_1x_1-p_2\Biggl[\dfrac{(1-{\alpha})p_1}{{\alpha}p_2}\Biggr]x_1
+=m-p_1\Biggl[1+\dfrac{(1-{\alpha})}{{\alpha}}\Biggr]x_1=0
+\]
+
+より，
+\begin{eqnarray*}
+x_1&=&\dfrac{{\alpha}m}{p_1}\\
+x_2&=&\dfrac{(1-{\alpha})m}{p_2}
+\end{eqnarray*}
+となる．
+</LI><br>
+</OL>
+
+<Div Align="right">【解答終】</Div>
+
+
+<hr>
+<Div Align="left">【メモ】</Div>
+\[
+\dfrac{\partial x_1}{\partial p_1}=\dfrac{-{\alpha}m}{p_1^2}
+\]
+なので，弾力性は
+\[
+e=\dfrac{p_1}{x_1}\dfrac{\partial x_1}{\partial p_1}=\dfrac{p_1^2}{{\alpha}m}\dfrac{-{\alpha}m}{p_1^2}=-1
+\]
+と一定値になる．
+<hr>
+
+<Div Align="left">【Further Reading】</Div>
+M. Hoy , J . Livernois, C. McKenna, R Rees and T. Stengos, Mathematics for Economics second edition,
+The MIT Press（2001）
+
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+準凸関数とinvex関数
+</h3>
+
+
+
+<hr>
+$\nabla f(x)=0$（停留点）ならば，$x$が大域的最小解となる関数を，invex関数という．
+特に定義より，停留点を持たない関数もinvex関数である．
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　
+Invex関数であるが，<A HREF="./suppli7_10.html">準凸関数</A>でない関数の例を与えなさい
+</p>
+
+
+<Div Align="left">【解答】</Div>
+(1) 　$x>0$に対し，$f(x)=x^2+\dfrac{1}{x}$とすると，$f(x)$はinvexであるが，準凸関数ではない．<br>
+実際，
+\[
+f^{\prime}(x)=2x-\dfrac{1}{x^2}=\dfrac{2x^3-1}{x^2}
+=\dfrac{2\Bigl(x-\sqrt[3]{\dfrac{1}{2}}\Bigr)\Bigl(x^2+\sqrt[3]{\dfrac{1}{2}}x+\sqrt[3]{\dfrac{1}{2^2}}\Bigr)}{x^2}
+\]
+ここで
+\[
+x^2+\sqrt[3]{\dfrac{1}{2}}x+\sqrt[3]{\dfrac{1}{2^2}}=
+\Bigl(x-\dfrac{1}{2}\sqrt[3]{\dfrac{1}{2}}\Bigr)^2+\dfrac{3}{4}\sqrt[3]{\dfrac{1}{2^2}}>0
+\]
+なので$f(x)$の唯一の停留点は$x=\sqrt[3]{\dfrac{1}{2}}$であり，この点で最小であるのでinvexである．<br>
+一方，$x=\dfrac{1}{2}, y=2$に対し，$z=\dfrac{1}{2}x+\dfrac{1}{2}y=\dfrac{5}{4}$とすると，
+$f(x)=\dfrac{1}{4}+2=\dfrac{9}{4}=2.25$, $f(y)=4+\dfrac{1}{2}=\dfrac{9}{2}=4.5$,
+$ f(z)=\dfrac{25}{16}+\dfrac{4}{5}=\dfrac{189}{30}=6.3$
+となり，$f(z)>\max\{f(x),f(y)\}$となって準凸関数ではない．<br><br>
+
+(2)　$f(x_1,x_2)=x_1^3+x_1-10x_2^3-x_2$を考える．
+\begin{align*}
+\dfrac{\partial f}{\partial x_1}&=3x_1^2+1 >0\\
+\dfrac{\partial f}{\partial x_2}&=-30x_2^2-1 <0
+\end{align*}
+だから停留点はないのでこの関数はinvexである．<br>
+一方，$y=(2,1)$, $x=(0,0)$に対し，$f(y)=f(2,1)=-21$, $f(x)=f(0,0)=0$なので，
+$f(y)\leq f(x)$であるが，
+\[
+\langle \nabla f(x), y-x \rangle =1\cdot 2 -1\cdot 1 >0
+\]
+となり，<A HREF="./suppli7_34.html">準凸関数の特徴づけ</A>に反する．<br>
+
+準凸でないことは次のように直接確かめることもできる．
+$z=\dfrac{1}{4}y+\dfrac{3}{4}x=(\dfrac{1}{2}, \dfrac{1}{4})$とすると，
+$f(z)=\dfrac{7}{32} > \max\{f(x), f(y)\}$となる．
+
+
+
+
+<Div Align="right">【解答終】</Div>
+
+<hr>
+
+<Div Align="left">【Further Reading】</Div>
+Mishra S. K. And Giorgi G. ‘Invexity and Optimization’, Springer(2008)<br>
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

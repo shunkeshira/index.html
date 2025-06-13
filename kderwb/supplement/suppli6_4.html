@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+多期間消費モデル．【『経出る』練習問題6.5発展】
+</h3>
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　$T$期間消費モデルを考える．第0期の所得を $y_0$ ，第２期の所得を $y_2$，第T期の所得を $y_T$，利子率を $r$ とする．第１期の消費額を $c_0$，第２期の消費額を $c_2$ ，第T期の消費額を $c_T$として，ライフサイクル仮説のもとでの生涯の予算制約式を求め，ベクトルの内積で表示しなさい．</p>
+
+<Div Align="left">【解答】</Div>
+　第0期の貯蓄を $s_0$ で表すと，第0期の予算制約は
+\[
+y_0-c_0=s_0
+\]
+　第 $1$ 期の貯蓄の割引現在価値を $s_1$ で表すと，第 $1$期の予算制約は
+\[
+\dfrac{y_1-c_1}{(1+r)}=s_1
+\]
+第 $2$ 期の貯蓄の割引現在価値を $s_2$ で表すと，第 $2$ 期の予算制約は
+\[
+\dfrac{y_2-c_2}{(1+r)^2}=s_2
+\]
+第 $T$ 期の貯蓄の割引現在価値を $s_T$ で表すと，第 $T$ 期の予算制約は
+\[
+\dfrac{y_T-c_T}{(1+r)^T}=s_T
+\]
+
+$1$ から $T$ の和を取れば，
+
+\[
+y_0+\dfrac{y_1}{(1+r)}+\dfrac{y_2}{(1+r)^2}+\cdots +\dfrac{y_T}{(1+r)^T}
+-\Bigl(c_0+\dfrac{c_1}{(1+r)}+\dfrac{c_2}{(1+r)^2}+\cdots +\dfrac{c_T}{(1+r)^T}\Bigr)
+=s_0+s_1+\cdots + s_T 
+\]
+
+ライフサイクル仮説から $s_0+s_1+\cdots + s_T =0$ なので，
+\[
+y_0+\dfrac{y_1}{(1+r)}+\dfrac{y_2}{(1+r)^2}+\cdots +\dfrac{y_T}{(1+r)^T}
+=c_0+\dfrac{c_1}{(1+r)}+\dfrac{c_2}{(1+r)^2}+\cdots +\dfrac{c_T}{(1+r)^T}
+\]
+という多期間モデルの予算制約式を得る．この式では生涯消費の現在価値=生涯所得の現在価値 という経済学的解釈を得る．
+
+
+$\boldsymbol{y}=\begin{pmatrix}y_0 \\ y_1\\ \vdots \\ y_T\end{pmatrix}$ ,
+$\boldsymbol{c}=\begin{pmatrix}c_0 \\ c_1\\ \vdots \\ c_T\end{pmatrix}$ , 
+$\boldsymbol{r}=\begin{pmatrix}1 \\ \dfrac{1}{(1+r)}\\ \vdots \\ \dfrac{1}{(1+r)^T}\end{pmatrix}$ とすると，(3) 式は 
+$\boldsymbol{r}\cdot \boldsymbol{y}=\boldsymbol{c}\cdot \boldsymbol{r}$ すなわち，
+$(\boldsymbol{y}-\boldsymbol{c})\cdot \boldsymbol{r}=0$ と書け，
+ベクトル $\boldsymbol{y}-\boldsymbol{c}$ と 
+ベクトル $\boldsymbol{r}$ が直交していることを示している．
+
+
+<Div Align="right">【解答終】</Div>
+<hr>
+<Div Align="left">【メモ】</Div>
+ライフサイクル仮説とは，個人の貯蓄（借入金）の総計が終末期には$0$になるように行動するという仮説．ここでは終末期の貯蓄残高の累計を現在価値に割引いてそれを$0$とおくことによって，予算制約式を得た．こんなやり方でよかったのかどうか分からない（笑）．
+<Div Align="right">【メモ終】</Div>
+<hr>
+<Div Align="left">【Further Reading】</Div>
+大垣昌夫・田中沙織『行動経済学』有斐閣（2014）
+
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

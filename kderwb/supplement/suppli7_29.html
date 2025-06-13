@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+コブ＝ダグラス関数は準凹関数
+</h3>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">
+関数 $f$ がどんな $\boldsymbol{x^0}, \boldsymbol{x^1}$ と 
+$0 < \lambda < 1$ なるどんな $\alpha$ に対しても
+$f(\boldsymbol{x^1}) \geq f(\boldsymbol{x^0}) \Rightarrow 
+f(\lambda\boldsymbol{x^0}+ (1-\lambda )\boldsymbol{x^1})
+\geq f(\boldsymbol{x^0}) $ を満たすとき，$f$ を準凹関数という．<br>
+</p>
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">
+【問】　$A>0, {\alpha}>0, {\beta}>0$に対し，コブ＝ダグラス関数$f(L,K)=AL^{\alpha}K^{\beta}$ が準凹関数であることを示しなさい．</p>
+
+<Div Align="left">【解答】</Div>
+$0<{\lambda} < 1$とし，
+$f(L^1,K^1)\geq f(L^0,K^0)$とする．$\log_{}{}$ が凹関数であることから，
+
+\begin{eqnarray*}
+\log_{}{f({\lambda}L^0+(1-{\lambda})L^1,{\lambda}K^0+(1-{\lambda})K^1)}
+&=&\log_{}{A({\lambda}L^0(1-{\lambda})L^1)^{\alpha}
+({\lambda}K^0(1-{\lambda})K^1)^{\beta}}\\
+&=&\log_{}{A}
++{\alpha}\log_{}{({\lambda}L^0(1-{\lambda})L^1)}
++{\beta}\log_{}{({\lambda}K^0(1-{\lambda})K^1)}\\
+&\geq&\log_{}{A}
++{\alpha}\bigl({\lambda}\log_{}{(L^0})+(1-{\lambda})\log_{}{(L^1})\bigr)
++{\beta}\bigl({\lambda}\log_{}{(K^0})+(1-{\lambda})\log_{}{(K^1})\bigr)\\
+&=&\log_{}{A}
++{\lambda}\bigl({\alpha}\log_{}{(L^0})+{\beta}\log_{}{(K^0})\bigr)
++(1-{\lambda})\bigl({\alpha}\log_{}{(L^1})+{\beta}\log_{}{(K^1})\bigr)\\
+&=&\log_{}{A}
++{\lambda}\bigl(\log_{}{(L^0})^{\alpha}\log_{}{(K^0})^{\beta}\bigr)
++(1-{\lambda})\bigl(\log_{}{(L^1})^{\alpha}\log_{}{(K^1})^{\beta}\bigr)\\
+&\geq&\log_{}{A}
++{\lambda}\bigl(\log_{}{(L^0})^{\alpha}\log_{}{(K^0})^{\beta}\bigr)
++(1-{\lambda})\bigl(\log_{}{(L^0})^{\alpha}\log_{}{(K^0})^{\beta}\bigr)\\
+&=&\log_{}{A}
++\bigl(\log_{}{(L^0})^{\alpha}\log_{}{(K^0})^{\beta}\bigr)\\
+&=&\log_{}{A(L^0})^{\alpha}\log_{}{(K^0})^{\beta}\\
+&=&\log_{}{f(L^0,K^0)}
+\end{eqnarray*}
+
+$\log_{}{}$ の単調性から結論が導かれる．
+
+
+<Div Align="right">【解答終】</Div>
+
+<hr>
+<Div Align="left">【Further Reading】</Div>
+中山幹夫「経済学覚書：凹関数，ジャンセンの不等式，および最適化」，
+三田学会雑誌，111巻，2号，pp.183-196，(2018)
+
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

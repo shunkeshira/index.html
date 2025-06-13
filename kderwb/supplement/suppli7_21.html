@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+消費者の支出最小化と補償需要関数
+</h3>
+
+<p>
+　効用関数$u(x,y)$に対して，所与の効用水準$\bar{u}$を保ったまま，
+支出$px+qy$を最小化する問題，
+\begin{align}
+\max_{x,y}& 　px+qy\\[2ex]
+s.t.&　u(x,y)=\bar{u}
+\end{align}
+</p>
+を考える．
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問１】　ラグランジュの未定乗数法を使って，次の費用最小化問題
+\begin{align}
+\max_{x,y}& 　px+qy\\[2ex]
+s.t.&　\log_{}{x}+\log_{}{y}=\bar{u}
+\end{align}
+を解きなさい．<br>
+</p>
+
+<Div Align="left">【解答】</Div>
+ラグランジュ関数を作ると，
+\[
+{\cal L}(x,y,\lambda )=px+qy+\lambda 
+\left(\bar{u}-\log_{}{x}-\log_{}{y}\right)．
+\]
+各変数で偏微分してイコールゼロとおくと，
+\begin{align}
+0=&\dfrac{\partial \cal L}{\partial x}=p-
+\dfrac{\lambda}{x}
+\tag{1}\\[2ex]
+0=&\dfrac{\partial \cal L}{\partial y}=q-
+\dfrac{\lambda}{y}
+\tag{2}\\[2ex]
+0=&\bar{u}-\log_{}{x}-\log_{}{y}\tag{3}
+\end{align}
+となる．(1)から，$\lambda =px$，(2)から，$\lambda =qy$．従って，
+$y=\dfrac{p}{q}x$となる．(3) に代入して，
+\[
+\bar{u}=\log_{}{x}+\log_{}{\dfrac{p}{q}x}=\log_{}{\dfrac{p}{q}x^2}．
+\]
+これより，$x(p,q,\bar{u})=\Bigl(\dfrac{q}{p}e^{\bar{u}}\Bigr)^{\frac{1}{2}}$，
+$y(p,q,\bar{u})=\Bigl(\dfrac{p}{q}e^{\bar{u}}\Bigr)^{\frac{1}{2}}$となる．
+<Div Align="right">【解答終】</Div>
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問２】　ラグランジュの未定乗数法を使って，次の費用最小化問題
+\begin{align}
+\max_{x,y}& 　px+qy\\[2ex]
+s.t.&　x^{\frac{1}{2}}y^{\frac{1}{2}}=\bar{u}
+\end{align}
+を解きなさい．<br>
+</p>
+
+<Div Align="left">【解答】</Div>
+ラグランジュ関数を作ると，
+\[
+{\cal L}(x,y,\lambda )=px+qy+\lambda 
+\left(\bar{u}-x^{\frac{1}{2}}y^{\frac{1}{2}}\right)．
+\]
+各変数で偏微分してイコールゼロとおくと，
+\begin{align}
+0=&\dfrac{\partial \cal L}{\partial x}=p-
+\dfrac{\lambda}{2} x^{-\frac{1}{2}}
+\tag{1}\\[2ex]
+0=&\dfrac{\partial \cal L}{\partial y}=q-
+\dfrac{\lambda}{2} y^{-\frac{1}{2}}
+\tag{2}\\[2ex]
+0=&\bar{u}-x^{\frac{1}{2}}y^{\frac{1}{2}}\tag{3}
+\end{align}
+となる．(1)から，$\dfrac{\lambda}{2} =px^{\frac{1}{2}}$，
+(2)から，$\dfrac{\lambda}{2} =qy^{\frac{1}{2}}$．従って，
+$y^{\frac{1}{2}}=\dfrac{p}{q}x^{\frac{1}{2}}$となる．(3) に代入して，
+\[
+\bar{u}=x^{\frac{1}{2}}\dfrac{p}{q}x^{\frac{1}{2}}=\dfrac{p}{q}x．
+\]
+これより，$x(p,q,\bar{u})=\dfrac{q}{p}\bar{u}$，
+$y(p,q,\bar{u})=\dfrac{p}{q}\bar{u}$となる．
+<Div Align="right">【解答終】</Div>
+
+
+
+<hr>
+<Div Align="left">【メモ】</Div>
+$x(p,q,\bar{u})$，$y(p,q,\bar{u})$を補償需要関数という．
+<Div Align="right">【メモ終】</Div>
+
+【Further Reading】<br>
+伊藤・戸瀬『経済学とファイナンスのための基礎数学』共立出版（2008）<br>
+神取道宏『ミクロ経済学の力』日本評論社（2014）
+<hr>
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

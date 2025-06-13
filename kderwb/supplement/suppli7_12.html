@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+コブ・ダグラス関数は準凹関数【『経出る』7.5節】
+</h3>
+
+<p>
+コブ・ダグラス関数が準凹関数であることを示す．証明の要は，
+対数関数 $\log_{}{x}$ が，
+<ol>
+<li>凹関数である</li>
+<li>単調である</li>
+</ol>
+ことを使って．コブ・ダグラス関数 $f(L,K)=L^{\alpha}K^{\beta}$ のレベル集合
+ $L(f,t):=\{\boldsymbol{x} \ | \ f(\boldsymbol{L,K})\geq t\}$ が凸集合であることを間接的に示すことにある．
+</p>
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　コブ・ダグラス関数 $f(L,K)=L^{\alpha}K^{\beta}$ は準凹関数であることを示しなさい．</p>
+
+<Div Align="left">【解答】</Div>
+<UL>
+<LI>つぎの式を満たす変数，$(L_{1},K_{1}),(L_{2},K_{2})$ と $0 < \lambda <1$ 
+\begin{align}
+f(L_{1},K_{1})=L_{1}^{\alpha}K_{1}^{\beta}\geq t\tag{1}\\[2ex]
+f(L_{2},K_{2})=L_{2}^{\alpha}K_{2}^{\beta}\geq t\tag{2}\\
+\end{align}
+に対して，
+\begin{align}
+f((1-\lambda)L_{1}+\lambda L_{2},(1-\lambda)K_{1}+\lambda K_{2})\geq t \tag{3}\\
+\end{align}
+となることを示す．
+</LI><br>
+
+<LI>(3) の左辺に $\log_{}{}$ を施す．
+\begin{align}
+\log_{}{f((1-\lambda)L_{1}+\lambda L_{2},(1-\lambda)K_{1}+\lambda K_{2})}
+&=\log_{}{((1-\lambda)L_{1}+\lambda L_{2})^{\alpha}
+(1-\lambda)K_{1}+\lambda K_{2})^{\beta})}\\[2ex]
+&={\alpha}\log_{}{((1-\lambda)L_{1}+\lambda L_{2})}
++{\beta}\log_{}{((1-\lambda)K_{1}+\lambda K_{2})}
+ \quad \cdots \quad 対数法則\\[2ex]
+&\geq \alpha\left((1-\lambda)\log_{}{L_{1}}+{\lambda}\log_{}{L_{2}}\right)
++\beta\left((1-\lambda)\log_{}{K_{1}}+{\lambda}\log_{}{K_{2}}\right) \quad \cdots \quad 対数は凹関数\\[2ex]
+&=(1-\lambda)\left(\alpha \log_{}{L_1}+\beta \log_{}{K_1}\right)
++\lambda \left(\alpha \log_{}{L_2}+\beta \log_{}{K_2}\right)\\[2ex]
+&\geq (1-\lambda)\log_{}{t}+\lambda\log_{}{t}
+ \quad \cdots \quad (1)，(2) に\log_{}{} を施して得る不等式\\[2ex]
+&=\log{}{t}．
+\end{align}
+
+まとめると，
+\begin{align}
+\log_{}{((1-\lambda)L_{1}+\lambda L_{2})^{\alpha}
+(1-\lambda)K_{1}+\lambda K_{2})^{\beta})}
+&\geq \log{}{t},
+\end{align}
+だが，対数の単調性より，
+$(1-\lambda)L_{1}+\lambda L_{2})^{\alpha}
+(1-\lambda)K_{1}+\lambda K_{2})^{\beta}
+\geq t$ となり，レベル集合が凸集合であることが示された．
+</LI><br>
+
+</UL>
+
+<Div Align="right">【解答終】</Div>
+<hr>
+<Div Align="left">【メモ】</Div>
+もっとスマートな証明があるかもしれないが思いつかない（笑）．
+<Div Align="right">【メモ終】</Div>
+
+
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

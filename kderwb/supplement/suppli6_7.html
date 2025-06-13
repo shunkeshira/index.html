@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+因果関係はあっても相関係数は$0$なケース
+</h3>
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　$x_i=i, y_i=(x_i-8)^2, i=0,1,\ldots ,16$のデータを考える．<br>
+ふたつのデータの相関係数を求めなさい．<br>
+</p>
+
+<Div Align="left">【解答】</Div>
+<p>
+$
+\begin{array}{|c|c|}
+\hline
+x_i&y_i\\\hline
+0&64\\\hline
+1&49\\\hline
+2&36\\\hline
+3&25\\\hline
+4&16\\\hline
+5&9\\\hline
+6&4\\\hline
+7&1\\\hline
+8&0\\\hline
+9&1\\\hline
+10&4\\\hline
+11&9\\\hline
+12&16\\\hline
+13&25\\\hline
+14&36\\\hline
+15&49\\\hline
+16&64\\\hline
+\end{array}
+$
+</p>
+<br>
+
+なのだから，平均は$\bar{x}=8$, $\bar{y}=24$，従って
+
+<p>
+$
+\begin{array}{|c|c|}
+\hline
+x_i-\bar{x}&y_i-\bar{y}\\\hline
+-8&40\\\hline
+-7&25\\\hline
+-6&12\\\hline
+-5&1\\\hline
+-4&-8\\\hline
+-3&-15\\\hline
+-2&-20\\\hline
+-1&-23\\\hline
+0&-24\\\hline
+1&-23\\\hline
+2&-20\\\hline
+3&-15\\\hline
+4&-8\\\hline
+5&1\\\hline
+6&12\\\hline
+7&25\\\hline
+8&40\\\hline
+\end{array}
+$
+</p>
+<br>
+
+
+$\boldsymbol{x}=\begin{pmatrix}x_0-\bar{x} \\ \vdots \\ x_{16}-\bar{x}\end{pmatrix}$
+と
+$\boldsymbol{y}=\begin{pmatrix}y_0-\bar{y} \\ \vdots \\ y_{16}-\bar{y}\end{pmatrix}$
+の内積は，対称性から明らかに，$\boldsymbol{x}\cdot \boldsymbol{y}=0$なので，相関係数は$0$である．
+<Div Align="right">【解答終】</Div>
+
+<hr>
+<Div Align="left">【メモ】</Div>
+「因果関係があれば必ず相関関係があるのか？」と聞かれたら，本問の例で答えると良い．
+<Div Align="right">【メモ終】</Div>
+<Div Align="left">【Further Reading】</Div>
+東京大学教養学部統計学教室編『統計学入門』東京大学出版会（1991）
+
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+２期間消費モデルの最適消費（指数割引モデル）【『経出る』練習問題7.7】
+</h3>
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　2期間消費モデルを考える．第１期の所得を $y_1$ ，第２期の所得を $y_2$，利子率を $r$ とする．第１期の消費額を $c_1$，第２期の消費額を $c_2$ とする．効用関数が $u(c_1, c_2)=u(c_1)+{\delta}u(c_2)$ であるとき，ラグランジュ乗数法から $1$ 階条件を求めなさい．</p>
+
+<Div Align="left">【解答】</Div>
+<UL>
+<LI><A HREF="./suppli6_1.html" target=blank>２期間消費モデル</A>で見たように，$2$ 期間を通じた予算制約は
+\[
+c_1+\dfrac{c_2}{1+r}=y_1+\dfrac{y_2}{1+r}
+\]
+となる．
+したがって，解くべき問題は，
+\begin{align}
+\max_{c_1>0,c_2>0}& u(c_1,c_2)=u(c_1)+{\delta}u(c_2)\\[2ex]
+s.t. & c_1+\dfrac{c_2}{1+r}=y_1+\dfrac{y_2}{1+r}
+\end{align}
+</LI><br>
+
+<LI>ラグランジュ関数を作ると，
+\[
+{\cal L}(c_1,c_2,\lambda )=u(c_1)+{\delta}u(c_2)+\lambda \left(y_1+\dfrac{y_2}{1+r}-
+\left(c_1+\dfrac{c_2}{1+r}\right)\right)．
+\]
+</LI><br>
+<LI>
+各変数で偏微分してイコールゼロとおくと，
+\[
+\begin{align}
+0=&\dfrac{\partial \cal L}{\partial c_1}=u^{\prime}(c_1)-\lambda 
+\tag{1}\\[2ex]
+0=&\dfrac{\partial \cal L}{\partial c_2}={\delta}u^{\prime}(c_2)-\dfrac{\lambda}{1+r}
+\tag{2}\\[2ex]
+0=&\dfrac{\partial \cal L}{\partial \lambda}=y_1+\dfrac{y_2}{1+r}-
+\left(c_1+\dfrac{c_2}{1+r}\right)\tag{3}
+\end{align}
+\]
+</LI><br>
+<LI>
+$(1) \div (2)$ から 
+\begin{align}
+\dfrac{u^{\prime}(c_1)}{{\delta}u^{\prime}(c_2)}&=1+r\tag{4}\\[2ex]
+\end{align}
+となる．この$1$ 階条件　(4) のことをオイラー方程式とよぶ．具体的な消費量を知るためには，$u(c)$ も具体的な形式で与えられる必要がある（例えば『経出る』練習問題7.7では，$u(c)=c^{\frac{1}{2}}$ として解いている）．
+</LI><br>
+</UL>
+
+<Div Align="right">【解答終】</Div>
+
+<hr>
+<Div Align="left">【Further Reading】</Div>
+大垣昌夫・田中沙織『行動経済学』有斐閣（2014）
+
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

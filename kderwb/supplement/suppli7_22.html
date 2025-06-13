@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+CES支出関数．
+</h3>
+
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　次の最小化問題について答えなさい．ただし ${\alpha},  {\beta} > 0, {\rho} < 1$ とする．
+\begin{align}
+\min_{x,y} &  (px+qy)
+\\[2ex]
+s.t. &u=\left\{{{\alpha}}(x)^{\rho}+{{\beta}}(y)^{\rho}\right\}^{\frac{1}{\rho}}
+\end{align}
+<br>
+支出関数$E(p,q,u)$を求めなさい．
+</p>
+
+<Div Align="left">【解答】</Div>
+<OL>
+<LI>ラグランジュ関数を作ると，
+\[
+{\cal L}(x,y,\lambda )=
+px+qy+{\lambda}[u-[{\alpha}x^{\rho}+{\beta}y^{\rho}]^{\frac{1}{\rho}}]
+\]
+</LI><br>
+<LI>
+各変数で偏微分してイコールゼロとおくと，
+\[
+\left\{
+\begin{align}
+0=&p-{\lambda}{\alpha}[{\alpha}x^{\rho}+{\beta}y^{\rho}]^{\frac{1}{\rho}-1}x^{\rho -1}
+\qquad (1)\\[2ex]
+0=&q-{\lambda}{\beta}[{\alpha}x^{\rho}+{\beta}y^{\rho}]^{\frac{1}{\rho}-1}y^{\rho -1}
+\qquad (2)\\[2ex]
+0=&u-[{\alpha}x^{\rho}+{\beta}y^{\rho}]^{\frac{1}{\rho}}\qquad (3)
+\end{align}
+\right.
+\]
+</LI><br>
+<LI>
+あとは工夫して解く．$(1)\div(2)$ から，
+$\Bigl(\dfrac{x}{y}\Bigr)^{\rho -1}=\dfrac{\beta}{\alpha}\cdot\dfrac{p}{q}$．
+
+\begin{eqnarray*}
+x&=&\Bigl(\frac{\beta p}{\alpha q}\Bigr)^{\frac{1}{\rho -1}}y,\\
+y&=&\Bigl(\frac{\alpha q}{\beta p}\Bigr)^{\frac{1}{\rho -1}}x,
+\end{eqnarray*}
+
+これを$(3)$に代入すると
+
+\begin{eqnarray*}
+u&=&\Bigl[{\alpha}x^{\rho}
++{\beta}\Bigl(\frac{\alpha q}{\beta p}\Bigr)^{\frac{\rho}{\rho -1}}x^{\rho}\Bigr]
+^{\frac{1}{\rho}}\\
+&=&\Bigl[x^{\rho}p^{\frac{-\rho}{\rho -1}}{\alpha}p^{\frac{\rho}{\rho -1}}
++x^{\rho}p^{\frac{-\rho}{\rho -1}}{\beta}
+\Bigl(\frac{\alpha q}{\beta}\Bigr)^{\frac{\rho}{\rho -1}}
+\Bigr]^{\frac{1}{\rho}}\\
+&=&xp^{\frac{-1}{\rho -1}}
+\Bigl[{\alpha}p^{\frac{\rho}{\rho -1}}
++\Bigl(\frac{\alpha q}{\beta}\Bigr)^{\frac{\rho}{\rho -1}}
+\Bigr]^{\frac{1}{\rho}},
+\end{eqnarray*}
+
+より，
+\[
+x=p^{\frac{1}{\rho -1}}\Bigl[{\alpha}p^{\frac{\rho}{\rho -1}}
++\Bigl(\frac{\alpha}{\beta}\Bigr)^{\frac{\rho}{\rho -1}}
+q^{\frac{\rho}{\rho -1}}
+\Bigr]^{-\frac{1}{\rho}}u,
+\]
+
+が，
+
+\begin{eqnarray*}
+u&=&\Bigl[{\alpha}\Bigl(\frac{\beta p}{\alpha q}\Bigr)^{\frac{\rho}{\rho -1}}y^{\rho}
++{\beta}y^{\rho}\Bigr]
+^{\frac{1}{\rho}}\\
+&=&\Bigl[y^{\rho}q^{\frac{-\rho}{\rho -1}}
+{\alpha}\Bigl(\frac{\beta p}{\alpha}\Bigr)^{\frac{\rho}{\rho -1}}
++y^{\rho}p^{\frac{-\rho}{\rho -1}}{\beta}q^{\frac{\rho}{\rho -1}}
+\Bigr]^{\frac{1}{\rho}}\\
+&=&yq^{\frac{-1}{\rho -1}}\Bigl[\Bigl(\frac{\beta}{\alpha}\Bigr)^{\frac{\rho}{\rho -1}}
+{\alpha}p^{\frac{\rho}{\rho -1}}
++{\beta}q^{\frac{\rho}{\rho -1}}
+\Bigr]^{\frac{1}{\rho}},
+\end{eqnarray*}
+
+より，
+\[
+y=q^{\frac{1}{\rho -1}}\Bigl[\Bigl(\frac{\beta}{\alpha}\Bigr)^{\frac{\rho}{\rho -1}}
+{\alpha}p^{\frac{\rho}{\rho -1}}
++{\beta}q^{\frac{\rho}{\rho -1}}
+\Bigr]^{-\frac{1}{\rho}}u
+\]
+
+が得られる．
+ここで，$\displaystyle r={\frac{\rho}{\rho -1}}$とおくと，
+
+\begin{eqnarray*}
+\rho &=&\frac{r}{r-1}\\
+\rho -1&=&\frac{1}{r-1}\\
+\frac{1}{\rho -1}&=&r-1\\
+\frac{1}{\rho}&=&\frac{1}{r}-1
+\end{eqnarray*}
+
+であることより，
+
+\begin{eqnarray*}
+x&=&p^{r-1}\Bigl[{\alpha}p^r
++{\beta}\Bigl(\frac{\alpha}{\beta}\Bigr)^rq^r
+\Bigr]^{\frac{1}{r}-1}u,\\
+y&=&q^{r-1}\Bigl[{\alpha}\Bigl(\frac{\beta}{\alpha}\Bigr)^rp^r+{\beta}q^r
+\Bigr]^{\frac{1}{r}-1}u,
+\end{eqnarray*}
+
+となる．したがって，支出関数は
+
+\begin{eqnarray*}
+E(p,q,u)&=&px+qy\\
+&=&p^{r}\Bigl[{\alpha}p^r
++{\beta}\Bigl(\frac{\alpha}{\beta}\Bigr)^rq^r
+\Bigr]^{\frac{1}{r}-1}u
++q^{r}\Bigl[{\alpha}\Bigl(\frac{\beta}{\alpha}\Bigr)^rp^r+{\beta}q^r
+\Bigr]^{\frac{1}{r}-1}u\\
+&=&p^r\Bigl(\frac{\alpha}{\beta}\Bigr)^{r(\frac{1}{r}-1)}
+\Bigl[{\alpha}\Bigl(\frac{\beta}{\alpha}\Bigr)^rp^r+{\beta}q^r
+\Bigr]^{\frac{1}{r}-1}u
++q^r\Bigl[{\alpha}\Bigl(\frac{\beta}{\alpha}\Bigr)^rp^r+{\beta}q^r
+\Bigr]^{\frac{1}{r}-1}u\\
+&=&\Bigl[p^r\Bigl(\frac{\alpha}{\beta}\Bigr)^{r(1-r)}+q^r\Bigr]
+\Bigl[{\alpha}\Bigl(\frac{\beta}{\alpha}\Bigr)^rp^r+{\beta}q^r
+\Bigr]^{\frac{1}{r}-1}u\\
+&=&\Bigl[\frac{\alpha}{\beta}\Bigl(\frac{\beta}{\alpha}\Bigr)p^r+q^r\Bigr]
+\Bigl[{\alpha}\Bigl(\frac{\beta}{\alpha}\Bigr)^rp^r+{\beta}q^r
+\Bigr]^{\frac{1}{r}-1}u\\
+&=&\Bigl[{\frac{1}{\beta}\Bigl({\alpha}}\bigl(\frac{\beta}{\alpha}\bigr)^rp^r
++{\beta}q^r\Bigr)
+\Bigr]
+\Bigl[{\alpha}\Bigl(\frac{\beta}{\alpha}\Bigr)^rp^r+{\beta}q^r
+\Bigr]^{\frac{1}{r}-1}u\\
+&=&{\frac{1}{\beta}\Bigl[\Bigl({\alpha}}\bigl(\frac{\beta}{\alpha}\bigr)^rp^r
++{\beta}q^r\Bigr)
+\Bigr]^{\frac{1}{r}}u\\
+&=&\Bigl[{\alpha}^{1-r}p^r+{\beta}^{1-r}q^r\Bigr]^{\frac{1}{r}}u.
+\end{eqnarray*}
+
+</LI><br>
+</OL>
+
+<Div Align="right">【解答終】</Div>
+
+<hr>
+
+<Div Align="left">【Further Reading】</Div>
+ディキシット 『経済理論における最適化【第2版】』勁草書房（1997）<br>
+この本では$\Bigl[{\alpha}^{1-r}p^r+{\beta}^{1-r}q^r\Bigr]^{\frac{1}{r}}u$の$u$が抜けている．
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

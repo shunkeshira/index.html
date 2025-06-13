@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+十分条件としてのＫＫＴ条件〜凸計画問題〜（作成：2017.3.29）
+</h3>
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　$f, g_1, \ldots , g_m$ を微分可能な凸関数とする．最適化問題：
+\[
+\begin{align}
+最小化 &　f(x)\\[2ex]
+条件 &　g_i(x)\leq 0, i=1,\ldots , m\\
+\end{align}
+\]
+に対しＫＫＴ条件
+\[
+\begin{align}
+\nabla f(\bar{x})+\sum_{i=1}^{m}\bar{\lambda}_i\nabla g_i(\bar{x})=0&\tag{1} \\
+\bar{\lambda}_i\geq 0, g_i(\bar{x})\leq 0, 
+\bar{\lambda}_ig_i(\bar{x})=0,& i=1,\ldots , m\tag{2}\\
+\end{align}
+\]
+が成り立つならば，$\bar{x}$ は 最適解であることを示しなさい．
+</p>
+
+
+<Div Align="left">【解答】</Div>
+関数 $x\mapsto f(x)+\sum_{i=1}^{m}\bar{\lambda}_i\nabla g_i(x)$ は微分可能な凸関数であるので，
+\[
+f(x)+\sum_{i=1}^{m}\bar{\lambda}_i g_i(x)-
+\Bigl(f(\bar{x})+\sum_{i=1}^{m}\bar{\lambda}_i g_i(\bar{x})\Bigr)
+\geq
+\langle
+\nabla f(\bar{x})+\sum_{i=1}^{m}\bar{\lambda}_i\nabla g_i(\bar{x}),
+x-\bar{x}=0
+\rangle
+\]
+となり，次式が成立する．
+\[
+f(x)+\sum_{i=1}^{m}\bar{\lambda}_i g_i(x)
+\geq
+f(\bar{x})+\sum_{i=1}^{m}\bar{\lambda}_i g_i(\bar{x})=f(\bar{x}).
+\]
+$g_i(x)\leq 0, i=1,\ldots ,m$ を満たす実行可能解 $x$ に対し，
+$\sum_{i=1}^{m}\bar{\lambda}_i g_i(x)\leq 0$なので，$f(x)\geq f(\bar{x})$ となる．
+
+<Div Align="right">【解答終】</Div>
+<hr>
+
+
+【Further Reading】
+福島雅夫『非線形最適化の基礎』朝倉書店（2001）<br>
+J.-B. Hiriart-Urruty, ‘Optimisation et analyse convexe’, Press Universitaire de France（1998）
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

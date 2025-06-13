@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+間接効用関数とラグランジュ乗数
+</h3>
+
+<p>【『経出る』例題7.5，『ワークブック』問7.18】類題</p>
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問１】　次の最大化問題を考える．
+\begin{align}
+\max_{x_1,x_2,x_3}& u(x_1,x_2,x_3)=x_1x_2x_3\\[2ex]
+s.t. & p_1x_1+p_2x_2+p_3x_3=I
+\end{align}
+（１）ラグランジュの未定乗数法を用いて，最適解とそのときのラグランジュ乗数を求めなさい．<br>
+（２）目的関数に最適解を代入して，間接効用関数 $V(p_1,p_2,p_3,I)$ を求めなさい．<br>
+（３）$\dfrac{\partial V}{\partial I}$ を求めなさい．
+</p>
+
+<Div Align="left">【解答】</Div>
+<OL>
+<LI>ラグランジュ関数を作ると，
+\[
+{\cal L}(x,y,\lambda )=x_1x_2x_3+\lambda (I-p_1x_1-p_2x_2-p_3x_3)．
+\]
+
+各変数で偏微分してイコールゼロとおくと，
+\[
+\left\{
+\begin{align}
+0=&\dfrac{\partial \cal L}{\partial x_1}=x_2x_3-p_1\lambda 
+\qquad (1)\\[2ex]
+0=&\dfrac{\partial \cal L}{\partial x_2}=x_1x_3-p_2\lambda
+\qquad (2)\\[2ex]
+0=&\dfrac{\partial \cal L}{\partial x_3}=x_1x_2-p_3\lambda
+\qquad (3)\\[2ex]
+0=&\dfrac{\partial \cal L}{\partial \lambda}=I-p_1x_1-p_2x_2-p_3x_3\qquad (4)
+\end{align}
+\right.
+\]
+
+あとは工夫して解く．$(1) \times x_1$, $(2) \times x_2$, $(3) \times x_3$ から，
+$p_1x_1{\lambda}=x_1x_2x_3$, $p_2x_2{\lambda}=x_1x_2x_3$, $p_3x_3{\lambda}=x_1x_2x_3$．これと (4) から $\lambda I=3x_1x_2x_3$．したがって，
+\begin{align}
+x_1&=\dfrac{\lambda I}{3p_1 \lambda}=\dfrac{I}{3p_1}
+\\[1ex]
+x_2&=\dfrac{\lambda I}{3p_2 \lambda}=\dfrac{I}{3p_2}
+\\[1ex]
+x_3&=\dfrac{\lambda I}{3p_3 \lambda}=\dfrac{I}{3p_3}
+\\[1ex]
+\end{align}
+ラグランジュ乗数は $\lambda I=3x_1x_2x_3 = \dfrac{I^3}{9p_1p_2p_3}$ より
+$\lambda = \dfrac{I^2}{9p_1p_2p_3}$．
+</LI><br>
+<LI>
+間接効用関数は
+\[
+V(p_1,p_2,p_3,I)=\dfrac{I}{3p_1}\dfrac{I}{3p_2}\dfrac{I}{3p_3}=
+\dfrac{I^3}{27p_1p_2p_3}．
+\]
+</LI><br>
+<LI>
+間接効用関数を $I$ で偏微分すると
+\[
+\dfrac{\partial V}{\partial I}(p_1,p_2,p_3)=
+\dfrac{I^2}{9p_1p_2p_3}．
+\]
+となり，ラグランジュ乗数と一致する．
+</LI><br>
+</OL>
+
+<Div Align="right">【解答終】</Div>
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問２】　次の最大化問題を考える．
+\begin{align}
+\max_{x_1,x_2,x_3}& u(x_1,x_2,x_3)=(x_1)^{\alpha}(x_2)^{\beta}(x_3)^{\gamma}\\[2ex]
+s.t. & p_1x_1+p_2x_2+p_3x_3=I
+\end{align}
+（１）ラグランジュの未定乗数法を用いて，最適解とそのときのラグランジュ乗数を求めなさい．<br>
+（２）目的関数に最適解を代入して，間接効用関数 $V(p_1,p_2,p_3,I)$ を求めなさい．<br>
+（３）$\dfrac{\partial V}{\partial I}$ を求めなさい．
+</p>
+
+<Div Align="left">【解答】</Div>
+
+<OL>
+<LI>ラグランジュ関数を作ると，
+$
+{\cal{L}}(x_1,x_2,x_3,\lambda)=(x_1)^{\alpha}(x_2)^{\beta}(x_3)^{\gamma}+\lambda\left(I-p_1x_1-p_2x_2-p_3x_3\right).
+$
+</LI><br>
+
+各変数で偏微分してイコールゼロとおくと，
+
+\[
+\left\{
+\begin{array}{lll}
+0=\displaystyle \frac{\partial\cal{L}}{\partial x_1}
+={\alpha}(x_1)^{\alpha -1}(x_2)^{\beta}(x_3)^{\gamma}-{\lambda}p_1
+&
+\rightarrow {\lambda}p_1={\alpha}(x_1)^{\alpha -1}(x_2)^{\beta}(x_3)^{\gamma}
+&\qquad (1)\\[2ex]
+0=\displaystyle \frac{\partial\cal{L}}{\partial x_2}
+={\beta}(x_1)^{\alpha}(x_2)^{\beta -1}(x_3)^{\gamma}-{\lambda}p_2
+&
+\rightarrow {\lambda}p_2= {\beta}(x_1)^{\alpha}(x_2)^{\beta -1}(x_3)^{\gamma}
+&\qquad (2)\\[2ex]
+0=\displaystyle \frac{\partial\cal{L}}{\partial x_3}
+={\gamma}(x_1)^{\alpha}(x_2)^{\beta}(x_3)^{\gamma -1}-{\lambda}p_3
+&
+\rightarrow {\lambda}p_3= {\gamma}(x_1)^{\alpha}(x_2)^{\beta}(x_3)^{\gamma -1}
+&\qquad (3)\\[2ex]
+0=I-p_1x_1-p_2x_2-p_3x_3& & \qquad (4)
+\end{array}
+\right.
+\]
+</LI><br>
+
+あとは工夫して解く．
+<ul>
+<li>$(1) \div (2)$ から 
+$\dfrac{\alpha}{\beta}x_1^{-1}x_2=\dfrac{p_1}{p_2} \Longrightarrow 
+x_2=\dfrac{\beta p_1}{\alpha p_2}x_1$</li>
+<br>
+<li>$(1) \div (3)$ から 
+$\dfrac{\alpha}{\gamma}x_1^{-1}x_3=\dfrac{p_1}{p_3} \Longrightarrow 
+x_3=\dfrac{\gamma p_1}{\alpha p_3}x_1$</li><br>
+<li>
+$(4)$ に代入すると，
+$p_1x_1+p_2\dfrac{\beta p_1}{\alpha p_2}x_1+p_3\dfrac{\gamma p_1}{\alpha p_3}x_1=I  \Longrightarrow \dfrac{\alpha + \beta +\gamma}{\alpha}p_1x_1=I$
+</li><br>
+<li>$x_1=\dfrac{\alpha}{\alpha + \beta +\gamma}\dfrac{I}{p_1}$</li><br>
+<li>$x_2=
+\dfrac{\beta p_1}{\alpha p_2}\dfrac{\alpha}{\alpha + \beta +\gamma}\dfrac{I}{p_1}
+=\dfrac{\beta}{\alpha + \beta +\gamma}\dfrac{I}{p_2}$</li><br>
+<li>
+$x_3=
+\dfrac{\gamma p_1}{\alpha p_3}\dfrac{\alpha}{\alpha + \beta +\gamma}\dfrac{I}{p_1}
+=\dfrac{\gamma}{\alpha + \beta +\gamma}\dfrac{I}{p_3}$</li><br>
+</ul>
+
+
+ゆえに最適解は，$(x_1,x_2,x_3)=\left(
+\dfrac{\alpha}{\alpha + \beta +\gamma}\dfrac{I}{p_1},
+\dfrac{\beta}{\alpha + \beta +\gamma}\dfrac{I}{p_2},
+\dfrac{\gamma}{\alpha + \beta +\gamma}\dfrac{I}{p_3}
+\right)$．<br>
+ラグランジュ乗数は，たとえば (1) を使えば，
+\begin{align}
+\lambda &=\dfrac{\alpha}{p_1}\left(\dfrac{\alpha}{\alpha + \beta +\gamma}\dfrac{I}{p_1}\right)^{\alpha -1}
+\left(\dfrac{\alpha}{\alpha + \beta +\gamma}\dfrac{I}{p_2}\right)^{\beta}
+\left(\dfrac{\alpha}{\alpha + \beta +\gamma}\dfrac{I}{p_3}\right)^{\gamma}
+\\[2ex]
+&=\dfrac{I^{\alpha + \beta +\gamma -1}}
+{(\alpha + \beta +\gamma)^{\alpha + \beta +\gamma -1}}
+\left(\dfrac{\alpha}{p_1}\right)^{\alpha}
+\left(\dfrac{\beta}{p_2}\right)^{\beta}
+\left(\dfrac{\gamma}{p_3}\right)^{\gamma}
+\end{align}
+</LI>
+<LI>
+間接効用関数は，
+\[
+V(p_1,p_2,p_3)
+=\left(\dfrac{\alpha}{\alpha + \beta +\gamma}\dfrac{I}{p_1}\right)^{\alpha}
+\left(\dfrac{\beta}{\alpha + \beta +\gamma}\dfrac{I}{p_2}\right)^{\beta}
+\left(\dfrac{\gamma}{\alpha + \beta +\gamma}\dfrac{I}{p_1}\right)^{\gamma}
+\]
+</LI>
+
+<LI>
+間接効用関数を $I$ で偏微分すると
+\[
+\dfrac{\partial V}{\partial I}(p_1,p_2,p_3)=
+\dfrac{I^{\alpha + \beta +\gamma -1}}
+{(\alpha + \beta +\gamma)^{\alpha + \beta +\gamma -1}}
+\left(\dfrac{\alpha}{p_1}\right)^{\alpha}
+\left(\dfrac{\beta}{p_2}\right)^{\beta}
+\left(\dfrac{\gamma}{p_3}\right)^{\gamma}．
+\]
+となり，ラグランジュ乗数と一致する．
+</LI><br>
+
+</OL>
+
+<Div Align="right">【解答終】</Div>
+
+<hr>
+<Div Align="left">【メモ】</Div>
+『経出る』にもあるように，間接効用関数を所得で微分したものが，ラグランジュ乗数と一致する．
+<Div Align="right">【メモ終】</Div>
+<hr>
+
+<Div Align="left">【Further Reading】</Div>
+「経済学で出る包絡線定理」『経済セミナー』（2011年10・11月号）
+
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

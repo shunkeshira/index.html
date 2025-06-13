@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+【『経出る』練習問題7.5】類題．CES関数の代替の弾力性．
+</h3>
+
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　次の最大化問題について答えなさい．ただし ${\alpha}_1,  {\alpha}_2 > 0$ とする．
+\begin{align}
+\max_{x_1,x_2}& u(x_1,x_2)
+=\left\{{{\alpha}_1}(x_1)^{\rho}+{{\alpha}_2}(x_2)^{\rho}\right\}^{\frac{1}{\rho}}\\[2ex]
+s.t. & p_1x_1+p_2x_2=I
+\end{align}
+<br>
+(1)　第 $1$ 財，第 $2$ 財に対する需要関数 $x^{*}_1(p_1, p_2, I)$, 
+$x^{*}_2(p_1, p_2, I)$ をラグランジュの未定乗数法を使って求めなさい．<br><br>
+(2)　最適消費の比 $\dfrac{x^{*}_1(p_1, p_2, I)}{x^{*}_2(p_1, p_2, I)}$ を価格比 
+$\dfrac{p_1}{p_2}$ の関数と見たときの弾力性（代替の弾力性）
+\[
+\dfrac{d(x^{*}_1/x^{*}_2)}{d(p_1/p_2)}\bigg/\dfrac{(x^{*}_1/x^{*}_2)}{(p_1/p_2)}
+\]
+を求めなさい．
+</p>
+
+<Div Align="left">【解答】</Div>
+<OL>
+<LI>ラグランジュ関数を作ると，
+\[
+{\cal L}(x_1,x_2,\lambda )=\left\{{{\alpha}_1}(x_1)^{\rho}+{{\alpha}_2}(x_2)^{\rho}\right\}^{\frac{1}{\rho}}
++\lambda (I-p_1x_1-p_2x_2)．
+\]
+</LI><br>
+<LI>
+各変数で偏微分してイコールゼロとおくと，
+\[
+\left\{
+\begin{align}
+0=&{{\alpha}_1}{\rho}(x_1)^{\rho -1}\dfrac{1}
+{\rho}\left\{{{\alpha}_1}(x_1)^{\rho}+{{\alpha}_2}(x_2)^{\rho}\right\}^{\frac{1}{\rho}-1}
+-p_1\lambda 
+=
+{{\alpha}_1}(x_1)^{\rho -1}\left\{{{\alpha}_1}(x_1)^{\rho}+{{\alpha}_2}(x_2)^{\rho}\right\}^{\frac{1}{\rho}-1}
+-p_1\lambda 
+\qquad (1)\\[2ex]
+0=&{{\alpha}_1}{\rho}(x_2)^{\rho -1}\dfrac{1}
+{\rho}\left\{{{\alpha}_1}(x_1)^{\rho}+{{\alpha}_2}(x_2)^{\rho}\right\}^{\frac{1}{\rho}-1}
+-p_2\lambda 
+=
+{{\alpha}_1}(x_2)^{\rho -1}\left\{{{\alpha}_1}(x_1)^{\rho}+{{\alpha}_2}(x_2)^{\rho}\right\}^{\frac{1}{\rho}-1}
+-p_2\lambda 
+\qquad (2)\\[2ex]
+0=&\dfrac{\partial \cal L}{\partial \lambda}=I-p_1x_1-p_2x_2\qquad (3)
+\end{align}
+\right.
+\]
+</LI><br>
+<LI>
+あとは工夫して解く．$(1)\div(2)$ から，
+$\dfrac{{\alpha}_1}{{\alpha}_2}\left(\dfrac{x_1}{x_2}\right)^{\rho -1}
+=\dfrac{p_1}{p_2}$．
+ゆえに ${x_1}=\left(\dfrac{{\alpha}_2p_1}{{\alpha}_1p_2}\right)^{\frac{1}{\rho -1}}x_2$．これを(3)に代入してうまく変形する．
+\begin{align}
+0&=I-\left(\dfrac{{\alpha}_2p_1}{{\alpha}_1p_2}\right)^{\frac{1}{\rho -1}}p_1x_2+p_2x_2\\[2ex]
+&=I-\dfrac{p_1({\alpha}_2p_1)^{\frac{\rho}{\rho -1}}
++p_2({\alpha}_1p_2)^{\frac{\rho}{\rho -1}}}
+{({\alpha}_1p_2)^{\frac{1}{\rho -1}}}x_2\\[2ex]
+\end{align}
+$\therefore x_2^{*}(p_1, p_2, I)=\dfrac{({\alpha}_1p_2)^{\frac{1}{\rho -1}}I}
+{p_1({\alpha}_2p_1)^{\frac{\rho}{\rho -1}}
++p_2({\alpha}_1p_2)^{\frac{\rho}{\rho -1}}}$を得る．同時に，
+$x_1^{*}(p_1, p_2, I)=\dfrac{({\alpha}_2p_1)^{\frac{1}{\rho -1}}I}
+{p_1({\alpha}_2p_1)^{\frac{\rho}{\rho -1}}
++p_2({\alpha}_1p_2)^{\frac{\rho}{\rho -1}}}$を得る
+</LI><br>
+<LI>
+最適消費の比は
+\[
+\dfrac{x_1^{*}(p_1, p_2, I)}{x_2^{*}(p_1, p_2, I)}=
+\left(\dfrac{{\alpha}_2p_1}{{\alpha}_1p_2}\right)^{\frac{1}{\rho -1}}
+\]
+を満たす．よって代替の弾力性は
+\begin{align}
+\dfrac{d(x^{*}_1/x^{*}_2)}{d(p_1/p_2)}\bigg/\dfrac{(x^{*}_1/x^{*}_2)}{(p_1/p_2)}&=\frac{1}{\rho -1}\left(\dfrac{{\alpha}_2}{{\alpha}_1}\right)^{\frac{1}{\rho -1}}
+\left(\dfrac{p_1}{p_2}\right)^{\frac{1}{\rho -1}-1}\bigg/
+\left(\dfrac{{\alpha}_2}{{\alpha}_1}\right)^{\frac{1}{\rho -1}}\left(\dfrac{p_1}{p_2}\right)^{\frac{1}{\rho -1}-1}
+=\frac{1}{\rho -1}\\[2ex]
+\end{align}
+となる．
+</LI><br>
+</OL>
+
+<Div Align="right">【解答終】</Div>
+
+<hr>
+
+<Div Align="left">【Further Reading】</Div>
+奥野正寛[編]『ミクロ経済学演習』東京大学出版会（2008）
+
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

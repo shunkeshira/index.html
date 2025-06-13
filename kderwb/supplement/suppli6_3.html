@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+分散・共分散とポートフォリオのリスク．【『経出る』p.188 ちょっとメモ】（作成：2015.11.21）
+</h3>
+
+データ$X$：$x_1, x_2, \ldots x_n$の平均を$\bar{x}$，
+データ$Y$：$y_1, y_2, \ldots y_n$の平均を$\bar{y}$としたとき，あらたにベクトルを
+\[
+\tilde{\bf x}=
+\left(
+\begin{array}{c}
+x_1-\bar{x}\\
+x_2-\bar{x}\\
+\vdots\\
+x_n-\bar{x}\\
+\end{array}
+\right)，
+\quad
+\tilde{\bf y}=
+\left(
+\begin{array}{c}
+y_1-\bar{y}\\
+y_2-\bar{y}\\
+\vdots\\
+y_n-\bar{y}\\
+\end{array}
+\right)
+\]
+とおく．このとき，内積$\dfrac{\tilde{\bf x} \cdot \tilde{\bf x}}{n}$を$X$の分散，$\dfrac{\tilde{\bf y} \cdot \tilde{\bf y}}{n}$を$Y$の分散，
+$\dfrac{\tilde{\bf x} \cdot \tilde{\bf y}}{n}$を$X$と$Y$の共分散という．
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　次のデータを用いて分散・共分散を求めなさい
+\[
+\begin{array}{|c|c|c|c|c|}
+\hline
+データ＃&X_1&X_2&X_3\\\hline
+＃1&6&16&10 \\\hline
+＃2&4&12&12 \\\hline
+＃3&8&8&6 \\\hline
+＃4&10&4&8 \\\hline
+\end{array}
+\]
+</p>
+
+<Div Align="left">【解答】</Div>
+<UL>
+<LI>【前処理１：平均】
+	<ul>
+	<li>$\bar{x_1}=\dfrac{6+4+8+10}{4}=7$</li>
+	<li>$\bar{x_2}=\dfrac{6+4+8+10}{4}=10$</li>
+	<li>$\bar{x_3}=\dfrac{10+12+6+8}{4}=9$</li>
+	</ul>
+</LI><br>
+
+<LI>【前処理２：偏差】
+\[
+\begin{array}{|c|c|c|c|c|}
+\hline
+偏差＃&X_1-\bar{x_1}&X_2-\bar{x_2}&X_3-\bar{x_3}\\\hline
+＃1&6-7=-1&16-10=6&10-9=1 \\\hline
+＃2&4-7=-3&12-10=2&12-9=3 \\\hline
+＃3&8-7=1&8-10=-2&6-9=-3 \\\hline
+＃4&10-7=3&4-10=-6&8-9=-1 \\\hline
+\end{array}
+\]
+</LI><br>
+
+<LI> 【分散・共分散の計算】次のように並べたい：
+\[
+\begin{array}{|c|c|c|c|c|}
+\hline
+分散・共分散&X_1&X_2&X_3\\\hline
+X_1&{\sigma}^2_{1}&{\sigma}_{12}&{\sigma}_{13} \\\hline
+X_2&{\sigma}_{21}&{\sigma}^2_{2}&{\sigma}_{23} \\\hline
+X_3&{\sigma}_{31}&{\sigma}_{32}&{\sigma}^2_{3} \\\hline
+\end{array}
+\]
+	<ul>
+	<li>$\sigma^2_{1}=\dfrac{(X_1-\bar{x_1})\cdot (X_1-\bar{x_1})}{4}
+	=\dfrac{(-1)(-1)+(-3)(-3)+1\cdot 1+ 3\cdot 3}{4}
+	=\dfrac{20}{4}=5$</li>
+	<li>$\sigma^2_{2}=\dfrac{(X_2-\bar{x_2})\cdot (X_2-\bar{x_2})}{4}
+	=\dfrac{6\cdot 6+2\cdot 2+(-2)(-2)+ (-6)(-6)}{4}
+	=\dfrac{80}{4}=20$</li>
+	<li>$\sigma^2_{3}=\dfrac{(X_2-\bar{x_2})\cdot (X_2-\bar{x_2})}{4}
+	=\dfrac{1\cdot 1+3\cdot 3+(-3)(-3)+ (-1)(-1)}{4}
+	=\dfrac{20}{4}=5$</li>
+	<li>$\sigma_{12}=\sigma_{21}
+	=\dfrac{(X_1-\bar{x_1})\cdot (X_2-\bar{x_2})}{4}
+	=\dfrac{(-1)\cdot 6+(-3)(-2)+1\cdot (-2)+ 3\cdot (-6)}{4}
+	=\dfrac{-32}{4}=-8$</li>
+	<li>$\sigma_{13}=\sigma_{31}
+	=\dfrac{(X_1-\bar{x_1})\cdot (X_3-\bar{x_3})}{4}
+	=\dfrac{(-1)\cdot 1+(-3)\cdot 3+1\cdot (-3)+ 3\cdot (-1)}{4}
+	=\dfrac{-16}{4}=-4$</li>
+	<li>$\sigma_{23}=\sigma_{32}
+	=\dfrac{(X_2-\bar{x_2})\cdot (X_3-\bar{x_3})}{4}
+	=\dfrac{6\cdot 1+2\cdot 3+(-2)\cdot (-3)+ (-6)\cdot (-1)}{4}
+	=\dfrac{24}{4}=6$</li>
+	</ul>
+
+すなわち
+
+\[
+\begin{array}{|c|c|c|c|c|}
+\hline
+分散・共分散&X_1&X_2&X_3\\\hline
+X_1&5&-8&-4 \\\hline
+X_2&-8&20&6\\\hline
+X_3&-4&6&5 \\\hline
+\end{array}
+\]
+
+<Div Align="right">【解答終】</Div>
+<hr>
+
+<Div Align="left">【メモ】</Div>
+次のデータからポートフォリオを構成する．
+\[
+\begin{array}{|c|c|c|c|c|}
+\hline
+銘柄&X_1&\ldots &X_n\\\hline
+投資比率&x_1&\cdots &x_n \\\hline
+第1期&r_{11}&\cdots &r_{1n}\\\hline
+第2期&r_{21}&\cdots &r_{2n}\\\hline
+\vdots & \vdots & &\vdots\\\hline
+第N期&r_{N1}&\cdots &r_{Nn}\\\hline
+\end{array}
+\]
+
+このとき，ポートフォリオ$X_P=x_1X_1+\cdots x_nX_n$について，
+
+<UL>
+<LI>
+【平均】$r_P=r_1x_1+\cdots r_nx_n$
+</LI>
+<LI>
+【分散】
+\[
+\begin{align}
+{\sigma}_P^2&=(偏差)^2の平均\\
+&=\dfrac{1}{N}\sum_{i=1}^{N}\Bigl(\sum_{j=1}^{n}(r_{ij}-r_j)xj\Bigr)^2\\
+&=\dfrac{1}{N}\sum_{i=1}^{N}\sum_{k=1}^{n}\sum_{j=1}^{n}(r_{ij}-r_j)(r_{ik}-r_k)x_jx_k\\
+&=\sum_{k=1}^{n}\sum_{j=1}^{n}\Bigl[\sum_{i=1}^{N}\dfrac{1}{N}(r_{ij}-r_j)(r_{ik}-r_k)\Bigr]x_jx_k\\
+&=\sum_{k=1}^{n}\sum_{j=1}^{n}{\sigma}_{jk}x_jx_k\\
+&=\begin{array}{|c|c|c|c|}
+\hline
+&x_1&\cdots &x_n\\\hline
+x_1&{\sigma}^2_{1}&\cdots &{\sigma}_{1n}  \\\hline
+\vdots &\vdots& &\vdots\\\hline
+x_n&{\sigma}_{n1}&\cdots &{\sigma}^2_{n}  \\\hline
+\end{array}
+\end{align}
+\]
+</LI>
+</UL>
+マーコビッツのMVモデルは次の最適化問題である．
+\[
+\begin{align}
+\max_{x_1, \ldots ,x_n}& {\sigma}_P(x_1, \ldots ,x_n)\\[2ex]
+s.t. \quad & r_1x_1+\cdots r_nx_n=\rho\\[2ex]
+& x_1+\cdots x_n=1.
+\end{align}
+\]
+
+数値例を使って，ＭＶモデルを解く問題が<A HREF="./suppli7_13.html">ここ</A>にある．
+
+<Div Align="right">【メモ終】</Div>
+
+<hr>
+<Div Align="left">【Further Reading】</Div>
+今野浩『理財工学Ｉ』日科技連（1995）
+
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

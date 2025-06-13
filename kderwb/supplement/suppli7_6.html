@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+労働と余暇：効用関数がコブ・ダグラス型【『経出る』練習問題7.6】
+</h3>
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　消費材の価格を $p$ ，労働賃金率を $w$，最大限使える時間を $H$ とする．消費材の消費量を $x$．労働時間を $l$，余暇時間を $h$ とする． 効用関数が $u(h, x)=h^{\alpha}x^{\beta}$ であるとき，効用を最大化する労働時間を求めなさい．</p>
+
+<Div Align="left">【解答】</Div>
+<UL>
+<LI>予算制約は
+\[
+px=wl
+\]
+となる．$l+h=H$ より，$l$ を消去して $h$ と $x$ の式で書くと，
+\begin{align}
+px&=w(H-h)\\[2ex]
+&\Longleftrightarrow wh+px=Hw
+\end{align}
+したがって，解くべき問題は，
+\begin{align}
+\max_{h,x}& u(h,x)=h^{\alpha}x^{\beta}\\[2ex]
+s.t. & wh+px=Hw
+\end{align}
+</LI><br>
+
+<LI>ラグランジュ関数を作ると，
+\[
+{\cal L}(c_1,c_2,\lambda )=h^{\alpha}x^{\beta}
++\lambda \left(Hw-wh-px\right)．
+\]
+</LI><br>
+<LI>
+各変数で偏微分してイコールゼロとおくと，
+\[
+\begin{align}
+0=&\dfrac{\partial \cal L}{\partial h}
+={\alpha}h^{{\alpha}-1}x^{{\beta}}-w\lambda 
+\tag{1}\\[2ex]
+0=&\dfrac{\partial \cal L}{\partial x}
+={\beta}h^{{\alpha}}x^{{\beta}-1}-p\lambda 
+\tag{2}\\[2ex]
+0=&\dfrac{\partial \cal L}{\partial \lambda}=Hw-wh-px\tag{3}
+\end{align}
+\]
+</LI><br>
+<LI>
+あとは工夫して解く．
+$(1)\div (2)$ から $\dfrac{\alpha}{\beta}h^{-1}x=\dfrac{w}{p}$．
+したがって，$x=\dfrac{\beta w}{\alpha p}h$
+これを(3)に代入すると，
+$wh+p\dfrac{\beta w}{\alpha p}h=\dfrac{\alpha +\beta}{\alpha}wh=Hw$
+となり，$h =\dfrac{\alpha}{\alpha +\beta}H$ を得る．したがって，効用を最大化する労働時間は
+\[
+l＝H-h=H-\dfrac{\alpha}{\alpha +\beta}H=\dfrac{\beta}{\alpha +\beta}H
+\]
+となる．
+</LI><br>
+</UL>
+
+<Div Align="right">【解答終】</Div>
+
+
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+<br>
+
+（2015.12.02更新）
+
+</BODY>
+
+
+
+</HTML>
+
+

@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+オイラーの定理の逆（作成：2015.12.28）
+</h3>
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　以下の$2$変数関数について，つねに
+\[
+\dfrac{\partial f}{\partial x_1}(x_1,x_2)x_1+
+\dfrac{\partial f}{\partial x_2}(x_1,x_2)x_2
+=kf(x_1,x_2)\]
+が成り立つならば，$f(x_1,x_2)$ は $k$ 次同次関数であることを示しなさい．
+</p>
+
+
+<Div Align="left">【解答】</Div>
+$y=f(tx_1,tx_2)-t^kf(x_1,x_2)$ とおく．
+\begin{align}
+\frac{dy}{dt}&=
+\dfrac{\partial f}{\partial x_1}(tx_1,tx_2)x_1+
+\dfrac{\partial f}{\partial x_2}(tx_1,tx_2)x_2-kt^{k-1}f(x_1,x_2)\\
+&=\frac{1}{t}\bigl(\dfrac{\partial f}{\partial x_1}(tx_1,tx_2)tx_1+
+\dfrac{\partial f}{\partial x_2}(tx_1,tx_2)tx_2-kt^{k}f(x_1,x_2)
+\Bigr)\\
+&=\frac{k}{t}\bigl(\dfrac{\partial f}{\partial x_1}(tx_1,tx_2)+
+\dfrac{\partial f}{\partial x_2}(tx_1,tx_2)-t^{k}f(x_1,x_2)
+\Bigr)\\
+&=\frac{k}{t}y.
+\end{align}
+
+したがって，$\dfrac{dy}{y}=k\dfrac{dt}{t}$ となるから，
+$\log_{}{|y|}=k\log_{}{|t|}+C_1$（$C_1$は定数）．ゆえに，
+$y=Ce^{\log_{}{t^k}}$．$t=1$ に対し，$y=0$ だから，$C=0$．
+ゆえに $y=f(tx_1,tx_2)-t^kf(x_1,x_2)=0$．
+
+<Div Align="right">【解答終】</Div>
+<hr>
+
+
+【Further Reading】
+<A HREF="http://people.hss.caltech.edu/~kcb/Notes/EulerHomogeneity.pdf">KC. Border, Euler’s Theorem for Homogeneous Functions</A>
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

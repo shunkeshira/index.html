@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+同値な効用最大化問題．
+</h3>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【『経出る』練習問題7.3】類題．効用関数の見かけが異なっても，同じ選好を示す場合はあたりまえだが同じ答が出ることの確認．</p>
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問１】　ラグランジュの未定乗数法を使って，次の最大化問題を解きなさい．ただし $\alpha +\beta =1$ とする．
+\begin{align}
+\max_{x,y}& u(x,y)=(x-a)^{\alpha}(y-b)^{\beta}\\[2ex]
+s.t. & px+qy=I
+\end{align}
+</p>
+
+<Div Align="left">【解答】</Div>
+<OL>
+<LI>ラグランジュ関数を作ると，
+\[
+{\cal L}(x,y,\lambda )=(x-a)^{\alpha}(y-b)^{\beta}+\lambda (I-px-qy)．
+\]
+</LI><br>
+<LI>
+各変数で偏微分してイコールゼロとおくと，
+\[
+\left\{
+\begin{align}
+0=&\dfrac{\partial \cal L}{\partial x}={\alpha}(x-a)^{\alpha -1}(y-b)^{\beta}-p\lambda 
+\qquad (1)\\[2ex]
+0=&\dfrac{\partial \cal L}{\partial y}={\beta}(x-a)^{\alpha}(y-b)^{\beta -1}-q\lambda
+\qquad (2)\\[2ex]
+0=&\dfrac{\partial \cal L}{\partial \lambda}=I-px-qy\qquad (3)
+\end{align}
+\right.
+\]
+</LI><br>
+<LI>
+あとは工夫して解く．$(2)\div(1)$ から（ちょっとはしょり気味？），
+$\dfrac{\alpha}{\beta}(x-a)^{-1}(y-b)=\dfrac{p}{q}$．
+ゆえに $q(y-b)=\dfrac{\beta}{\alpha}p(x-a)$．これを(3)をうまく代入して変形する．
+\begin{align}
+0&=I-p(x-a)-q(y-b)-(pa+qb)\\[1ex]
+&=I-p(x-a)-\dfrac{\beta}{\alpha}p(x-a)-(pa+qb)\\[1ex]
+&=I-\dfrac{\alpha +\beta}{\alpha}p(x-a)-(pa+qb)\\[1ex]
+&=I-\dfrac{1}{\alpha}p(x-a)-(pa+qb)
+\end{align}
+$\therefore p(x-a)={\alpha}\left(I-(pa+qb)\right)$より，
+$q(y-b)={\beta}\left(I-(pa+qb)\right)$．したがって最適解は，
+$px={\alpha}\left(I-(pa+qb)\right)+pa=\alpha I +\beta pa -\alpha qb$，
+$qy={\beta}\left(I-(pa+qb)\right)+qb=\beta I -\beta pa +\alpha qb$ 
+と変形し（途中$\alpha +\beta =1$ を使った），
+$(x,y)=\left(\dfrac{\alpha I +\beta pa -\alpha qb}{p}, 
+\dfrac{\beta I -\beta pa +\alpha qb}{q}\right)$ を得る．
+</LI><br>
+</OL>
+
+<Div Align="right">【解答終】</Div>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問２】　ラグランジュの未定乗数法を使って，次の最大化問題を解きなさい．ただし $\alpha +\beta =1$ とする．
+\begin{align}
+\max_{x,y}& v(x,y)={\alpha}\log_{}{(x-a)}+{\beta}\log_{}{(y-b)}\\[2ex]
+s.t. & px+qy=I
+\end{align}
+</p>
+
+<Div Align="left">【解答】</Div>
+<OL>
+<LI>ラグランジュ関数を作ると，
+\[
+{\cal L}(x,y,\lambda )={\alpha}\log_{}{(x-a)}+{\beta}\log_{}{(y-b)}+\lambda (I-px-qy)．
+\]
+</LI><br>
+<LI>
+各変数で偏微分してイコールゼロとおくと，
+\[
+\left\{
+\begin{align}
+0=&\dfrac{\partial \cal L}{\partial x}=\dfrac{\alpha}{x-a}-p\lambda 
+\qquad (1)\\[2ex]
+0=&\dfrac{\partial \cal L}{\partial y}=\dfrac{\beta}{y-b}-q\lambda
+\qquad (2)\\[2ex]
+0=&\dfrac{\partial \cal L}{\partial \lambda}=I-px-qy\qquad (3)
+\end{align}
+\right.
+\]
+</LI><br>
+<LI>
+あとは工夫して解く．$(1)と(2)$ から，
+\begin{align}
+p(x-a)&=\lambda\alpha\\
+q(y-b)&=\lambda\beta
+\end{align}
+これを(3)にうまく代入して変形する（途中$\alpha +\beta =1$ を使う）．
+\begin{align}
+0&=I-p(x-a)-q(y-b)-(pa+qb)\\[1ex]
+&=I-\lambda\alpha - \lambda\beta-(pa+qb)\\[1ex]
+&=I-\lambda(\alpha + \beta)-(pa+qb)\\[1ex]
+&=I-\lambda -(pa+qb)
+\end{align}
+$\therefore \lambda =\left(I-(pa+qb)\right)$となるので，
+\begin{align}
+p(x-a)&=\alpha\left(I-(pa+qb)\right)\\
+q(y-b)&=\beta\left(I-(pa+qb)\right)
+\end{align}
+したがって最適解は，
+$px={\alpha}\left(I-(pa+qb)\right)+pa=\alpha I +\beta pa -\alpha qb$，
+$qy={\beta}\left(I-(pa+qb)\right)+qb=\beta I -\beta pa +\alpha qb$ 
+と変形し，
+$(x,y)=\left(\dfrac{\alpha I +\beta pa -\alpha qb}{p}, 
+\dfrac{\beta I -\beta pa +\alpha qb}{q}\right)$ を得る．
+</LI><br>
+</OL>
+
+<Div Align="right">【解答終】</Div>
+
+<hr>
+<Div Align="left">【メモ】</Div>
+【問１】と【問２】ではまったく同じ解がでてくるのは，偶然ではなく必然であるのは，『経出る』練習問題7.3の解説にある通り．片方の効用関数に適当な単調変換を施すと，もう一方の効用関数が出てくるというのがその理由．具体的には，
+\begin{align}
+\log_{}{u(x,y)}=v(x,y)\\
+e^{v(x,y)}=u(x,y)
+\end{align}
+である．
+<Div Align="right">【メモ終】</Div>
+<hr>
+
+<Div Align="left">【Further Reading】</Div>
+A.K. Dixit, ‘Optimization in Economic Theory Second Edition’, OXFORD UNIVERSITY PRESS（1990）
+
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

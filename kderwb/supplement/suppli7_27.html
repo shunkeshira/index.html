@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+多目的最適化の拡大Tchebyshev関数とパレート解
+</h3>
+
+
+
+<hr>
+$f_{\ell}(y)$の最大化に対し，次の拡大Tchebyshev関数を考える．
+
+\begin{align}
+最大化　& G(y)=\min_{{\ell}=1,\dots , k}{\lambda}_{\ell}f_{\ell}(y)+{\alpha}\sum_{{\ell}=1}^{k}{\lambda}_{\ell}f_{\ell}(y)
+, \tag{1}\\[2ex]
+条件　& y\in Y
+\end{align}
+
+$\hat{y}$は
+
+\[
+f_{\ell}(y)\geq f_{\ell}(\hat{y}), \quad \ell =1,\dots k, \tag{2}
+\]
+
+で，しかもこの不等式の少なくとも$1$つが厳密な不等号を満足するような$y\in Y$が存在しないとき，パレート最適解とよぶ．
+
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　
+問題(1}の解$\hat{y}$はパレート解であることを示しなさい．
+</p>
+
+
+
+<Div Align="left">【解答】</Div>
+$\hat{y}$がパレート解でなかったとすると，(2)を満たし，かつそのうち一つのindexに対して（一般性を失うことなく$k$としてよい）
+厳密な不等式が成立する$y\in Y$が存在する．
+このとき${\alpha} >0,{\lambda}_{\ell}>0$だから，
+\begin{eqnarray*}
+{\alpha}\sum_{{\ell}=1}^{k-1}{\lambda}_{\ell}f_{\ell}(y)&\geq& {\alpha}\sum_{{\ell}=1}^{k-1}{\lambda}_{\ell}f_{\ell}(\hat{y}),\\
+{\alpha}{\lambda}_kf_k(y)&>&{\alpha}{\lambda}_kf_k(\hat{y}).
+\end{eqnarray*}
+
+また
+\begin{eqnarray*}
+f_{\ell}(y)&\geq &f_{\ell}(\hat{y}),\\
+\min_{{\ell}=1,\dots , k}{\lambda}_{\ell}f_{\ell}(y)&\geq &\min_{{\ell}=1,\dots , k}{\lambda}_{\ell}f_{\ell}(\hat{y}),
+\end{eqnarray*}
+
+となり，$G(y)>G(\hat{y})$が導かれ，$\hat{y}\in Y$が問題(1)の最適解であることに反する．
+
+<Div Align="right">【解答終】</Div>
+
+<hr>
+
+<Div Align="left">【Further Reading】</Div>
+中山弘隆<A HREF="https://orsj.org/wp-content/or-archives50/pdf/bul/Vol.41_06_343.pdf">「あれもこれもよくしたい多目的計画法」</A>オペレーションズ・リサーチ1996年6月号<br>
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

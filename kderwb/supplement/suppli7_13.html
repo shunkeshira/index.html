@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+ポートフォリオ最適化問題をラグランジュの未定乗数法で解く【『経出る』7.5節】
+</h3>
+
+<p>
+マーコビッツのMVモデルをラグランジュの未定乗数法で解く問題．基本的なソースは今野浩『理財工学Ｉ』日科技連（1995）だが，完全にパクるのはまずいので（笑），数値例をひねり出してみた．（作成：2015.11.20）
+</p>
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　ラグランジュの未定乗数法を使って，次の最小化問題を解きなさい．
+\begin{align}
+\min_{x_1,x_2,x_3}& V(x_1,x_2,x_3)=5x_1^2+20x_2^2+5x_3^2-16x_1x_2-8x_1x_3+12x_2x_3\\[2ex]
+s.t. \quad & 7x_1+10x_2+9x_3=9\\[2ex]
+&x_1+x_2+x_3=1
+\end{align}
+</p>
+
+<Div Align="left">【解答】</Div>
+<OL>
+<LI>ラグランジュ関数を作ると，
+\[
+{\cal L}(x_1,x_2,x_3,\lambda ,\mu)=5x_1^2+20x_2^2+5x_3^2-16x_1x_2-8x_1x_3+12x_2x_3
++\lambda (9-7x_1-10x_2-9x_3)
++\mu (1-x_1-x_2-x_3)．
+\]
+</LI><br>
+<LI>
+各変数で偏微分してイコールゼロとおくと，
+\[
+\left\{
+\begin{align}
+0=&10x_1-16x_2-8x_3-7\lambda - \mu
+\qquad (1)\\[2ex]
+0=&-16x_1+40x_2+12x_3-10\lambda  - \mu
+\qquad (2)\\[2ex]
+0=&-8x_1+12x_2+10x_3-9\lambda  - \mu\qquad (3)\\[2ex]
+0=&1-x_1-x_2-x_3\qquad (4)\\[2ex]
+0=&9-7x_1-10x_2-9x_3\qquad (5)
+\end{align}
+\right.
+\]
+</LI><br>
+<LI>
+連立１次方程式なので，基本，中学生でも解けるはず．$\lambda$と $\mu$を(1)〜(3)式を用いてまず消去する．
+	<UL>
+	<li>
+	$(1)-(2)$より
+	\[
+	26x_1-56x_2-20x_3+3\lambda =0\qquad (6)
+	\]
+	</li>
+	<li>
+	$(3)-(2)$より
+	\[
+	8x_1-28x_2-2x_3+\lambda =0\qquad (7)
+	\]
+	</li>
+	<li>
+	$(6)-(7)\times 3$より
+	\[
+	2x_1+28x_2-14x_3=0\quad \Rightarrow　x_1+14x_2-7x_3=0\qquad (8)
+	\]
+	</li>
+	<li>
+	いっぽう，$(5)-(4)\times 9$より
+	\[
+	2x_1-x_2=0\quad \Rightarrow　x_2=2x_1\qquad (9)
+	\]
+	</li>
+	<li>
+	さらに，$(8)-(4)\times 7$より
+	\[
+	8x_1+21x_2-7=0\quad (10)
+	\]
+	</li>
+	<li>
+	$(10)$に$(9)$を代入して，
+	\[
+	8x_1+21(2x_1)-7=0\quad \Rightarrow　50x_1=7.
+	\]
+	</li>
+	</UL>
+したがって，$x_1=\dfrac{7}{50}$，$x_2=\dfrac{14}{50}$，
+$x_3=\dfrac{29}{50}$．
+</LI><br>
+</OL>
+
+<Div Align="right">【解答終】</Div>
+<hr>
+<Div Align="left">【メモ１】</Div>
+次のデータの分散共分散行列から出るポートフォリオの分散が，本問の目的関数．<A HREF="./suppli6_3.html">ここ</A>を参照．
+\[
+\begin{array}{|c|c|c|c|c|}
+\hline
+銘柄&S_1&S_2&S_3\\\hline
+第1期&6&16&10 \\\hline
+第2期&4&12&12 \\\hline
+第3期&8&8&6 \\\hline
+第4期&10&4&8 \\\hline
+\end{array}
+\]
+
+
+<Div Align="right">【メモ１終】</Div>
+<Div Align="left">【メモ２】</Div>
+エクセルのソルバーで計算させた結果，$x_1=0.14, x_2=0.279999999, x_3=0.580000001$となった．誤差の範囲でしょう．
+<Div Align="right">【メモ２終】</Div>
+<hr>
+【Further Reading】
+今野浩『理財工学Ｉ』日科技連（1995）
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

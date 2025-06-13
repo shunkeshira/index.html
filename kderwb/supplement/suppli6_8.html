@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+CFの複製
+</h3>
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　キャッシュ・フローとして，$c_0,c_1,\ldots ,c_n$を考える．<br>
+また，$i$次ベクトル，$0_i=\begin{pmatrix}0\\\vdots\\0\end{pmatrix}$に対して$n+1$次ベクトル，$e_1, {\ell}_2, \ldots , {\ell}_{n-1}$を
+\[
+e_1=\begin{pmatrix}
+1\\
+0_n
+\end{pmatrix}
+,
+{\ell}_1=\begin{pmatrix}
+1\\
+-(1+r)\\
+0_{n-1}
+\end{pmatrix}
+,
+{\ell}_2=\begin{pmatrix}
+0_1\\
+1\\
+-(1+r)\\
+0_{n-2}
+\end{pmatrix}
+,
+\ldots
+,
+{\ell}_i=\begin{pmatrix}
+0_{i-1}\\
+1\\
+-(1+r)\\
+0_{n-i-1}
+\end{pmatrix}
+,
+\ldots
+,
+{\ell}_{n-1}=\begin{pmatrix}
+0_{n-1}\\
+1\\
+-(1+r)\\
+\end{pmatrix}
+,
+
+c=\begin{pmatrix}
+c_0\\
+c_1\\
+\vdots\\
+c_{n-1}\\
+c_n
+\end{pmatrix}
+\]
+とする．
+<br>
+このとき，
+\[
+c={\alpha}_1e_1+{\alpha}_2{\ell}_1+\cdots +{\alpha}_{n}{\ell}_{n-1}
+\]
+と書けることを示せ．
+</p>
+
+<Div Align="left">【解答】</Div>
+\[
+{\alpha}_1e_1+{\alpha}_2{\ell}_1+\cdots +{\alpha}_{n}{\ell}_{n-1}=
+\begin{pmatrix}
+{\alpha}_1+{\alpha}_2\\
+{\alpha}_3-(1+r){\alpha}_2\\
+\vdots\\
+{\alpha}_n-(1+r){\alpha}_{n-1}\\
+-(1+r){\alpha}_n
+\end{pmatrix}
+=
+\begin{pmatrix}
+c_0\\
+c_1\\
+\vdots\\
+c_{n-1}\\
+c_n
+\end{pmatrix}
+\]
+
+これを後ろ向きに解いていくと
+\begin{align}
+{\alpha}_n&=\dfrac{-c_n}{(1+r)}\\
+{\alpha}_{n-1}&=\dfrac{-c_{n-1}}{(1+r)}+\dfrac{-c_n}{(1+r)^2}\\
+&\vdots\\
+{\alpha}_2&=\dfrac{-c_1}{(1+r)}+ \cdots +\dfrac{-c_{n-1}}{(1+r)^{n-2}}+\dfrac{-c_n}{(1+r)^{n-1}}\\
+{\alpha}_1&=c_0+\dfrac{c_1}{(1+r)}+ \cdots +\dfrac{c_{n-1}}{(1+r)^{n-2}}+\dfrac{c_n}{(1+r)^{n-1}}\\
+\end{align}
+
+となる．
+<Div Align="right">【解答終】</Div>
+
+<hr>
+<Div Align="left">【メモ】</Div>
+${\alpha}_1$はキャッシュフローのNPV（正味現在価値）になる．
+<Div Align="right">【メモ終】</Div>
+<Div Align="left">【Further Reading】</Div>
+ボイド＋ヴァンデンベルグ『スタンフォード ベクトル・行列からはじめる最適化数学』講談社（2021）
+
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

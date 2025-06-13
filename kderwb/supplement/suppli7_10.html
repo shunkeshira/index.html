@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+準凸関数とレベル集合【『経出る』7.5節】
+</h3>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">
+(1)　関数 $f$ がどんな $\boldsymbol{x^0}, \boldsymbol{x^1}$ と 
+$0 < \alpha < 1$ なるどんな $\alpha$ に対しても
+$f(\boldsymbol{x^1}) \geq f(\boldsymbol{x^0}) \Rightarrow 
+f((1-\alpha )\boldsymbol{x^0}+\alpha \boldsymbol{x^1})
+\geq f(\boldsymbol{x^0}) $ を満たすとき，$f$ を準凹関数という．<br>
+(2)　関数 $f$ がどんな $\boldsymbol{x^0}, \boldsymbol{x^1}$ と 
+$0 < \alpha < 1$ なるどんな $\alpha$ に対しても
+$f(\boldsymbol{x^1}) \leq f(\boldsymbol{x^0}) \Rightarrow 
+f((1-\alpha )\boldsymbol{x^0}+\alpha \boldsymbol{x^1})
+\leq f(\boldsymbol{x^0}) $ を満たすとき，$f$ を準凸関数という
+</p>
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　$f$ が準凸であることと，どんな $t$ に対しても $f$ のレベル集合 
+$L(f,t):=\{\boldsymbol{x} \ | \ f(\boldsymbol{x})\leq t\}$ が凸集合であることとが同値であることを示しなさい．</p>
+
+<Div Align="left">【解答】</Div>
+<UL>
+<LI>
+$f$ が準凸であるとする．$f(\boldsymbol{x^0})\leq t , f(\boldsymbol{x^1})\leq t $ とする．$f(\boldsymbol{x^1}) \leq f(\boldsymbol{x^0})$ の場合，$f$ が準凸であるので，
+\[
+f((1-\alpha )\boldsymbol{x^0}+\alpha \boldsymbol{x^1})
+\leq f(\boldsymbol{x^0})\leq t
+\]
+$f(\boldsymbol{x^0}) \leq f(\boldsymbol{x^1})$ の場合も，$f$ が準凸であるので，
+\[
+f((1-\alpha )\boldsymbol{x^0}+\alpha \boldsymbol{x^1})
+\leq f(\boldsymbol{x^1})\leq t
+\]
+となる．いずれにしろ，凸結合
+$(1-\alpha )\boldsymbol{x^0}+\alpha \boldsymbol{x^1}$ がレベル集合 $L(f,t)$ に属するので，このレベル集合は凸集合である．
+</LI><br>
+
+<LI>どんなレベル集合も凸であるとする．$f(\boldsymbol{x^1}) \leq f(\boldsymbol{x^0})$ とする．今，$t=f(\boldsymbol{x^0})$ に対しレベル集合 $L(f,t)$ は凸集合であるので，
+\[f((1-\alpha )\boldsymbol{x^0}+\alpha \boldsymbol{x^1})
+\leq t=f(\boldsymbol{x^0})
+\]
+となり，$f$ が準凸関数であることが言えた．</LI><br>
+
+</UL>
+
+<Div Align="right">【解答終】</Div>
+<hr>
+<Div Align="left">【メモ】</Div>
+準凹関数にはレベル集合の不等号を逆転させて$L(f,t):=\{\boldsymbol{x} \ | \ f(\boldsymbol{x})\geq t\}$ とすれば同じことが言える．『経出る』ではあっさりと，「どんな $t$ に対しても，$f({\boldsymbol{x}} )\geq t$ を満たす 
+${\boldsymbol{x}}$ の集合が凸集合である」と表現している．
+<Div Align="right">【メモ終】</Div>
+<hr>
+<Div Align="left">【Further Reading】</Div>
+M. Avriel, ‘Nonlinear Programming: Analysis and Methods’, Prentice Hall（1976）
+
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+
