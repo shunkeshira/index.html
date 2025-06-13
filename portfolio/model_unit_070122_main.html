@@ -1,0 +1,173 @@
+<HTML lang="ja">
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<TITLE>'06年度　経営モデル分析　第１４回学習ユニット・メイン</TITLE>
+</head>
+<body>
+富山大学経済学部　'06年度　<br>
+<A href="./model06.html">経営モデル分析</A>　<A href="./model06.html#unit14">第１４回</A>学習ユニット（01月22日）<br>
+<h3>スタート→<A href="./model_unit_070122_1.html">次</A></h3>
+<hr>
+<h4>進め方と提出要領</h4>
+<p>
+学習ユニットを順に行う。
+<A href="./model_unit_070122_fin.html">最終ページの指示</A>に従って課題を提出する。
+</p>
+<p>
+作成したファイルは、「あなたの名前070122」をファイル名にして、WebCTの「課題ファイル受取・提出」のページで提出しなさい。<br>
+提出締め切り：<font color=red>平成19年1月22日17：00</font>
+</p>
+
+
+<hr>
+<h3>ねらい：マーコビッツのＭＶモデルと最適ポートフォリオ</h3>
+	<ol type=1>
+	<li>マーコビッツのＭＶモデルを理解する。（ファイナンス）</li>
+	<li>投資機会集合と効率的フロンティアを理解する。（ファイナンス）</li>
+	<li>ソルバーで最適ポートフォリオを求める。（エクセル）</li>
+	<li>効率的フロンティアを求める。（エクセル）</li>
+	</ol>
+<hr>
+
+<h3>問題</h3>
+	<OL TYPE=I>
+	<LI>ポートフォリオのリターンとリスク：復習</LI>
+<ol>
+<li><A HREF="./model_070122_data.xls">ここのエクセル・データ</A>（右クリックでダウンロード→ファイルに保存）に基づき、各々の銘柄の月次収益率を求めなさい。</li>
+<li>収益率のデータから、各々の銘柄のリターン（収益率の平均）とリスク（収益率の標準偏差）を求めなさい。</li>
+<li>各銘柄に等分比率で投資した場合の、ポートフォリオのリターン（収益率の平均）とリスク（収益率の標準偏差）を求めなさい。</li>
+</ol>
+
+
+<LI>マーコビッツのＭＶモデル</LI>
+<ol>
+<li>リターンのターゲットを３％にしたときの、最適ポートフォリオ（リスク最小ポートフォリオ）を求めなさい。</li>
+<li>リターンのターゲットを４％にしたときの、最適ポートフォリオ（リスク最小ポートフォリオ）を求めなさい。</li>
+</ol>
+
+<LI>投資機会集合と効率的フロンティア</LI>
+<p>
+リターンのターゲットを１％刻みで動かしたときの、最適ポートフォリオのリスクの変化を、リターン＝リスク平面に描きなさい。
+</p>
+
+</OL>
+
+<p>
+<font color=red>おことわり</font>：ここのエクセルのデータは、すでに公開された東証１部の株価の値（該当日の終値）を手作業で編集したものです。従って写し間違い等のミスがありえます。また銘柄の選択はでたらめに行いましたので、投資判断上は何の根拠もありません。
+</p>
+
+<hr>
+
+<h3>数式解説</h3>
+<UL>
+<LI><b><font color=blue>ポートフォリオの収益率</font></b></Li>
+<p>
+<b><font face="Times New Roman"><i>r</i><sub>j</sub></i></font>
+：第 <font face="Times New Roman"><i>j</i></font> 銘柄収益率，
+<font face="Times New Roman"><i>x</i><sub>j</sub></i></font>
+：第 <font face="Times New Roman"><i>j</i></font> 銘柄投資比率
+</b>
+</p>
+
+
+
+<p>
+<b>ポートフォリオ収益率＝
+Σ<font face="Times New Roman"><i>r</i><sub>j</sub></i><i>x</i><sub>j</sub></i></font>
+＝Σ（個別収益率　×　投資比率）←　SUMPRODUCT関数
+</b>
+</p>
+
+
+<LI><b><font color=green>リターン</font>と<font color=red>リスク</font>：
+<font color=green>平均</font>と<font color=red>標準偏差</font></b>
+
+<p>
+<table style="
+  display:inline;">
+
+<tr>
+<th>
+平均（AVERAGE関数）：μ＝
+</th>
+<th  style="border-bottom:#000000 1pt solid;">
+<font face="Times New Roman"><i>r</i><sub>1</sub>+<i>r</i><sub>2</sub>+
+・・・+<i>r<sub>T</sub></i></font>
+</th>
+</tr>
+
+<tr>
+<th>
+
+</th>
+<th>
+<font face="Times New Roman"><i>T</i></font>
+</th>
+</tr>
+
+</table>
+</p>
+
+<p>
+<table style="
+  display:inline;">
+
+<tr>
+<th>
+分散（VARP関数）：σ<sup>2</sup>＝
+</th>
+<th  style="border-bottom:#000000 1pt solid;">
+<font face="Times New Roman">(<i>r</i><sub>1</sub>－μ)<sup>2</sup>+
+(<i>r</i><sub>2</sub>－μ)<sup>2</sup>+
+・・・+(<i>r<sub>T</sub></i>－μ)<sup>2</sup></font>
+</th>
+</tr>
+
+<tr>
+<th>
+
+</th>
+<th>
+<font face="Times New Roman"><i>T</i></font>
+</th>
+</tr>
+
+</table>
+</p>
+
+</table>
+</p>
+
+<p>
+<table style="
+  display:inline;">
+
+<tr>
+<th>
+標準偏差（STDEVP関数）：σ＝
+</th>
+<th>
+√σ<sup>2</sup>
+</th>
+</tr>
+
+</table>
+</p>
+
+
+</UL>
+
+<hr>
+<p>
+<A href="./model_unit_070122_main.html">スタート</A>・<A href="./model_unit_070122_1.html">１</A>・<A href="./model_unit_070122_2.html">２</A>・<A href="./model_unit_070122_3.html">３</A>・<A href="./model_unit_070122_4.html">４</A>・<A href="./model_unit_070122_5.html">５</A>・
+<A href="./model_unit_070122_6.html">６</A>・
+<A href="./model_unit_070122_7.html">７</A>・
+<A href="./model_unit_070122_fin.html">最終ページ</A>
+</p>
+
+<hr>
+'07/01/12 UP<br>
+'07/01/12 更新
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<HTML lang="ja">
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<TITLE>経営モデル分析　マーコビッツのＭＶモデルと最適ポートフォリオ　実習内容</TITLE>
+</head>
+
+<body>
+富山大学経済学部
+<A href="http://www3.u-toyama.ac.jp/shira/#syllabus" target=blank>経営モデル分析</A><br>
+学習ユニット～マーコビッツのＭＶモデルと最適ポートフォリオ～<br>
+
+<hr>
+<h3>ねらい：マーコビッツのＭＶモデルと最適ポートフォリオ</h3>
+	<ol type=1>
+	<li>マーコビッツのＭＶモデルを理解する。（ファイナンス）</li>
+	<li>投資機会集合と効率的フロンティアを理解する。（ファイナンス）</li>
+	<li>ソルバーで最適ポートフォリオを求める。（エクセル）</li>
+	</ol>
+<hr>
+
+<h3>問題</h3>
+	<OL TYPE=I>
+	<LI>ポートフォリオのリターンとリスク：復習</LI>
+<ol>
+<li><A HREF="./portfolio.xlsx">ここのエクセル・データ</A>（右クリックでダウンロード→ファイルに保存）に基づき、各々の銘柄の月次収益率を求めなさい。</li>
+<li>収益率のデータから、各々の銘柄のリターン（収益率の平均）とリスク（収益率の標準偏差）を求めなさい。</li>
+<li>各銘柄に等分比率で投資した場合の、ポートフォリオのリターン（収益率の平均）とリスク（収益率の標準偏差）を求めなさい。</li>
+</ol>
+
+
+<LI>マーコビッツのＭＶモデル</LI>
+<ol>
+<li>リターンのターゲットを1.5％にしたときの、最適ポートフォリオ（リスク最小ポートフォリオ）を求めなさい。</li>
+<li>リターンのターゲットを2.0％にしたときの、最適ポートフォリオ（リスク最小ポートフォリオ）を求めなさい。</li>
+</ol>
+
+
+</OL>
+
+<p>
+<font color=red>おことわり</font>：ここのエクセルのデータは、すでに公開された東証１部の株価の値（該当日の終値）を手作業で編集したものです。従って写し間違い等のミスがありえます。また銘柄の選択はでたらめに行いましたので、投資判断上の根拠は何もありません。
+</p>
+
+<hr>
+
+<h3>数式解説</h3>
+<UL>
+<LI><b><font color=blue>ポートフォリオの収益率</font></b></Li>
+<p>
+<b><font face="Times New Roman"><i>r</i><sub>j</sub></i></font>
+：第 <font face="Times New Roman"><i>j</i></font> 銘柄収益率，
+<font face="Times New Roman"><i>x</i><sub>j</sub></i></font>
+：第 <font face="Times New Roman"><i>j</i></font> 銘柄投資比率
+</b>
+</p>
+
+
+
+<p>
+<b>ポートフォリオ収益率＝
+Σ<font face="Times New Roman"><i>r</i><sub>j</sub></i><i>x</i><sub>j</sub></i></font>
+＝Σ（個別収益率　×　投資比率）←　SUMPRODUCT関数
+</b>
+</p>
+
+
+<LI><b><font color=green>リターン</font>と<font color=red>リスク</font>：
+<font color=green>平均</font>と<font color=red>標準偏差</font></b>
+
+<p>
+<table style="
+  display:inline;">
+
+<tr>
+<th>
+平均（AVERAGE関数）：μ＝
+</th>
+<th  style="border-bottom:#000000 1pt solid;">
+<font face="Times New Roman"><i>r</i><sub>1</sub>+<i>r</i><sub>2</sub>+
+・・・+<i>r<sub>T</sub></i></font>
+</th>
+</tr>
+
+<tr>
+<th>
+
+</th>
+<th>
+<font face="Times New Roman"><i>T</i></font>
+</th>
+</tr>
+
+</table>
+</p>
+
+<p>
+<table style="
+  display:inline;">
+
+<tr>
+<th>
+分散（VARP関数）：σ<sup>2</sup>＝
+</th>
+<th  style="border-bottom:#000000 1pt solid;">
+<font face="Times New Roman">(<i>r</i><sub>1</sub>－μ)<sup>2</sup>+
+(<i>r</i><sub>2</sub>－μ)<sup>2</sup>+
+・・・+(<i>r<sub>T</sub></i>－μ)<sup>2</sup></font>
+</th>
+</tr>
+
+<tr>
+<th>
+
+</th>
+<th>
+<font face="Times New Roman"><i>T</i></font>
+</th>
+</tr>
+
+</table>
+</p>
+
+</table>
+</p>
+
+<p>
+<table style="
+  display:inline;">
+
+<tr>
+<th>
+標準偏差（STDEVP関数）：σ＝
+</th>
+<th>
+√σ<sup>2</sup>
+</th>
+</tr>
+
+</table>
+</p>
+
+
+</UL>
+
+
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<HTML lang="ja">
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<TITLE>経営モデル分析　マーコビッツのＭＶモデルと最適ポートフォリオ　ユニット４</TITLE>
+</head>
+
+<body>
+富山大学経済学部
+<A href="http://www3.u-toyama.ac.jp/shira/#syllabus" target=blank>経営モデル分析</A><br>
+学習ユニット～マーコビッツのＭＶモデルと最適ポートフォリオ～<br>
+ユニット４
+<hr>
+
+<h4>II.　マーコビッツのＭＶモデル</h4>
+
+<ol>
+<li>リターンのターゲットを1.5％にしたときの、最適ポートフォリオ（リスク最小ポートフォリオ）を求めなさい。</li>
+<li>リターンのターゲットを2.0％にしたときの、最適ポートフォリオ（リスク最小ポートフォリオ）を求めなさい。</li>
+</ol>
+<hr>
+<h4>ＭＶモデルの考え方</h4>
+
+<p>
+<table>
+
+<tr>
+<td align=left>
+<font color=red>STDEVP</font>
+</td>
+<td align=center>
+→
+</td>
+<td align=left>
+最小
+</td>
+<td align=right>
+…１
+</td>
+</tr>
+
+<tr>
+<td align=left>
+<font color=green>AVERAGE</font>
+</td>
+<td align=center>
+＝
+</td>
+<td align=left>
+<font color=green>1.5％</font>
+</td>
+<td align=right>
+…２
+</td>
+</tr>
+
+
+
+<tr>
+<td align=left>
+<font color=dodgerblue>SUM</font>
+</td>
+<td align=center>
+＝
+</td>
+<td align=left>
+1
+</td>
+<td align=right>
+…３
+</td>
+</tr>
+<tr>
+<td align=left>
+非負条件
+</td>
+<td align=center>
+≧
+</td>
+<td align=left>
+0
+</td>
+<td align=right>
+…４
+</td>
+</tr>
+</table>
+</p>
+
+</OL>
+
+<h4>入力例：ソルバー出動</h4>
+<P>
+【データ】→【ソルバー】（見つからない場合には【マイクロソフトボタン】→【Excelのオプション】→【アドイン】<A href="http://www3.u-toyama.ac.jp/shira/lecture/e-learning/excel_step3/solver_add_in/solver_add_in.htm" TARGET="top">ムービー</A>参照）
+</P>
+<OL Type=i>
+<LI><font color=red>STDEVP</font>→最小…１</LI>
+<P>
+ポートフォリオのリスクの計算式が入ったセルを、目的セルとして参照入力。最小値のラジオボタンにチェック。
+</P>
+<p>
+<img src="solver_min.jpg" width=800>>
+</p>
+
+<LI>変数セルの指定</LI>
+<P>
+ポートフォリオの投資比率を暫定値から、変化させることで、リスクをコントロールするのがねらい。
+</P>
+<p>
+<img src="solver_variable.jpg" width=800>>
+</p>
+
+<LI><font color=green>AVERAGE</font>＝2％…２</LI>
+<P>
+制約条件の<font color=red><b><u>追加ボタン</u></b></font>で、希求水準を指定。<font color=green><b><u>希求水準のセル</u></b></font>を準備しておくのがこつ。
+</P>
+<p>
+<img src="solver_level.jpg" width=800>>
+</p>
+
+<LI><font color=dodgerblue>SUM</font>＝1（100％）…３</LI>
+<P>
+制約条件の追加で、総投資比率１００％に指定。
+</P>
+<p>
+<img src="solver_100per.jpg" width=800>>
+</p>
+
+<LI>非負条件…４</LI>
+<P>
+制約条件の追加で、各投資比率０％以上に指定。
+</P>
+<p>
+<img src="solver_nonnnegative.jpg" width=800>>
+</p>
+
+</OL>
+
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<HTML lang="ja">
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<TITLE>経営モデル分析　マーコビッツのＭＶモデルと最適ポートフォリオ　ユニット２</TITLE>
+</head>
+
+<body>
+富山大学経済学部
+<A href="http://www3.u-toyama.ac.jp/shira/#syllabus" target=blank>経営モデル分析</A><br>
+学習ユニット～マーコビッツのＭＶモデルと最適ポートフォリオ～<br>
+ユニット２
+<hr>
+
+<h4>I.　ポートフォリオのリターンとリスク：復習</h4>
+
+<ol>
+<li><A HREF="./model_070122_data.xls">ここのエクセル・データ</A>（右クリックでダウンロード→ファイルに保存）に基づき、各々の銘柄の月次収益率を求めなさい。</li>
+<li>収益率のデータから、各々の銘柄のリターン（収益率の平均）とリスク（収益率の標準偏差）を求めなさい。</li>
+<li>各銘柄に等分比率で投資した場合の、ポートフォリオのリターン（収益率の平均）とリスク（収益率の標準偏差）を求めなさい。</li>
+</ol>
+<hr>
+
+<h4><font color=green>入力例：ステップ２</font></h4>
+
+<h4>手順（ポートフォリオ）：収益率→平均→標準偏差</h4>
+<P>
+この手順もすでに、練習済みなのでかんたん♪　平均と標準偏差はよこっちょからコピペで。<br>
+</P>
+<OL Type=i>
+<LI>投資比率（暫定値）：<font color=red><b>和は１</b></font>（１００％）</LI>
+<P>
+５銘柄に等分なので、0.2づつ。オートサムでちゃんと１００％になることを検算。ここに入力した<font color=red><b>セルはあとでソルバーでも使うので重要</b></font>。<br>
+</P>
+<p>
+<img src="MV_hiritu_sum.jpg" width=800>>
+</p>
+
+<LI>収益率＝Σ（投資比率×各銘柄の収益率）＝ＳＵＭＰＲＯＤＵＣＴ</LI>
+<P>
+最初の月次分を求めればあとはコピペ。そのためにも$投資比率$は絶対参照。<br>
+</P>
+<p>
+<img src="MV_sumproduct.jpg" width=800>>
+</p>
+
+<LI>リターン（平均）＝ＡＶＥＲＡＧＥ（次もまとめて、よこっちょからコピペでＯＫ）</LI>
+<p>
+<img src="MV_pf_av.jpg" width=800>>
+</p>
+
+<LI>リスク（標準偏差）＝ＳＴＤＥＶＰ</LI>
+<p>
+<img src="MV_pf_std.jpg" width=800>>
+</p>
+
+
+</OL>
+
+
+
+</body>
+</html>
