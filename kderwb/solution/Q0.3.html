@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻める解答例：0.3</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの解答例">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,解答例,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：問0.3解答例</H1>
+
+<hr>
+
+<Div Align="left">【解答 0.3】</Div>
+
+$A > 0$ は暗黙の了解（笑）．このとき関数 $f(D)=1-(1+kD)e^{-kD}$ に対し，$f(D)\geq 0$ が$D\geq 0$に対して成立することを示せばよい．
+
+\begin{align}
+f^{\prime}(D)&=-ke^{-kD}+(1+kD)ke^{-kD}\\
+&=-ke^{-kD}+ke^{-kD}+k^2De^{-kD}\\
+&=k^2De^{-kD}
+\end{align}
+
+したがって $D > 0$ に対して $f^{\prime}(D) > 0$ であるので，次の増減表を得る．
+
+\[
+\begin{array}{c|c|c}
+D & 0 & 0 < D \\\hline
+f^{\prime}(D) & 0 & +\\\hline
+f(D) &f(0) & \nearrow
+\end{array}
+\]
+
+ゆえに， $D \geq 0$ に対して，$f(D)\geq f(0)=1-(1+0)e^{-0}=0$．
+
+
+
+<Div Align="right">【解答 0.3 終わり】</Div>
+
+<hr>
+<Div Align="left">【メモ】</Div>
+この不等式は一般の双曲型割引関数 $\displaystyle (1+\alpha t)^{-\dfrac{\gamma}{\alpha}}$ との間でも成立する．実際 
+$\displaystyle f(t)=1-(1+\alpha t)^{\dfrac{\gamma}{\alpha}}e^{-kt}$ に対し，
+
+\[
+\begin{align}
+f^{\prime}(t)&=\gamma(1+\alpha t)^{\dfrac{\gamma}{\alpha}-1}e^{-kt}
++k(1+\alpha t)^{\dfrac{\gamma}{\alpha}}e^{-kt}\\
+&=(1+\alpha t)^{\dfrac{\gamma}{\alpha}}
+\Bigl(\frac{\gamma}{(1+\alpha t)}+k\Bigr)e^{-kt}>0
+\end{align}
+\]
+となるからである．
+<Div Align="right">【メモ終わり】</Div>
+<hr>
+
+<A HREF="./solution.html">解答例一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

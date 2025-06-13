@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻める解答例：問2.10</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの解答例">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,解答例,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：問2.10解答例</H1>
+
+<hr>
+
+
+<Div Align="left">【解答 2.10】</Div>
+企業$1$の利潤${\pi}_1(x_1,x_2)$は
+\begin{align*}
+{\pi}_1(x_1,x_2)&=px_1-c_1\\[2mm]
+		&=(100-2(x_1+x_2))x_1-4x_1\\[2mm]
+		&=x_1(96-2x_1-2x_2).
+\end{align*}
+横軸切片は$x_1=0, 48-x_2$なので最適反応関数は
+\[
+R_1(x_2)=\frac{48-x_2}{2}
+\]
+
+企業$2$の利潤${\pi}_2(x_1,x_2)$は
+\begin{align*}
+{\pi}_2(x_1,x_2)&=px_2-c_2\\[2mm]
+		&=(100-2(x_1+x_2))x_2-4x_2\\[2mm]
+		&=x_2(96-2x_1-2x_2).
+\end{align*}
+
+横軸切片は$x_2=0, 48-x_1$なので最適反応関数は
+\[
+R_2(x_1)=\frac{48-x_1}{2}
+\]
+
+連立方程式
+\[
+\left\{
+\begin{array}{c@{\;}c@{\;}l}
+x_1&=&\displaystyle R_1(x_2)=\frac{48-x_2}{2}\\[2mm]
+x_2&=&\displaystyle R_2(x_1)=\frac{48-x_1}{2}
+\end{array}
+\right.
+\]
+から，$x_1=16, x_2=16$となる．また${\pi}_1(16,16)=16\times (96-2\times 16-2\times 16)=512$ ．$p=100-2(16+16)=36$である．
+
+<Div Align="right">【問 2.10終わり】</Div>
+<hr>
+<Div Align="left">【メモ】</Div>
+企業1の独占のケースを考えてみよう．企業1の利潤は，
+\begin{align*}
+{\pi}_1(x_1)&=px_1-c_1\\[2mm]
+		&=(100-2x_1)x_1-4x_1\\[2mm]
+		&=x_1(96-2x_1).
+\end{align*}
+
+横軸切片は$x_1=0,48$ なので，中点（頂点の$x_1$座標）の $24$ が最適生産量．このとき，${\pi}_1(24)=24\times (96-2\times 24)=1152$ ．$p=100-2\times 24=52$である．
+寡占のケースが価格は低く，生産量が多いことがわかる．
+独占と複占の場合を比較して表にまとめる．
+
+\[
+\begin{array}{|c|c|c|c|c|c|}
+\hline
+ & 総生産量 & 価格 & 総利潤 & 消費者余剰 & 総余剰\\\hline
+ 独占 & 24 & 52 & 1152 & 676 & 1828\\\hline
+ 複占 & 32 & 36 & 1024 & 1024 & 2048\\\hline
+\end{array}
+\]
+
+<Div Align="center"><IMG SRC="fig_Q.2.10.jpg" width=400></Div>
+
+<Div Align="right">【メモ終わり】</Div>
+
+
+<hr>
+
+<LI><A HREF="./solution.html">解答例一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+
