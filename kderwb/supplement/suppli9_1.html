@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+確率の性質
+</h3>
+
+<p>『経出る』命題12の検証．標本空間を$\Omega$とする確率$P(E)$は次の３つの性質を満たすとする．
+<ol type="a">
+<li>どのような事象に対しても$P(E)\geq 0$である．</li>
+<li>全事象の確率は$P(\Omega )=1$である．</li>
+<li>もし事象$E_1$と$E_2$が排反事象であるなら，
+$P(E_1\cup E_2)=P(E_1)+P(E_2)$である．</li>
+</ol>
+</p>
+
+
+<hr>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】<br>
+　次のような確率の性質が導かれることを示しなさい．<br>
+1.　もし事象$E_1$が$E_2$に踏むまれるならば，$P(E_1)\leq P(E_2)$である．<br>
+2.　すべての事象$E$について，$0\leq P(E) \leq 1$である．<br>
+3.　空事象$\emptyset$の起こる確率は$P(\emptyset )=0$である．<br>
+4.　もし事象$E_1, E_2, \ldots E_n$が互いに排反事象ならば，
+\[
+P(E_1\cup E_2 \cup \cdots \cup E_n)=P(E_1)+P(E_2)+\cdots +P(E_1)
+\]
+である．<br>
+5.　すべての事象$E_1, E_2$について，
+\[
+P(E_1\cup E_2)=P(E_1)+P(E_2)-P(E_1\cap E_2)
+\]
+である．<br>
+6.　すべての事象$E$について，その余事象$\Omega \setminus E$の確率は
+$P(\Omega \setminus E)=1-P(E)$である．
+</p>
+
+
+
+
+<Div Align="left">【解答】</Div>
+
+<OL>
+<LI>$E_1\subset E_2$ならば，$E_2=E_1\cup (E_2\setminus E_1)$で，
+$E_1$と$E_2\setminus E_1$は排反．従って$b$により，$P(E_2)=P(E_1)+P(E_2\setminus E_1)$．
+a.より$P(E_2\setminus E_1)\geq 0$なので，
+$P(E_2)\geq P(E_1)$．
+</LI><br>
+<LI>$E \subset \Omega$なので，
+a.と1.より$0\leq P(E)\leq P(\Omega )=1$となる．</LI><br>
+<LI>$\Omega=\emptyset \cup \Omega $なので，
+$P(\Omega )=P(\emptyset \cup \Omega)=P(\emptyset )+P(\Omega)$．
+従って$P(\emptyset )=0．$
+</LI><br>
+<LI>$E_1\cap (E_2 \cup \cdots \cup E_n)
+=(E_1\cap E_2)\cup \cdots \cup(E_1\cap E_n)=\emptyset $なので，
+$P(E_1\cup (E_2 \cup \cdots \cup E_n))
+=P(E_1)+P(E_2 \cup \cdots \cup E_n)$．これを繰り返せばよい．</LI><br>
+<LI>
+\begin{align}
+E_1\cup E_2&=E_1\cup (E_2\setminus E_1\cap E_2)\\
+E_2&= (E_1\cap E_2)\cup (E_2\setminus E_1\cap E_2)
+\end{align}
+なので，
+\begin{align}
+P(E_1\cup E_2)&=P(E_1)+P(E_2\setminus E_1\cap E_2)\\
+P(E_2)&= P(E_1\cap E_2)+P(E_2\setminus E_1\cap E_2)
+\end{align}
+となる．辺々引き算すればよい．</LI><br>
+<LI>$\Omega =E\cup (\Omega \setminus E)$
+なので，$P(\Omega )=P(E)+ P(\Omega \setminus E)$より得られる．</LI><br>
+</OL>
+
+
+<Div Align="right">【解答終】</Div>
+
+<hr>
+
+
+
+【Further Reading】<br>
+武隈良一『確率』培風館（昭和53年）
+
+<hr>
+
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

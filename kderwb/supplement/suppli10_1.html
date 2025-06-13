@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+年功賃金と積分（作成：2016.03.03）
+</h3>
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　ある企業の賃金体系について，以下の問に答えなさい．
+<OL>
+<LI>賃金を企業に対する貢献に見合った歩合で払うこととする．このときの賃金カーブを求めなさい．また，採用から退職までの総支払額を求めなさい．ただし賃金カーブは
+<ul>
+<li>２次曲線である</li>
+<li>初年次は貢献度は $-30$ 万円である</li>
+<li>勤続 $30$ 年目に貢献度は最大の $60$ 万円となる</li>
+<li>停年は $40$ 年である</li>
+</ul>
+を満たすものとする
+</LI>
+<LI>賃金を年功序列で払うこととする．このときの賃金カーブを求めなさい．ただし，採用から退職までの総支払額が貢献に見合った度合いと一致するようにしなさい．また賃金カーブは
+<ul>
+<li>２次曲線である</li>
+<li>初任給は $20$ 万円である $40$ 万円である</li>
+</ul>
+を満たすものとする
+</LI>
+
+</OL>
+</p>
+
+
+<Div Align="left">【解答】</Div>
+<OL>
+<LI>
+求める関数は，貢献度最大の条件から， $f(x)=a(x-30)^2+60$ と書ける．
+$x=0$ を代入することで，初年次の貢献度条件から，
+$900a+60=-30$ となるため，$\displaystyle a=-\frac{1}{10}$ である．したがって
+\[
+f(x)=-\frac{1}{10}(x-30)^2+60=-\frac{1}{10}x^2+6x-30.
+\]
+賃金の総支払額は
+\begin{align}
+\int_{0}^{40}f(x)dx&=\int_{0}^{40}(-\frac{1}{10}x^2+6x-30)dx\\
+&=\Bigl[-\frac{1}{30}x^3+3x^2-30x\Bigr]_{0}^{40}\\
+&=\Bigl[-\frac{1}{30}40^3+3\cdot 40^2-30\cdot 40\Bigr]_{0}^{40}\\
+&=-\frac{6,400}{3}+4,800-1,200=\frac{4,400}{3}\\
+\end{align}
+</LI>
+
+<LI>
+求める関数は，初任給の条件から， $g(x)=cx^2+dx+20$ と書ける．また退職時の給与待遇から $g(40)=40$ であるので，$1600c+40d+20=40$，
+すなわち $\displaystyle d=\frac{1}{2}-40c$ となる．ゆえに，総賃金は
+\begin{align}
+\int_{0}^{40}g(x)dx&=\int_{0}^{40}\bigl(cx^2+(\frac{1}{2}-40c)x+20\bigr)dx\\
+&=\Bigl[\frac{c}{3}x^3+\frac{1}{4}x^2-20cx^2+20x\Bigr]_{0}^{40}\\
+&=\frac{64,000c}{3}+400-32,000c+800\\
+&=-\frac{32,000c}{3}+\frac{3,600}{3}\\
+\end{align}
+
+これが上で求めた $\displaystyle \frac{4,400}{3}$ と一致するので，
+$\displaystyle c=-\frac{1}{40}$．
+求める賃金カーブは，$\displaystyle g(x)=-\frac{1}{40}x^2+\frac{3}{2}x+20$ である．
+</LI>
+
+<br>
+
+<Div Align="center"><IMG SRC="nenkokyu.png" width=400></Div>
+
+</OL>
+
+
+
+<Div Align="right">【解答終】</Div>
+<hr>
+
+<Div Align="left">【メモ】</Div>
+解答方針はこれでいいはず（たぶん）．計算結果に自信なし．
+<Div Align="right">【メモ終】</Div>
+
+
+【Further Reading】
+安藤至大『これだけは知っておきたい働き方の教科書』ちくま新書（2015）
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

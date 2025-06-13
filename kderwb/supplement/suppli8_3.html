@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+有効フロンティアは凸関数
+</h3>
+
+<p>
+$\boldsymbol{1}=
+\begin{pmatrix}
+1\\
+1\\
+\vdots\\
+1\\
+\end{pmatrix}
+$
+を単位ベクトル，
+$\boldsymbol{r}=
+\begin{pmatrix}
+r_1\\
+r_2\\
+\vdots\\
+r_n\\
+\end{pmatrix}
+$
+を利得ベクトル，
+$
+C
+=\begin{pmatrix}
+{\sigma}^2_{1} & {\sigma}_{12} & \cdots & {\sigma}_{12}\\
+{\sigma}_{21} & {\sigma}^2_{2} & \cdots & {\sigma}_{2n}\\
+\vdots & \vdots & \ddots & \vdots \\
+{\sigma}_{n1} & {\sigma}_{n2} & \cdots & {\sigma}^2_{n}
+\end{pmatrix}
+$
+を分散共分散行列，
+$\boldsymbol{x}=
+\begin{pmatrix}
+x_1\\
+x_2\\
+\vdots\\
+x_n\\
+\end{pmatrix}
+$，
+$\boldsymbol{y}=
+\begin{pmatrix}
+y_1\\
+y_2\\
+\vdots\\
+y_n\\
+\end{pmatrix}
+$
+を変数ベクトルとし，関数
+\[
+{\sigma}(\boldsymbol{x})=\boldsymbol{x}^{\prime}C\boldsymbol{x}
+\]
+を考える．行列演算の練習をしてみよう．
+</p>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　$\sqrt{{\sigma}(\boldsymbol{x})}$は凸関数となることを示しなさい．
+</p>
+
+
+
+
+<Div Align="left">【解答】</Div>
+【Step 1】
+$\Bigl(\boldsymbol{x}^{\prime}C\boldsymbol{y}\Bigr)^2
+\leq 
+\boldsymbol{x}^{\prime}C\boldsymbol{x}\cdot
+\boldsymbol{y}^{\prime}C\boldsymbol{y}$である．
+
+実際，<A HREF="./suppli8_2.html">分散共分散行列の非負定値性</A>から，$t$に対し，$0\leq 
+(\boldsymbol{x}-t\boldsymbol{y})^{\prime}C
+(\boldsymbol{x}-t\boldsymbol{y})$である．
+$t=\dfrac{\boldsymbol{x}^{\prime}C\boldsymbol{y}}
+{\boldsymbol{y}^{\prime}C\boldsymbol{y}}$，
+\begin{align}
+(\boldsymbol{x}-t\boldsymbol{y})^{\prime}C
+(\boldsymbol{x}-t\boldsymbol{y})&=
+\boldsymbol{x}^{\prime}C\boldsymbol{x}
+-2t\boldsymbol{x}^{\prime}C\boldsymbol{y}
++t^2\boldsymbol{y}^{\prime}C\boldsymbol{y}\\
+&=\boldsymbol{x}^{\prime}C\boldsymbol{x}
+-2\dfrac{\bigl(\boldsymbol{x}^{\prime}C\boldsymbol{y}\bigr)^2}
+{\boldsymbol{y}^{\prime}C\boldsymbol{y}}
++\dfrac{\bigl(\boldsymbol{x}^{\prime}C\boldsymbol{y}\bigr)^2}
+{\boldsymbol{y}^{\prime}C\boldsymbol{y}}\\
+&=\dfrac{1}{\boldsymbol{y}^{\prime}C\boldsymbol{y}}
+\Bigl(\boldsymbol{x}^{\prime}C\boldsymbol{y}\cdot\boldsymbol{y}^{\prime}C\boldsymbol{x}
+-\bigl(\boldsymbol{x}^{\prime}C\boldsymbol{y}\bigr)^2\Bigr)
+\end{align}
+となるので主張が示された．<br>
+
+【Step 2】
+$\sqrt{{\sigma}(\boldsymbol{x}+\boldsymbol{y})}
+\leq \sqrt{{\sigma}(\boldsymbol{x})}
++\sqrt{{\sigma}(\boldsymbol{y})}$である．
+実際Step1の結果を使えば，
+\begin{align}
+{\sigma}(\boldsymbol{x}+\boldsymbol{y})&=
+(\boldsymbol{x}+\boldsymbol{y})^{\prime}C
+(\boldsymbol{x}+\boldsymbol{y})\\
+&=\boldsymbol{x}^{\prime}C\boldsymbol{x}
++2\boldsymbol{x}^{\prime}C\boldsymbol{y}
++\boldsymbol{y}^{\prime}C\boldsymbol{y}\\
+&\leq {\sigma}(\boldsymbol{x})+{\sigma}(\boldsymbol{y})
++2\sqrt{{\sigma}(\boldsymbol{x}){\sigma}(\boldsymbol{y})}\\
+&=\bigl(\sqrt{{\sigma}(\boldsymbol{x})}
++\sqrt{{\sigma}(\boldsymbol{y})}\bigr)^2
+\end{align}
+が言えて，主張が示された．<br>
+
+【Step 3】$\sqrt{{\sigma}(\boldsymbol{x})}$が凸関数であることは，
+$\lambda > 0$に対し，明らかに
+$\sqrt{{\sigma}(\lambda\boldsymbol{x})}
+=\lambda\sqrt{{\sigma}(\boldsymbol{x})}$が成立することと，Step2の結果に従う．
+<Div Align="right">【解答終】</Div>
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">
+　有効フロンティア
+\[
+g(\rho )=\min \bigl\{\sqrt{{\sigma}(\boldsymbol{x})} \mid 
+\boldsymbol{r}^{\prime}\boldsymbol{x}=\rho,
+\boldsymbol{1}^{\prime}\boldsymbol{x}=1, \boldsymbol{x}\geq 0
+\bigr\}
+\]
+は，凸関数になることを示しなさい．
+</p>
+<Div Align="left">【解答】</Div>
+$X(\rho )=\bigl\{x \mid \boldsymbol{r}^{\prime}\boldsymbol{x}=\rho,
+\boldsymbol{1}^{\prime}\boldsymbol{x}=1, \boldsymbol{x}\geq 0
+\bigr\}$とおく．$g(\rho )=\min \bigl\{\sqrt{{\sigma}(\boldsymbol{x})} \mid 
+x\in X({\rho})\bigr\}$となる．いま，$\boldsymbol{x_1}\in X({\rho}_1)$，
+$\boldsymbol{x_2}\in X({\rho}_2)$，$1\leq \lambda \leq 1$とすると，
+
+\begin{align}
+\boldsymbol{r}^{\prime}
+\bigl( \lambda \boldsymbol{x_1}+(1-\lambda )\boldsymbol{x_2} \bigr)
+&=\lambda \boldsymbol{r}^{\prime}\boldsymbol{x_1}+
+(1-\lambda )\boldsymbol{r}^{\prime}\boldsymbol{x_2}
+=\lambda {\rho}_1+(1-\lambda ){\rho}_2\\
+\boldsymbol{1}^{\prime}
+\bigl( \lambda \boldsymbol{x_1}+(1-\lambda )\boldsymbol{x_2} \bigr)
+&=\lambda \boldsymbol{1}^{\prime}\boldsymbol{x_1}+
+(1-\lambda )\boldsymbol{1}^{\prime}\boldsymbol{x_2}
+=\lambda +(1-\lambda )=1\\
+\lambda \boldsymbol{x_1}+(1-\lambda )\boldsymbol{x_2}
+&\geq 0
+\end{align}
+より，
+\[
+\lambda \boldsymbol{x_1}+(1-\lambda )\boldsymbol{x_2}
+\in X(\lambda {\rho}_1+(1-\lambda ){\rho}_2)
+\]
+となる．したがって，
+
+\begin{align}
+g(\lambda {\rho}_1+(1-\lambda ){\rho}_2)&=
+\min \bigl\{\sqrt{{\sigma}(\boldsymbol{x})} \mid 
+\boldsymbol{x}\in X(\lambda {\rho}_1+(1-\lambda ){\rho}_2)\bigr\}\\
+&\leq \min \bigl\{\sqrt{{\sigma}(\lambda \boldsymbol{x_1}+(1-\lambda )\boldsymbol{x_2})} \mid 
+\boldsymbol{x_1}\in X({\rho}_1), 
+\boldsymbol{x_2}\in X({\rho}_2)\bigr\}\\
+&\leq \min \bigl\{\lambda \sqrt{{\sigma}(\boldsymbol{x_1}})+
+(1-\lambda )\sqrt{{\sigma}(\boldsymbol{x_2}})\mid 
+\boldsymbol{x_1}\in X({\rho}_1), 
+\boldsymbol{x_2}\in X({\rho}_2)\bigr\}\\
+&=\lambda\min \bigl\{ \sqrt{{\sigma}(\boldsymbol{x_1}}))\mid 
+\boldsymbol{x_1}\in X({\rho}_1)\bigr\}
++(1-\lambda )\min \bigl\{ \sqrt{{\sigma}(\boldsymbol{x_2}}))\mid 
+\boldsymbol{x_2}\in X({\rho}_2)\bigr\}\\
+&=\lambda g({\rho}_1)+(1-\lambda )g({\rho}_2)．
+\end{align}
+
+<Div Align="right">【解答終】</Div>
+<hr>
+【Further Reading】<br>
+今野浩『理財工学Ｉ』日科技連（1995）
+
+<hr>
+
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

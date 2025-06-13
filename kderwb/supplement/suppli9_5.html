@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+ベイズの定理の計算問題（コロナ問題）
+</h3>
+
+
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】<br>
+　ある疾病は人口の$0.01\%$が罹患していることが分かっている．この病気の検査の真陽性率（実際に罹患している人が陽性となる確率）は$0.7$，偽陽性率（罹患していない人が陽性となる確率）が$0.01$であるとする．このとき，この検査で陽性と判定された人が，この病気に罹患している確率を求めなさい．
+
+</p>
+
+
+
+
+<Div Align="left">【解答】</Div>
+
+　病気に罹患している事象を$E_1$，罹患していない事象を$E_2$とし，検査で陽性となる事象を$A$とする．なので，$P(E_1)=0.0001$，$P(E_2)=0.999$となる．
+<ul>
+<li>罹患している人が陽性となる確率：$P(A\mid E_1)=0.7$</li>
+<li>罹患していない人が陽性となる確率：$P(A\mid E_2)=0.01$</li>
+</ul>
+なので，陽性と判定されたときに罹患している確率は，ベイズの定理から，
+\[
+P(E_1 \mid A)=
+\dfrac{P(E_1)P(A\mid E_1)}{P(E_1)P(A\mid E_1)+P(E_2)P(A\mid E_2)}
+=\dfrac{0.0001\times 0.7}{0.0001\times 0.7+0.999\times 0.01}
+=\dfrac{7}{7+99.99}
+\approx 0.0654.
+\]
+<Div Align="right">【解答終】</Div>
+
+<hr>
+
+
+
+【Further Reading】<br>
+YOUTUBE<A HREF="https://www.youtube.com/watch?v=67FGN9RKmqw&list=WL&index=11l">式変形チャンネル（2020）</A>
+
+<hr>
+
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

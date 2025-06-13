@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+不偏推定量
+</h3>
+
+
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】<br>
+母数$\theta$の推定量$\hat{\theta}(X_1,X_2,\dots , X_n)$の平均値が$\theta$
+に等しいとき，すなわち
+\[
+E(\hat{\theta})=\theta
+\]
+のとき，$\hat{\theta}(X_1,X_2,\dots , X_n)$を$\theta$の不偏推定量という．
+このとき次を示しなさい．<br>
+(1) 標本平均$\bar{X}=\dfrac{1}{n}\sum_{I=1}^nX_i$は母平均$\mu$の不偏推定量である．<br>
+(2) 不偏分散$U^2=\dfrac{1}{n-1}\sum_{I=1}^n(X_i-\bar{X})^2$は
+母分散$\sigma$の不偏推定量である．
+</p>
+
+
+
+
+<Div Align="left">【解答】</Div>
+$E(X_i)=\mu$であることに注意する．
+また$E(aX+bY)=aE(X)+bE(Y)$であることも使う．<br>
+(1) 
+\begin{eqnarray*}
+E(\bar{X})&=&E\Bigl(\dfrac{1}{n}\sum_{I=1}^nX_i\Bigr)\\
+&=&\dfrac{1}{n}\sum_{I=1}^nE(X_i)\\
+&=&\dfrac{1}{n}\cdot n \cdot \mu=\mu.
+\end{eqnarray*}
+(2)
+$\dfrac{1}{n-1}E\Bigl(\sum_{I=1}^n(X_i-\bar{X})^2\Bigr)$において，
+\[
+(X_i-\bar{X})^2=(x_i-\mu)^2-2(X_i-\mu)(\bar{X}-\mu)+(\bar{X}-\mu)^2
+\]
+の各項目について期待値を取る．
+第1項目は分散の定義式になるので，$E[(X_i-\bar{X})^2]={\sigma}^2$となる．
+第2項目は\begin{eqnarray*}
+(X_i-\mu)(\bar{X}-\mu)&=&(X_i-\mu)\times \dfrac{1}{n}\sum_{I=I}^n(X_i-\mu )
+\\
+&=&\dfrac{1}{n}(X_i-\mu)\times\Bigl \{(X_1-\mu)+(X_2-\mu)+\dots 
++(X_n-\mu)\Bigr\}
+\end{eqnarray*}
+$I\neq j$  に対し，$X_i$と$X_j$は独立なので，
+$E[(X_i-\mu )(X_j-\mu )]=0$となる．
+従って
+\[
+E[(X_i-\mu)(\bar{X}-\mu )]=\dfrac{1}{n}E[(X_i-\bar{X})^2]=\dfrac{{\sigma}^2}{n}
+\]
+となる．
+第3項は$E[(X_i-\mu )(X_j-\mu )]=0$となることに注意すると，
+\begin{eqnarray*}
+E[(\bar{X}-\mu)^2]&=&E[\dfrac{1}{n^2}\sum_{I=1}^n(X_i-\mu )^2]\\
+&=&\dfrac{1}{n^2}\sum_{I=1}^nE[(X_i-\mu )^2]\\
+&=&\dfrac{1}{n^2}\sum_{I=1}^n{\sigma}^2=\dfrac{{\sigma}^2}{n}
+\end{eqnarray*}
+である．
+まとめると，
+\[
+E[(X_i-\bar{X})^2]={\sigma}^2-2\dfrac{{\sigma}^2}{n}+\dfrac{{\sigma}^2}{n}
+=\dfrac{n-1}{n}{\sigma}^2.
+\]
+なので
+\[
+E[\sum_{I=1}^n(X_i-\bar{X})^2]=(n-1){\sigma}^2
+\]
+だから，
+\[
+E[\dfrac{1}{n-1}\sum_{I=1}^n(X_i-\bar{X})^2]{\sigma}^2
+\]
+が得られる．
+<Div Align="right">【解答終】</Div>
+
+<hr>
+
+
+
+【Further Reading】<br>
+大屋幸輔『コア・テキスト 統計学』新世社（2003）
+
+<hr>
+
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+分散共分散行列の非負定値性
+</h3>
+
+<p>
+$
+C
+=\begin{pmatrix}
+{\sigma}^2_{1} & {\sigma}_{12} & \cdots & {\sigma}_{12}\\
+{\sigma}_{21} & {\sigma}^2_{2} & \cdots & {\sigma}_{2n}\\
+\vdots & \vdots & \ddots & \vdots \\
+{\sigma}_{n1} & {\sigma}_{n2} & \cdots & {\sigma}^2_{n}
+\end{pmatrix}
+$
+を分散共分散行列，
+$\boldsymbol{x}=
+\begin{pmatrix}
+x_1\\
+x_2\\
+\vdots\\
+x_n\\
+\end{pmatrix}
+$
+を変数ベクトルとする．
+</p>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　$C$は非負正定値であること，
+すなわち，任意の$\boldsymbol{x}$に対し，
+\[
+\boldsymbol{x}^{\prime}C\boldsymbol{x} \geq 0
+\]
+であることを示しなさい．
+</p>
+
+
+
+
+<Div Align="left">【解答】</Div>
+分散共分散行列の出方を，ポートフォリオ理論の立場から復習しよう．次のデータが与えられたとする．
+
+\[
+\begin{array}{ccccc}
+銘柄 & S_1  &  S_2 & \ldots & S_n\\
+第1期 & r_{11}  & r_{12} & \ldots & r_{1n}\\
+第2期 & r_{21}  & r_{22} & \ldots & r_{2n}\\
+\vdots & \vdots & \vdots & & \vdots \\
+第t期 & r_{t1}  & r_{t2} & \ldots & r_{tn}\\  
+平均 & r_{1}  & r_{2} & \ldots & r_{n}\\  
+\end{array}
+\]
+
+これらから，導かれるポートフォリオは
+\[
+\begin{array}{cccccc}
+銘柄 & S_1  &  S_2 & \ldots & S_n&x_1S_1+x_2S_2\cdots x_nS_n\\
+比率& x_1  &  x_2 & \ldots & x_n& x_1+x_2+\cdots +x_n=1\\
+第1期 & r_{11}x_1  & r_{12}x_2 & \ldots & r_{1n}x_n &r_{11}x_1+ r_{12}x_2+\cdots  r_{1n}x_n\\
+第2期 & r_{21}x_1  & r_{22}x_2 & \ldots & r_{2n}x_n  &r_{21}x_1+ r_{22}x_2+\cdots  r_{2n}x_n\\ \\
+\vdots & \vdots & \vdots & & \vdots &\vdots \\
+第t期 & r_{t1}x_1  & r_{t2}x_2 & \ldots & r_{tn}x_n &r_{t1}x_1+ r_{t2}x_2+\cdots  r_{tn}x_n\\\hline
+平均& r_1x_1 & r_2x_2 & \ldots & r_nx_n&r
+\end{array}
+\]
+であるので，
+
+\[
+\begin{array}{ccccc}
+銘柄 & S_1の偏差  &  S_2の偏差 & \ldots & S_nの偏差\\
+第1期 & r_{11}x_1-r_1x_1  & r_{12}x_2-r_1x_2 & \ldots & r_{1n}x_n-r_1x_n\\
+第2期 & r_{21}x_1-r_1x_1  & r_{22}x_2-r_1x_2 & \ldots & r_{2n}x_n-r_1x_n \\
+\vdots & \vdots & \vdots & & \vdots \\
+第t期 & r_{t1}x_1-r_1x_1  & r_{t2}x_2-r_1x_2 & \ldots & r_{tn}x_n-r_1x_n\\  
+\end{array}
+\]
+
+を得る．従って，
+
+
+
+\begin{eqnarray*}
+第i期のポートフォリオの偏差&=&\sum_{j=1}^{n}(r_{ij}x_n-r_1x_n)\\
+0\leq 分散&=&(偏差)^2の平均\\
+&=&\dfrac{1}{t}\sum_{i=1}^{t}\Bigl(\sum_{j=1}^{n}(r_{ij}-r_j)x_j\Bigr)^2\\
+&=&\dfrac{1}{t}\sum_{i=1}^{t}\sum_{k=1}^{n}\sum_{j=1}^{n}(r_{ij}-r_j)(r_{ik}-r_k)x_jx_k\\
+&=&\sum_{k=1}^{n}\sum_{j=1}^{n}\Bigl[\sum_{i=1}^{t}\dfrac{1}{t}(r_{ij}-r_j)(r_{ik}-r_k)\Bigr]x_jx_k\\
+&=&\sum_{k=1}^{n}\sum_{j=1}^{n}{\sigma}_{jk}x_jx_k
+\end{eqnarray*}
+
+ここで，$\displaystyle {\sigma}_{jk}=\sum_{i=1}^{t}\dfrac{1}{t}(r_{ij}-r_j)(r_{ik}-r_k)$（共分散という）．特に{$\sigma_{jj}$}を分散といい，ふつうは${\sigma}_j^2$と書くので，主張が示された．
+<Div Align="right">【解答終】</Div>
+
+<hr>
+
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

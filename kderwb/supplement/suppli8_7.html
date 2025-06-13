@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+固有多項式の係数：トレースと行列式
+</h3>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　
+正方行列
+\[
+A=
+\begin{pmatrix}
+a_{11}&a_{12}&\dots & a_{1n} \\
+a_{21}&a_{22}& \dots &a_{2n} \\
+\vdots & \vdots &\ddots & \vdots\\
+a_{n1} &a_{n2}&\dots &a_{nn}\\
+\end{pmatrix}
+\]
+について，その固有多項式
+\[
+\det ({\lambda}E-A)={\lambda}^n+c_1{\lambda}^{n-1}+\dots +c_{n-1}{\lambda}+c_n
+\]
+に対し，
+\begin{eqnarray*}
+c_1&=&-\operatorname{tr}A\\
+c_n&=&(-1)^n\operatorname{det}A
+\end{eqnarray*}
+
+であり，固有値${\lambda}_1,\dots ,{\lambda}_n$に対し，
+\begin{eqnarray*}
+\operatorname{tr}A&=&{\lambda}_1+\dots +{\lambda}_n\\
+\operatorname{det}A&=&{\lambda}_1\cdots {\lambda}_n
+\end{eqnarray*}
+となることを示せ．
+</p>
+
+<Div Align="left">【解答】</Div>
+\[
+\det ({\lambda}E-A)
+=\begin{vmatrix}
+{\lambda}-a_{11}&a-_{12}&\dots & -a_{1n} \\
+-a_{21}&{\lambda}-a_{22}& \dots &-a_{2n} \\
+\vdots & \vdots &\ddots & \vdots\\
+-a_{n1} &-a_{n2}&\dots &{\lambda}-a_{nn}\\
+\end{vmatrix}
+\]
+で${\lambda}^{n-1}$の項が出るのは，対角成分の積
+$({\lambda}-a_{11})({\lambda}-a_{22})\cdots ({\lambda}-a_{nn})$
+であり，その${\lambda}^{n-1}$の項は
+$(-a_{11})({\lambda}-a_{22})\cdots ({\lambda}-a_{nn}),
+({\lambda}-a_{11})(-a_{22})\cdots ({\lambda}-a_{nn}),\dots ,
+({\lambda}-a_{11})({\lambda}-a_{22})\cdots (-a_{nn})$
+から構成されるので，$-(a_{11}+a_{22}+\cdots +a_{nn}=-\operatorname{tr}A$となる．
+\[
+c_n=\det (0\cdot E-A)=(-1)^n\det A
+\]
+である．
+
+一方，固有多項式は，
+\[
+\det ({\lambda}E-A)=({\lambda}-{\lambda}_1)({\lambda}-{\lambda}_2)\cdots ({\lambda}-{\lambda}_n)
+\]
+なので，
+\begin{eqnarray*}
+\operatorname{tr}A&=&{\lambda}_1+\dots +{\lambda}_n\\
+\operatorname{det}A&=&{\lambda}_1\cdots {\lambda}_n
+\end{eqnarray*}
+となる．
+<Div Align="right">【解答終】</Div>
+
+
+<hr>
+<Div Align="left">【Further Reading】</Div>
+G．ストラング『線形代数とその応用』産業図書（1978）
+
+<hr>
+
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

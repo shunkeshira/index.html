@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+ベイズの定理とシグナル：『経出る』練習問題9.1改題
+</h3>
+
+
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】<br>
+　ある企業で社員の募集を行う．応募者のうち，生産性の高い人材は$p$，
+生産性の低い人材は$1-p$である．生産性の高い人が資格を持っているのは$q_1$，
+生産性の低い人が資格を持っているのは$q_2$であるとしよう．<br>
+1.　資格を持っている人を採用したとき，その人が生産性の高い人材である確率を求めなさい．<br>
+2.　$q_1 > q_2$ならば，資格を持っている人を採用すると，無作為に採用する場合に比べて，生産性の高い人材を採用できる確率が高くなることを示しなさい．
+</p>
+
+
+
+
+<Div Align="left">【解答】</Div>
+<ol>
+<li>$E_1$を生産性が高い応募者の事象，$E_2$を生産性が低い応募者の事象とする．$P(E_1)=p, P(E_2)=1-p$となる．事象$A$を資格を持っている応募者の事象とすると，$P(A\mid E_1)=q_1, P(A\mid E_2)=q_2$となる．
+ベイズの定理から，
+\begin{align}
+P(E_1 \mid A)&=\dfrac{P(E_1)P(A\mid E_1)}{P(E_1)P(A\mid E_1)+P(E_2)P(A\mid E_2)}\\
+&=\dfrac{pq_1}{pq_1+(1-p)q_2}.
+\end{align}
+
+</li><br>
+
+<li>$q_1 > q_2$なので，$pq_1+(1-p)q_2 < pq_1+(1-p)q_1=q_1$
+従って，
+\begin{align}
+P(E_1 \mid A)
+&=\dfrac{pq_1}{pq_1+(1-p)q_2}\\
+&>\frac{pq_1}{q_1}=p=P(E_1).
+\end{align}
+</li>
+</ol>
+<Div Align="right">【解答終】</Div>
+
+<hr>
+<Div Align="left">【メモ】</Div>
+　資格というシグナル（追加情報）を利用することで，確率をupさせることができることが分かる．
+<Div Align="right">【メモ終】</Div>
+
+【Further Reading】<br>
+小島寛之『使える！確率的思考』ちくま新書（2005）
+
+<hr>
+
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+

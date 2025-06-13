@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+$3$次の一対比較行列の固有多項式
+</h3>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　
+$3$次の一対比較行列
+\[
+A=
+\begin{pmatrix}
+1&a_{12}&a_{13} \\
+\frac{1}{a_{12}}&1&a_{23} \\
+\frac{1}{a_{13}} &\frac{1}{a_{23}} &1 \\
+\end{pmatrix}
+\]
+に対して，その固有多項式$\det ({\lambda}E-A)$を求めなさい．
+</p>
+
+
+
+
+<Div Align="left">【解答】</Div>
+$3$次の行列，
+
+\[
+A=
+\begin{pmatrix}
+a_{11}&a_{12}&a_{13} \\
+{a_{21}}&a_{22}&a_{23}\\
+{a_{31}} &{a_{32}} &a_{33}\\
+\end{pmatrix}
+\]
+
+にサラスの公式を使うと，その固有多項式は
+\begin{eqnarray*}
+P_A({\lambda})&=&\det ({\lambda}E-A)\\
+&=&\left|
+\begin{array}{ccc}
+{\lambda}-a_{11}&-a_{12}&-a_{13} \\
+-a_{21}&{\lambda}-a_{22}&-a_{23}\\
+-a_{31}&-a_{32} &{\lambda}-a_{33}\ \\
+\end{array}
+\right|\\
+&=&{\lambda}^3-(a_{11}+a_{22}+a_{33}){\lambda}^2+
+\bigl((a_{11}a_{22}+a_{22}a_{33}+a_{11}a_{33})-
+(a_{12}a_{21}+a_{23}a_{32}+a_{13}a_{31})\bigr){\lambda}\\
+&+&(-a_{11})(-a_{22})(-a_{33})
++(-a_{12})(-a_{23})(-a_{31})
++(-a_{13})(-a_{21})(-a_{32})\\
+&-&(-a_{11})(-a_{23})(-a_{32})-(-a_{12})(-a_{21})(-a_{33})
+-(-a_{13})(-a_{22})(-a_{31})
+\\
+\end{eqnarray*}
+
+である．従って，AHPの一対比較行列に対しては，
+
+\begin{eqnarray*}
+P_A({\lambda})
+&=&{\lambda}^3-3{\lambda}^2-\det A
+\end{eqnarray*}
+
+がいえる．
+
+
+<Div Align="right">【解答終】</Div>
+<hr>
+<Div Align="left">【メモ】</Div>
+相加平均と相乗平均の大小関係を使うと，
+
+\begin{eqnarray*}
+\det A&=&\left|
+\begin{array}{ccc}
+1&a_{12}&a_{13} \\
+\frac{1}{a_{12}}&1&a_{23} \\
+\frac{1}{a_{13}} &\frac{1}{a_{23}} &1 \ \\
+\end{array}
+\right|\\
+&=&\frac{a_{12}a_{23}}{a_{13}}+\frac{a_{13}}{a_{12}a_{23}}-2\geq 0.
+\end{eqnarray*}
+
+$P_A({\lambda})$を微分すると，
+$
+P_A^{\prime}({\lambda})=3{\lambda}(\lambda -2)
+$
+なので，$\lambda =0, 2$で極値をとる．まとめると， 縦軸切片は$-\det A\leq 0$で，グラフの概形は下図のようになる．
+
+<center>
+<IMG SRC="characteristic_polynomial.png" width=200>
+</center>
+
+<hr>
+<Div Align="left">【Further Reading】</Div>
+小畑・白石「<a href="http://hdl.handle.net/10559/16817">AHPにおける3次と4次の一対比較行列に関する考察</a>」大分大学理工学部研究報告第68号，pp.7-12（2021）
+
+<hr>
+
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+
