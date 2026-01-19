@@ -165,7 +165,7 @@ MathJax.Hub.Config({
 <hr>
 
 <h3>
-間接税下の効用最大化
+間接税・直接税下の効用最大化
 </h3>
 
 
@@ -261,7 +261,7 @@ x_1^{\alpha}x_2^{1-{\alpha}}+{\lambda}[m-({(p_1+t)x_1+p_2x_2})]
 \]
 </LI><br>
 <LI>
-あとは工夫して解く．$(1)\div(2)$ から，
+あとは工夫して解く．あとは工夫して解く．$(4)\div(5)$ から，
 \[
 \dfrac{p_1+t}{p_2}=\dfrac{{\alpha}x_1^{{\alpha}-1}x_2^{1-{\alpha}}}{(1-{\alpha})x_1^{{\alpha}}x_2^{-{\alpha}}}
 \]
@@ -273,7 +273,7 @@ x_2=\Biggl[\dfrac{(1-{\alpha})(p_1+t)}{{\alpha}p_2}\Biggr]x_1
 \]
 
 
-これを$(3)$に代入すると
+これを$(6)$に代入すると
 
 \[
 m-(p_1+t)x_1-p_2\Biggl[\dfrac{(1-{\alpha})(p_1+t)}{{\alpha}p_2}\Biggr]x_1
@@ -295,6 +295,72 @@ x_2&=&\dfrac{(1-{\alpha})m}{p_2}
 <hr>
 <Div Align="left">【メモ】</Div>
 間接税により$x_1$財の購入量は減るが，$x_2$財の購入量は変化しない．
+<hr>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　間接税が加えられた場合と同額の直接税を課した場合の次の消費者の最大化問題を解きなさい．．
+\begin{align}
+\max_{x_1,x_2}& 　u(x,y)=x_1^{\alpha}x_2^{1-{\alpha}}\\[2ex]
+s.t.&　p_1x_1+p_2x_2=m-t\dfrac{{\alpha}m}{p_1+t}
+\end{align}
+</p>
+
+<Div Align="left">【解答】</Div>
+<OL>
+<LI>ラグランジュ関数を作ると，
+\[
+{\cal L}(x_1,x_2,\lambda )=
+x_1^{\alpha}x_2^{1-{\alpha}}+{\lambda}[m-t\dfrac{{\alpha}m}{p_1+t}-(p_1x_1+p_2x_2)]
+\]
+</LI><br>
+<LI>
+各変数で偏微分してイコールゼロとおくと，
+\[
+\left\{
+\begin{align}
+0=&{\alpha}x_1^{{\alpha}-1}x_2^{1-{\alpha}}-{\lambda}p_1
+\qquad (7)\\[2ex]
+0=&(1-{\alpha})x_1^{{\alpha}}x_2^{-{\alpha}}-{\lambda}p_2
+\qquad (8)\\[2ex]
+0=&m-t\dfrac{{\alpha}m}{p_1+t}-(p_1x_1+p_2x_2)\qquad (9)
+\end{align}
+\right.
+\]
+</LI><br>
+<LI>
+あとは工夫して解く．$(7)\div(8)$ から，
+\[
+\dfrac{p_1}{p_2}=\dfrac{{\alpha}x_1^{{\alpha}-1}x_2^{1-{\alpha}}}{(1-{\alpha})x_1^{{\alpha}}x_2^{-{\alpha}}}
+\]
+\[
+\dfrac{p_1}{p_2}=\dfrac{{\alpha}x_2}{(1-{\alpha})x_1}
+\]
+\[
+x_2=\Biggl[\dfrac{(1-{\alpha})p_1}{{\alpha}p_2}\Biggr]x_1
+\]
+
+
+これを$(9)$に代入すると
+
+\[
+m-t\dfrac{{\alpha}m}{p_1+t}-p_1x_1-p_2\Biggl[\dfrac{(1-{\alpha})p_1}{{\alpha}p_2}\Biggr]x_1
+=m-t\dfrac{{\alpha}m}{p_1+t}-p_1\Biggl[1+\dfrac{(1-{\alpha})}{{\alpha}}\Biggr]x_1=0
+\]
+
+より，
+\begin{eqnarray*}
+x_1&=&\dfrac{{\alpha}m}{p_1+t}\dfrac{p_1+t(1-{\alpha})}{p_1} > \dfrac{{\alpha}m}{p_1+t}\\
+x_2&=&\dfrac{(1-{\alpha})m}{p_2(p_1+t)}(p_1+t(1-{\alpha}))
+=\dfrac{(1-{\alpha})m}{p_2}-\dfrac{(1-{\alpha})mt{\alpha}}{p_2(p_1+t)} < \dfrac{(1-{\alpha})m}{p_2}
+\end{eqnarray*}
+となる．
+</LI><br>
+</OL>
+
+<Div Align="right">【解答終】</Div>
+
+<hr>
+<Div Align="left">【メモ】</Div>
+直接税に変更することにより$x_1$財の購入量が増え，$x_2$財の購入量は減る．
 <hr>
 
 <Div Align="left">【Further Reading】</Div>
