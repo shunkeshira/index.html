@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+準線形の効用関数と上級財と中級財
+</h3>
+
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】消費者の最大化問題を解くことで消費関数を求めなさい．
+\begin{align}
+\max_{x_1,x_2}& 　u(x_1,x_2)=\sqrt{x_1}+x_2\\[2ex]
+s.t.&　p_1x_1+p_2x_2=I
+\end{align}
+</p>
+
+<Div Align="left">【解答】</Div>
+<OL>
+<LI>ラグランジュ関数を作ると，
+\[
+{\cal L}(x_1,x_2,\lambda )=
+\sqrt{x_1}+x_2+{\lambda}(I-p_1x_1-p_2x_2)
+\]
+</LI><br>
+<LI>
+各変数で偏微分してイコールゼロとおくと，
+\[
+\left\{
+\begin{align}
+0=&\dfrac{1}{2\sqrt{x_1}}-{\lambda}p_1
+\qquad (1)\\[2ex]
+0=&1-{\lambda}p_2
+\qquad (2)\\[2ex]
+0=&I-p_1x_1-p_2x_2\qquad (3)
+\end{align}
+\right.
+\]
+</LI><br>
+<LI>
+あとは工夫して解く．$(1)$と$(2)$ から$\lambda$を消去すると，
+
+\[
+ \dfrac{p_1}{p_2}=\dfrac{1}{2\sqrt{x_1}}
+\]
+
+従って
+
+\[
+x_1=\dfrac{p_2^2}{4p_1^2}
+\]
+
+
+これを$(3)$に代入すると
+
+\[
+\dfrac{p_2^2}{4p_1}+p_2x_2=I
+\]
+
+より，
+\[
+x_2=\dfrac{I}{p_2}-\dfrac{p_2}{4p_1}
+\]
+となる．
+</LI><br>
+$x_1,x_2$を$I$で偏微分すると，
+\begin{align*}
+\dfrac{\partial x_1}{\partial I}&=0\\
+\dfrac{\partial x_2}{\partial I}&=\dfrac{1}{p_2}>0
+\end{align*}
+</OL>
+なので，所得$I$の増加に応じて需要量が変化しない$x_1$財は中間財，需要が増える$x_2$財は上級財であることがわかる．
+
+<Div Align="right">【解答終】</Div>
+
+
+
+
+<Div Align="left">【Further Reading】</Div>
+遠山智久『大学生のミクロ経済学』東京図書（2008）
+
+<hr>
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+
