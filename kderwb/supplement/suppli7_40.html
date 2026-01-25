@@ -172,7 +172,7 @@ Stone–Geary型効用関数と下級財
 <hr>
 <p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　ラグランジュの未定乗数法を使って効用最大化問題
 \begin{align}
-\max_{x,y}& (x-\bar{x})^{\alpha}(\bar{y}-y)^{\beta}\\[2ex]
+\max_{x,y}& \ u(x,y)={\alpha}\log_{}{(x-\bar{x})}-{\beta}\log_{}{(\bar{y}-y)}\\[2ex]
 s.t.&　px+qy=I
 \end{align}
 を解きなさい．<br>
@@ -180,23 +180,21 @@ s.t.&　px+qy=I
 </p>
 
 <Div Align="left">【解答】</Div>
-$X=x-\bar{x}$, $Y=y-\bar{y}$とすると問題は,
+$X=x-\bar{x}$, $Y=\bar{y}-y$とすると問題は, $x=X+\bar{x}$, $y=-Y+\bar{y}$なので，
 \begin{align}
-\max_{x,y}& X^{\alpha}Y^{\beta}\\[2ex]
+\max_{x,y}& {\alpha}\log_{}{X}-{\beta}\log_{}{Y}\\[2ex]
 s.t.&　pX-qY=I-p\bar{x}-q\bar{y}
 \end{align}
 となる．ラグランジュ関数を作ると，
 \[
-{\cal L}(x,m,\lambda )=X^{\alpha}Y^{\beta}+\lambda 
+{\cal L}(x,m,\lambda )={\alpha}\log_{}{X}-{\beta}\log_{}{Y}+\lambda 
 \left(I-p\bar{x}-q\bar{y}-pX+qY\right)．
 \]
 各変数で偏微分してイコールゼロとおくと，
 \begin{align}
-0=&\dfrac{\partial \cal L}{\partial x}={\alpha}X^{{\alpha}-1}Y^{\beta}
--\lambda p
+0=&\dfrac{\partial \cal L}{\partial x}=\dfrac{{\alpha}}{X}-\lambda p
 \tag{1}\\[2ex]
-0=&\dfrac{\partial \cal L}{\partial m}={\beta}X^{{\alpha}}Y^{{\beta}-1}
--\lambda q
+0=&\dfrac{\partial \cal L}{\partial m}=-\dfrac{{\beta}}{Y}+\lambda q
 \tag{2}\\[2ex]
 0=&I-p\bar{x}-q\bar{y}-pX+qY\tag{3}
 \end{align}
@@ -231,7 +229,8 @@ y=\dfrac{-{\beta}I+p{\beta}\bar{x}+q{\alpha}\bar{y}}{q({\alpha}-{\beta})}
 
 <hr>
 <Div Align="left">【メモ】</Div>
-効用関数としては備えるべき条件を備えてないかもしれない．
+効用関数としては備えるべき条件を備えてないかもしれない．単にラグランジュ乗数法で解いてみただけになっている恐れはある．
+また効用関数が$u(x,y)={\alpha}\log_{}{(x-\bar{x})}+{\beta}\log_{}{(\bar{y}-y)}$であると下級財は生成しない．
 
 <hr>
 
