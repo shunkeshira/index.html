@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+間接効用関数の性質
+</h3>
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　効用関数$u(x)$，価格$p$，予算$m$に対し，
+次の問題を解いて得られる関数を，間接効用関数という．
+\begin{align*}
+v(p,m)=\max_{x}& u(x)\\[2ex]
+s.t.&　px=m
+\end{align*}
+この時次を示しなさい．<br>
+(1)　$v(p,m)$は$p$に関して単調非増加である．同様に$m$に関して単調非減少である．<br>
+(2)　$v(p,m)$は$(p,m)$について$0$次斉次である．<br>
+(3)　$v(p,m)$は$p$に関して準凸関数である．<br>
+</p>
+
+<Div Align="left">【解答】</Div>
+(1)　$B(p)=\{x \mid px\leq m\}$, $B(p^{\prime})=\{x \mid p^{\prime}x\leq m\}$とし，$p^{\prime}\geq p$とする．
+この時，$p^{\prime}x \geq px$なので，$B(p^{\prime})\subset B(p)$である．
+従って$v(p^{\prime},m)=\max_{x\in B(p^{\prime})}u(x) \leq v(p,m)=\max_{x\in B(p)}u(x)$となる．<br>
+$B(m)=\{x \mid px\leq m\}$, $B(m^{\prime})=\{x \mid px\leq m^{\prime}\}$とし，$m^{\prime}\geq m$とする．
+この時，$B(m^{\prime})\supset B(m)$である．
+従って$v(p,m^{\prime})=\max_{x\in B(m^{\prime})}u(x) \geq v(p,m)=\max_{x\in B(m)}u(x)$となる．<br>
+(2) $B(p,m)=\{x \mid px\leq m\}$に対し，価格と予算を一斉に$k$倍すると$B(kp,km)=B(p,m)$なので，
+$v(kp,km)=\max_{x\in B(kp, km)}u(x) = v(p,m)=\max_{x\in B(p,m)}u(x)$となる．<br>
+(3)　$v(p,m)\leq t, v(p^{\prime},m)\leq t, p^{\prime\prime}={\lambda}p+(1-{\lambda})p^{\prime}$とする．
+示すべきは$v(p^{\prime\prime},m)\leq t$である．<br>
+$B(p)=\{x \mid px\leq m\}$, $B(p^{\prime})=\{x \mid p^{\prime}x\leq m\}$,  $B(p^{\prime\prime})=\{x \mid p^{\prime\prime}x\leq m\}$とすると，
+$B(p)\cup B(p^{\prime})\supset B(p^{\prime\prime})$が言える．
+もしそうでないとすると，${\lambda}px+(1-{\lambda})p^{\prime}x\leq m$だが，$px > m$, $p^{\prime}x>m$となる$x$が存在することになる．
+従って，${\lambda}px+(1-{\lambda})p^{\prime}x > m$	となり，${\lambda}px+(1-{\lambda})p^{\prime}x\leq m$に反する．従って
+\begin{align*}
+v(p^{\prime\prime},m)&=\max_{x\in B(p^{\prime\prime})}u(x)\\
+&\leq \max_{x\in B(p)\cup B(p^{\prime})}\\
+&=\max\{\max_{x\in B(p)}u(x), \max_{x\in B(p^{\prime})}u(x)\}\leq t.
+\end{align*}			
+<Div Align="right">【解答終】</Div>
+
+<hr>
+<Div Align="left">【Further Reading】</Div>
+Hal R. Varian ‘Microeconomic Analysis; Third Edition,’ W.W.Norton & Company (1992)
+
+<hr>
+
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+
