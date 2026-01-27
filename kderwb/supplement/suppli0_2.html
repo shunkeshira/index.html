@@ -165,41 +165,38 @@ MathJax.Hub.Config({
 <hr>
 
 <h3>
-Leonchef型効用関数
+$\min (x_1,x_2)=k$のグラフ
 </h3>
 
 
-<hr>
-<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　効用関数$u(x,y)=\min (x,y)$，価格$p,q$，予算$I$に対し，
-次のふたつの問題を考える．
-\begin{align*}
-v(p,q,I)=\max_{x,y}& \ u(x,y)\\[2ex]
-s.t.&　px+qy=I
-\end{align*}
-を解き，間接効用関数$v(p,q,I)$を求めなさい．<br>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】<br>
+次の効用関数の等高線を書きなさい．<br>
+\[
+u(x_1,x_2)=\min (x_1,x_2)
+\]
 </p>
 
+
+
+
 <Div Align="left">【解答】</Div>
-$x>y$とすると，$u(x,y)=y$．予算制約式より，$y=\dfrac{I-px}{q}$だが，$x$より少し大きい$x^{\prime} > x$に対し，
-$x^{\prime} = y^{\prime}＝\dfrac{I-px^{\prime}}{q}$で，
-$u(x^{\prime},y^{\prime})=\dfrac{I-px^{\prime}}{q} > u(x,y)=\dfrac{I-px}{q} $なので，最適ではない．
-従って最適解は$x\leq y$を満たさなければならない．同様に$x\geq y$を満たさなければならないので，最適解では$x=y$.<br>
-$x=y=k$とおくと，$pk+qk=I$より，$k=\dfrac{I}{p+q}$．<br>
-従って，
-\[
-v(p,q,I)=\dfrac{I}{p+q}
-\]
-となる．<br>
+
+$x_1>x_2$のとき$\min (x_1,x_2)=x_2$,
+$x_1< x_2$のとき$\min (x_1,x_2)=x_1$なので下図の通りとなる．<br>
 
 <center>
-<IMG SRC="maxmin(x,y).png" height=400>
+<IMG SRC="min(x,y).png" height=400>
 </center>
+
+
+
+
 <Div Align="right">【解答終】</Div>
+
 
 <hr>
 <Div Align="left">【Further Reading】</Div>
 遠山智久『大学生のミクロ経済学』東京図書（2008）
-
 <hr>
 
 
