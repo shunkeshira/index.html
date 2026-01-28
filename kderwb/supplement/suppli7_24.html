@@ -172,7 +172,7 @@ MathJax.Hub.Config({
 
 <hr>
 <p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　
-関数 $f:{\mathbb R}^n \to {\mathbb R}$ に対し，次は同値であることを示しなさい．<br>
+微分可能な関数 $f:{\mathbb R}^n \to {\mathbb R}$ に対し，次は同値であることを示しなさい．<br>
 (1) $f(x)$は凸関数<br>
 (2) $f(y) \geq f(x) + \langle \nabla f(x), y-x \rangle$ for all $x,y$
 </p>
@@ -199,10 +199,44 @@ $y_1, y_2$と${\alpha}\in (0,1)$に対し，$x={\alpha}y_1+(1-{\alpha})y_2$と�
 
 <Div Align="right">【解答終】</Div>
 
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　
+$2$階連続微分可能な関数 $f:{\mathbb R}^n \to {\mathbb R}$ に対し，次は同値であることを示しなさい．<br>
+(1) $f(x)$は凸関数<br>
+(3) ${\nabla}^2 f(x)$ は任意の$x$に対して半正定値
+</p>
+
+
+<Div Align="left">【解答】</Div>
+(3) $\Rightarrow$ (1)<br>
+Taylorの定理から，任意の$x,y$に対して，$\exists y\in (0,1)$が存在して，
+\[
+f(y)-f(x)=\langle \nabla f(x), y-x \rangle 
++\dfrac{1}{2}\langle {\nabla}^2 f(x+r(y-x))(y-x), y-x\rangle \tag{a}
+\]
+ ${\nabla}^2 f(x)$ は任意の$x$に対して半正定値なので，
+\[
+f(y)-f(x)\geq \langle \nabla f(x), y-x \rangle
+\]
+となり，(2)が成り立っているので，凸関数である．<br>
+(1) $\Rightarrow$ (3)<br>
+対偶を示す．
+ ${\nabla}^2 f(x)$ がある$x$に対して半正定値でないとすれば，
+\[
+\langle {\nabla}^2 f(x)d, d\rangle < 0
+\]
+となる$d\neq 0$が存在する．十分小さい${\alpha}>0$に対して，$y=x+{\alpha}d$とおくと，
+$y-x={\alpha}d$であることより， ${\nabla}^2 f(x)$の連続性から，
+\[
+\langle {\nabla}^2 f(x+r(y-x))(y-x), y-x\rangle={\alpha}^2\langle {\nabla}^2 f(x+r(y-x))d, d\rangle <0
+\]
+となるが(a)式より，(2)が成り立たないことがいえるので，$f$は凸関数ではない．
+<Div Align="right">【解答終】</Div>
+
 <hr>
 
 <Div Align="left">【Further Reading】</Div>
 J.-B. Hiriart-Urruty, C. Lamaréchal, "Convex Analysis and Minimization Algorithms I", Springer (1993)<br>
+福島雅夫,『非線形最適化の基礎』朝倉書店（2001）
 <hr>
 <A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
 

@@ -177,6 +177,7 @@ v(p,q,I)=\max_{x,y}& \ u(x,y)\\[2ex]
 s.t.&　px+qy=I
 \end{align*}
 を解き，間接効用関数$v(p,q,I)$を求めなさい．<br>
+また$v(p,q,I)$は$(p,q)$について凸関数であることを示しなさい．
 </p>
 
 <Div Align="left">【解答】</Div>
@@ -193,9 +194,26 @@ v(p,q,I)=\dfrac{I}{p+q}
 
 <center>
 <IMG SRC="maxmin(x,y).png" height=400>
-</center>
-<Div Align="right">【解答終】</Div>
+</center><br>
 
+<Div Align="right">【解答終】</Div>
+$v(p,q,I)=\dfrac{I}{p+q}$の$2$階微分を求める．
+\begin{align*}
+\dfrac{\partial v}{\partial p}&=\dfrac{-I}{(p+q)^2}\\
+\dfrac{\partial v}{\partial q}&=\dfrac{-I}{(p+q)^2}\\
+\dfrac{{\partial}^2 v}{\partial p^2}&=\dfrac{2I}{(p+q)^3}\\
+\dfrac{{\partial}^2 v}{\partial p \partial q}&=\dfrac{{\partial}^2 v}{\partial q \partial p}=\dfrac{2I}{(p+q)^3}\\
+\dfrac{{\partial}^2 v}{\partial q^2}&=\dfrac{2I}{(p+q)^3}
+\end{align*}
+なので，任意の$d\neq 0$に対し，
+\[
+\begin{pmatrix}d & d\end{pmatrix}
+\begin{pmatrix}\dfrac{2I}{(p+q)^3} &\dfrac{2I}{(p+q)^3}\\
+\dfrac{2I}{(p+q)^3} &\dfrac{2I}{(p+q)^3}\end{pmatrix}
+\begin{pmatrix}d\\ d\end{pmatrix}
+=\dfrac{4I}{(p+q)^3}d^2>0
+\]
+となり，${\nabla}^2 v$は正定値．従って凸関数（<A HREF="./suppli7_24.html">参考</A>）．
 <hr>
 <Div Align="left">【Further Reading】</Div>
 遠山智久『弱点克服 大学生のミクロ経済学』東京図書（2008）
