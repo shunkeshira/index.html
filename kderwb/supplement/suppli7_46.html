@@ -165,61 +165,68 @@ MathJax.Hub.Config({
 <hr>
 
 <h3>
-Leonchef型効用関数
+間接効用関数が必ずしも凸にならない効用関数
 </h3>
 
 
 <hr>
-<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　効用関数$u(x,y)=\min (x,y)$，価格$p,q$，予算$I$に対し，
-次のふたつの問題を考える．
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　効用関数$u(x,y)=\min (x,1)+y$，価格$p,q$，予算$I=1$に対し，
+次の問題を考える．
 \begin{align*}
 v(p,q,I)=\max_{x,y}& \ u(x,y)\\[2ex]
-s.t.&　px+qy=I
+s.t.&　px+qy=1
 \end{align*}
-を解き，間接効用関数$v(p,q,I)$を求めなさい．<br>
-また$v(p,q,I)$は$(p,q)$について凸関数であることを示しなさい．
+間接効用関数$v(p,q,I)$を求めなさい．<br>
+また$v(p,q,I)$は$(p,q)$について凸関数でないことを示しなさい．
 </p>
 
 <Div Align="left">【解答】</Div>
-$x>y$とすると，$u(x,y)=y$．予算制約式より，$y=\dfrac{I-px}{q}$だが，$x$より少し大きい$x^{\prime} > x$に対し，
-$x^{\prime} = y^{\prime}＝\dfrac{I-px^{\prime}}{q}$で，
-$u(x^{\prime},y^{\prime})=\dfrac{I-px^{\prime}}{q} > u(x,y)=\dfrac{I-px}{q} $なので，最適ではない．
-従って最適解は$x\leq y$を満たさなければならない．同様に$x\geq y$を満たさなければならないので，最適解では$x=y$.<br>
-$x=y=k$とおくと，$pk+qk=I$より，$k=\dfrac{I}{p+q}$．<br>
-従って，
+$x<1 $では，$u(x,y)=x+y$, $x\geq 1$では$u(x,y)=1+y$となる．
+従って等高線$u(x,y)=k$は$x\leq 1$では$x+y=k$，$x\geq 1$では$1+y=k$となる．<br>
+$px+qy=1$と$x+y=k$の傾きを比較すると，$\dfrac{-p}{q}>-1$，すなわち$q>p$のとき，
+効用関数の等高線と予算線は$(1,k-1)$で接することになり，ここで効用最大となる．
+従って，予算制約から
 \[
-v(p,q,I)=\dfrac{I}{p+q}
+p\cdot 1 +q(k-1)=1
+\]
+なので
+\[
+k=1+\dfrac{1-p}{q}
+\]
+\[
+u(1,k-1)=1+(1+\dfrac{1-p}{q})-1=1+\dfrac{1-p}{q})
+\]
+なので
+\[
+v(p,q,I)=1+\dfrac{1-p}{q}
 \]
 となる．<br>
 
 <center>
-<IMG SRC="maxmin(x,y).png" height=400>
+<IMG SRC="maxmin(x,1).png" height=400>
 </center><br>
 
-
-$v(p,q,I)=\dfrac{I}{p+q}$の$2$階微分を求める．
-\begin{align*}
-\dfrac{\partial v}{\partial p}&=\dfrac{-I}{(p+q)^2}\\
-\dfrac{\partial v}{\partial q}&=\dfrac{-I}{(p+q)^2}\\
-\dfrac{{\partial}^2 v}{\partial p^2}&=\dfrac{2I}{(p+q)^3}\\
-\dfrac{{\partial}^2 v}{\partial p \partial q}&=\dfrac{{\partial}^2 v}{\partial q \partial p}=\dfrac{2I}{(p+q)^3}\\
-\dfrac{{\partial}^2 v}{\partial q^2}&=\dfrac{2I}{(p+q)^3}
-\end{align*}
-なので，任意の$d\neq 0$に対し，
+$(p,q)=(\dfrac{1}{4},1), (p^{\prime}, q^{\prime})=(\dfrac{1}{2}, \dfrac{3}{4})$とする，
 \[
-\begin{pmatrix}d & d\end{pmatrix}
-\begin{pmatrix}\dfrac{2I}{(p+q)^3} &\dfrac{2I}{(p+q)^3}\\
-\dfrac{2I}{(p+q)^3} &\dfrac{2I}{(p+q)^3}\end{pmatrix}
-\begin{pmatrix}d\\ d\end{pmatrix}
-=\dfrac{4I}{(p+q)^3}d^2>0
+\dfrac{1}{2}(p,q)+\dfrac{1}{2}(p^{\prime},q^{\prime})=(\dfrac{3}{8}, \dfrac{7}{8})
 \]
-となり，${\nabla}^2 v$は正定値．従って凸関数（<A HREF="./suppli7_24.html">参考</A>）．
+だが，
+\begin{align*}
+v(\dfrac{1}{4},1,1)=\dfrac{7}{4}\\
+v(\dfrac{1}{2}, \dfrac{3}{4},1)=\dfrac{5}{3}\\
+v(\dfrac{3}{8}, \dfrac{7}{8},1)=\dfrac{12}{7}\\
+\end{align*}
+となり，
+\[
+\dfrac{1}{2}\cdot\dfrac{7}{4}+\dfrac{1}{2}\cdot\dfrac{5}{3}=\dfrac{41}{24}=\dfrac{287}{168}  < \dfrac{12}{7}=\dfrac{288}{168} 
+\]
+なので凸性は崩れる．
 
 <Div Align="right">【解答終】</Div>
 <hr>
-<Div Align="left">【Further Reading】</Div>
-遠山智久『弱点克服 大学生のミクロ経済学』東京図書（2008）
-
+<Div Align="left">【メモ】</Div>
+この問題はChatGPT5.2によって生成した（2026.1.28）
+<Div Align="left">【メモ終】</Div>
 <hr>
 
 
