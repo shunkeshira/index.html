@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+CES関数の極限とLeontief関数
+</h3>
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　CES関数に対し，
+\[
+\lim_{{\rho}\to -\infty}({\alpha}x_1^{\rho}+(1-{\alpha})x_2^{\rho})^{\frac{1}{{\rho}}}=\min (x_1,x_2)
+\]
+となることを示しなさい．
+
+</p>
+
+<Div Align="left">【解答】</Div>
+$X=\min (x_1,x_2)$とし，$x_i=Xy_i$とする．このとき，$y_i=\dfrac{x_i}{X}\geq 1$でどちらかは，$y_i=1$．
+\begin{align*}
+({\alpha}x_1^{\rho}+(1-{\alpha})x_2^{\rho})^{\frac{1}{{\rho}}}&=({\alpha}(Xy_1)^{\rho}+(1-{\alpha})(Xy_2)^{\rho})^{\frac{1}{{\rho}}}\\
+&=X({\alpha}y_1^{\rho}+(1-{\alpha})y_2^{\rho})^{\frac{1}{{\rho}}}
+\end{align*}
+このことより，
+\[
+\lim_{{\rho}\to -\infty}({\alpha}y_1^{\rho}+(1-{\alpha})y_2^{\rho})^{\frac{1}{{\rho}}}=1
+\]
+を示せばよい．<br>
+(1) ${\rho}\to -\infty$とするのだから，${\rho}<0$で$y_i\geq 1$なのだから，$y_i^{\rho}\leq 1$．
+\[
+{\alpha}y_1^{\rho}+(1-{\alpha})y_2^{\rho}\leq {\alpha}+(1-{\alpha})=1.
+\]
+${\rho}<0$なので，
+\[
+({\alpha}y_1^{\rho}+(1-{\alpha})y_2^{\rho})^{\frac{1}{{\rho}}}\geq 1^{\frac{1}{{\rho}}}=1.
+\]<br>
+
+(2)
+$\min (y_1,y_2)=1$だから，一般性を失うことなく$y_1=1\leq y_2$としてよい．
+$y_2^{\rho}>0$なので，
+\[
+{\alpha}y_1^{\rho}+(1-{\alpha})y_2^{\rho}= {\alpha}+(1-{\alpha})y_2\geq {\alpha}..
+\]
+従って，${\rho}<0$なので，
+\[
+({\alpha}y_1^{\rho}+(1-{\alpha})y_2^{\rho})^{\frac{1}{{\rho}}}\leq {\alpha}^{\frac{1}{\rho}}.
+\]
+このとき${\rho} \to -\infty$とすると，$\dfrac{\log_{}{\alpha}}{{\rho}}=0$なので，
+\[
+{\alpha}^{\frac{1}{\rho}}=\exp{(\log_{}{{\alpha}^{\frac{1}{\rho}}})}=\exp{\dfrac{\log_{}{\alpha}}{{\rho}}}\to \exp{0}
+\]
+従って，
+\[
+\lim_{{\rho}\to -\infty}({\alpha}y_1^{\rho}+(1-{\alpha})y_2^{\rho})^{\frac{1}{{\rho}}}\leq 1
+\]
+となる．
+
+
+<Div Align="right">【解答終】</Div>
+<hr>
+<Div Align="left">【メモ】</Div>
+この問題はChatGPT5.2によって生成した（2026.2.4）プロンプトは「CES関数について教えてください」「${\rho}\to -\infty$のときLeontiefになることの証明を教えてください」
+<Div Align="left">【メモ終】</Div>
+<Div Align="left">【Further Reading】</Div>
+『経出る』p.230
+<hr>
+
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+
