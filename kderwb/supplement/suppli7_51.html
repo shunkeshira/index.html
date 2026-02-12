@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+Cobb-Douglus関数とCES関数の限界代替率（marginal rate of substitute）
+</h3>
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">
+関数$f(x_1,x_2)$に対し，等高線$f(x_1,x_2)=c$を考える．
+両辺を$x_1$で微分すると，
+\[
+\dfrac{\partial f}{\partial x_1}+\dfrac{\partial f}{\partial x_2}\dfrac{x_2}{x_1}=0
+\]
+となる．従って
+\[
+MRS=\dfrac{x_2}{x_1}=-\dfrac{\dfrac{\partial f}{\partial x_1}}{\dfrac{\partial f}{\partial x_2}}
+\]
+を限界代替率（marginal rate of substitute）という．
+
+【問】　
+(1) CES関数，
+\[
+f(x_1,x_2)=({\alpha}_1x_1^{\rho}+{\alpha}_2x_2^{\rho})^{\frac{1}{{\rho}}}
+\]
+に対して限界代替率を求めなさい．<br>
+(2) Cobb-Douglus関数
+\[
+f(x_1,x_2)=x_1^{{\alpha}}x_2^{1-{\alpha}}
+\]
+に対して限界代替率を求めなさい．<br>
+
+</p>
+
+<Div Align="left">【解答】</Div>
+(1) $f(x_1,x_2)=({\alpha}_1x_1^{\rho}+{\alpha}_2x_2^{\rho})^{\frac{1}{{\rho}}}$に対して，
+\begin{align*}
+\dfrac{\partial f}{\partial x_1}&={\alpha}_1{\rho}x_1^{{\rho}-1}({\alpha}_1x_1^{\rho}+{\alpha}_2x_2^{\rho})^{\frac{1}{{\rho}}-1}\\
+\dfrac{\partial f}{\partial x_2}&={\alpha}_2{\rho}x_2^{{\rho}-1}({\alpha}_1x_1^{\rho}+{\alpha}_2x_2^{\rho})^{\frac{1}{{\rho}}-1}
+\end{align*}
+なので，
+\[
+MRS=-\dfrac{{\alpha}_1}{{\alpha}_2}\Bigl(\dfrac{x_1}{x_2}\Bigr)^{{\rho}-1}.
+\]<br>
+(2) $f(x_1,x_2)=x_1^{{\alpha}}x_2^{1-{\alpha}}$に対して，
+\begin{align*}
+\dfrac{\partial f}{\partial x_1}&={\alpha}x_1^{{\alpha}-1}x_2^{1-{\alpha}}\\
+\dfrac{\partial f}{\partial x_2}&=(1-{\alpha})x_1^{{\alpha}}x_2^{-{\alpha}}
+\end{align*}
+なので，
+\[
+MRS=-\dfrac{{\alpha}}{1-{\alpha}}\dfrac{x_2}{x_1}.
+\]<br>
+
+<Div Align="right">【解答終】</Div>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">
+
+【問】　
+(3) CES関数の限界代替率で${\rho}=0$としなさい．<br>
+(4) CES関数の限界代替率で${\rho}\to -\infty$としなさい．
+
+</p>
+
+<Div Align="left">【解答】</Div>
+(3)${\rho}=0$を代入すると，
+\[
+MRS=-\dfrac{{\alpha}_1}{{\alpha}_2}\Bigl(\dfrac{x_1}{x_2}\Bigr)^{-1}=-\dfrac{{\alpha}_1}{{\alpha}_2}\dfrac{x_2}{x_1}
+\]
+となり，Cobb-Douglus関数のMRSとなる．
+<br>
+(4) 
+\[
+\lim_{{\rho}\to -\infty}-\dfrac{{\alpha}_1}{{\alpha}_2}\Bigl(\dfrac{x_1}{x_2}\Bigr)^{{\rho}-1}
+\]
+$-({\rho}-1)=r$とすると，${\rho}\to -\infty$のとき，$r\to \infty$で
+\begin{align*}
+\lim_{{\rho}\to -\infty}-\dfrac{{\alpha}_1}{{\alpha}_2}\Bigl(\dfrac{x_1}{x_2}\Bigr)^{{\rho}-1}&=\lim_{{r}\to \infty}-\dfrac{{\alpha}_1}{{\alpha}_2}\Bigl(\dfrac{x_2}{x_1}\Bigr)^r\\
+&=\begin{cases}
+-\infty , &  \text{if} \quad x_2>x_1\\
+0, &  \text{if} \quad x_2 < x_1.
+\end{cases}
+\end{align*}
+
+<br>
+
+<Div Align="right">【解答終】</Div>
+
+<Div Align="left">【メモ】</Div>
+<A HREF="./suppli7_49.html">CES関数の極限とLeontief関数</A>参照
+<Div Align="left">【メモ終】</Div>
+
+<hr>
+<Div Align="left">【Further Reading】</Div>
+Hal R. Varian ‘Microeconomic Analysis; Third Edition,’ W.W.Norton & Company (1992)
+<hr>
+
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+
