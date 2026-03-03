@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+CAPM 証券市場線の導出
+</h3>
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　$M$をマーケットポートフォリオ，$S_j$を個別銘柄とし，
+それぞれの平均，標準偏差を$r_M, r_j$, ${\sigma}_M,{\sigma}_j$,共分散を$\mathrm{cov}(R_M,R_j)$とする．${\rho}$を相関係数とする．
+また無リスク資産の利子率を$r$とする．
+このときシャープレシオが最大になるという条件から
+証券市場線を導出しなさい．
+</p>
+
+<Div Align="left">【解答】</Div>
+次のポートフォリオを考える．
+\[
+P({\alpha})={\alpha}S_j+(1-{\alpha})M
+\]
+$P({\alpha})$の期待収益率を$R({\alpha})$とすると，
+\begin{align*}
+r({\alpha})=E[R({\alpha})]&={\alpha}r_j+(1-{\alpha})r_M \tag{1}\\
+{\sigma}^2({\alpha})={\sigma}^2[R({\alpha})]&={\alpha}^2{\sigma}^2_j+2{\alpha}(1-{\alpha})\mathrm{cov}(R_M,R_j)+(1-{\alpha})^2{\sigma}^2_M \tag{2}\\
+&={\alpha}^2{\sigma}^2_j+2{\alpha}(1-{\alpha}){\rho}(R_M,R_j){\sigma}_j{\sigma}_M+(1-{\alpha})^2{\sigma}^2_M \tag{3}
+\end{align*}\\
+超過リターンが
+\[
+h({\alpha})=r({\alpha})-r={\alpha}(r_j-r)+(1-{\alpha})(r_M-r) \tag{4s}
+\]
+なので，
+シャープレシオは
+\[
+S({\alpha})=\dfrac{h({\alpha})}{{\sigma}({\alpha})}
+\]
+だがこれが$\alpha =0$で最大となればよい．
+\[
+S^{\prime}({\alpha})=\dfrac{h^{\prime}({\alpha}){\sigma}({\alpha})-h({\alpha}){\sigma}^{\prime}({\alpha})}{{\sigma}^2({\alpha})}
+\]
+であるが，(3)式から，
+\[
+h^{\prime}({\alpha})=(r_j-r)-(r_M-r) =r_j-r_M
+\]
+(3)式から
+\[
+2{\sigma}({\alpha}){\sigma}^{\prime}({\alpha})=2{\alpha}{\sigma}^2_j+2(1-2{\alpha}){\rho}(R_M,R_j){\sigma}_j{\sigma}_M-2(1-{\alpha}){\sigma}^2_M
+\]
+
+\[
+{\sigma}({0})={\sigma}_M
+\]
+\[
+{\sigma}^{\prime}({0})={\rho}(R_M,R_j){\sigma}_j-{\sigma}_M
+\]
+\[
+S^{\prime}({0})=\dfrac{(r_j-r_M){{\sigma}_M}-(r_M-r)({\rho}(R_M,R_j){\sigma}_j-{\sigma}_M)}{{\sigma}^2_M}
+\]
+$S^{\prime}({0})=0$とすると，
+\[
+(r_j-r_M){{\sigma}_M}-(r_M-r)({\rho}(R_M,R_j){\sigma}_j-{\sigma}_M)=0
+\]
+これを整理すると
+\[
+r_j=r+\dfrac{{\rho}(R_M,R_j){\sigma}_j}{{\sigma}_M}(r_M-r)
+\]
+が得られる．
+<Div Align="right">【解答終】</Div>
+
+
+
+<hr>
+<Div Align="left">【Further Reading】</Div>
+冨島祐充『金融数学入門』講談社ブルーバックス B-2321（2026）<br>
+今野浩『理財工学I』日科技連（1995）
+<hr>
+
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+
