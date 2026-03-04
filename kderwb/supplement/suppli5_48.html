@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+再生可能な天然資源（木）の最適伐採
+</h3>
+
+
+<hr>
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】　再生可能な木々のストックを表す関数を$x(t)$とする．
+成長の上限を$\bar{x}$とする．成長率が
+\[
+f(x(t))=\dfrac{d}{dt}x(t)
+\]
+ただし，$f(x)=x(\bar{x}-x)$で与えられているとする．利子率を$r$，販売価格を$p$とした時，木々のストックの割引現在価値が
+\[
+V(t)=px(t)e^{-rt}
+\]
+ている時，最適伐採時間を求めなさい．
+</p>
+
+<Div Align="left">【解答】</Div>
+\begin{align*}
+0=V^{\prime}(t)&=p\dfrac{dx(t^*)}{dt}e^{-rt^*}-rpx(t^*)e^{-rt^*}\\
+&=pe^{-rt^*}[f(x(t^*))-rx(t^*)]\\
+&=pe^{-rt^*}[x(t^*)(\bar{x}-x(t^*))-rx(t^*)]\\
+&=pe^{-rt^*}[x(t^*)(\bar{x}-(1+r)x(t^*))]
+\end{align*}
+であるので，
+\[
+x(t^*)=\dfrac{\bar{x}}{1+r}
+\]
+となる$t^*$が最適伐採である．
+<Div Align="right">【解答終】</Div>
+
+
+
+<hr>
+<Div Align="left">【Further Reading】</Div>
+B.R. ビンガー/E.ホフマン『微積分で学ぶミクロ経済学　下』シーエーピー出版（1996）<br>
+今野浩『理財工学I』日科技連（1995）
+<hr>
+
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+
