@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<HEAD>
+
+
+
+<meta charset="UTF-8" />
+
+
+
+<TITLE>経済学で出る数学 ワークブックでじっくり攻めるふろく（応用問題）</TITLE>
+
+<meta name="description" content="経済学で出る数学ワークブックの応用問題">
+
+<meta name="keywords" content="経済学で出る数学ワークブックでじっくり攻める,経出るワークブック,応用問題,経済数学">
+
+
+
+<STYLE type="text/css">
+
+<!--
+
+BODY {
+
+font-family: Times New Roman, serif;
+
+}
+
+div.header {
+
+display: table;
+
+padding: 0 0 0 0;
+
+margin: 0 0 0 0;
+
+}
+
+DIV.titleimg {
+
+float: left;
+
+width: 190;
+
+}
+
+DIV.title {
+
+display: table-cell;
+
+height: 240;
+
+padding: 0 21px 16px;
+
+margin: 0 0 0 0;
+
+vertical-align: middle;
+
+}
+
+H1 {
+
+line-height: 130%;
+
+font-size: xx-large;
+
+}
+
+H1.pretitle {
+
+font-size: x-large;
+
+}
+
+H1.subtitle {
+
+font-size: x-large;
+
+padding-bottom: 10px;
+
+}
+
+H2 {
+
+line-height: 130%;
+
+font-size: x-large;
+
+padding-top: 20px;
+
+}
+
+H3 {
+
+line-height: 100%;
+
+font-size: medium;
+
+padding-top: 20px;
+
+}
+
+H4 {
+
+line-height: 130%;
+
+}
+
+UL { line-height: 150%; }
+
+IMG { border: 0px; vertical-align: bottom; }
+
+IMG.equation {
+
+vertical-align: middle;
+
+}
+
+SPAN.math {
+
+font-family: "Times New Roman";
+
+}
+
+SPAN.mathit {
+
+font-family: "Times New Roman";
+
+font-style: italic;
+
+}
+
+P.date {
+
+padding-top: 20px;
+
+}
+
+-->
+
+</STYLE>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+  CommonHTML: { matchFontHeight: false }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</HEAD>
+
+<H1>経済学で出る数学</H1>
+
+<H1 class="subtitle">ワークブックでじっくり攻める：応用問題</H1>
+
+<hr>
+
+<h3>
+中央値の性質
+</h3>
+
+
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】<br>
+確率変数$X$に対して，
+\[
+E|X-a|
+\]
+を最小にする，$a$は中央値であることを示しなさい．
+</p>
+
+
+
+
+<Div Align="left">【解答】</Div>
+ます並べ替えをし，
+\[
+x_1\leq x_2\leq \cdots \leq x_n
+\]
+としておく．$E|X-a|$の最小値を求めるためには
+\[
+S(a)=\sum_{I=1}^n|x_i-a|
+\]
+の最小値を求めればよい．<br>
+両端から
+\[
+(x_1,x_n), (x_2,x_{n-1}),\ldots
+\]
+とペアにしておく．各組$(x_{i},x_{n+1-i})$について，
+\[
+|x_i-a|+|x_{n+1-i}-a|
+\]
+を考えると，$x_{i}\leq a \leq x_{n+1-i}$のとき，
+\[
+|x_i-a|+|x_{n+1-i}-a|=(a-x_i)+(x_{n+1-i}-a)=x_{n+1-i}-x_i
+\]
+となり，区間$[x_{i},x_{n+1-i}]$上で最小となる．<br>
+$n=2k+1$のとき，$I=1,\ldots k$に対して，中央値は$x_{k+1}$だから，$x_i\leq x_k \leq x_{2k+2-i}=x_{n+1-i}$が成り立つ．
+$a=x_{k+1}$は全ての区間$[x_i, x_{2k+2-i}]$に含まれる．よって各組の和は$a=x_{k+1}$で最小であり，$|x_{k+1}-a|$も
+$a=x_{k+1}$で最小である．したがって$S(a)$は$a=x_{k+1}$で最小である．<br>
+$n=2k$のとき，中央値$m$は$[x_k, x_{k+1}]$の任意の点である（$m=(x_k+x_{k+1}])/2$ととることが通常）．
+$I=1,\ldots k$に対して，
+\[
+x_i\leq m \leq x_{2k+1-i}=x_{n+1-i}
+\]
+なので$m$は全ての区間$[x_i, x_{2k+1-i}]$に含まれる．ゆえに各組の和は$a=m$で同時に最小となる．したがって$S(a)$は$a=m$で最小となる．
+<Div Align="right">【解答終】</Div>
+
+<p style="background-color:#E3F2FB;border:1px dotted #CCCCCC;padding:5px;">【問】<br>
+確率変数$X$に対して，
+平均を$\mu$，中央値を$m$，標準偏差を$\sigma$とするとき，
+\[
+|{\mu}-m|\leq {\sigma}
+\]
+が成り立つことを示しなさい．
+</p>
+<Div Align="left">【解答】</Div>
+\begin{align*}
+|{\mu}-m|&=|E(X-m)|\\
+&\leq E|X-m|\\
+&\leq E|X-{\mu}|\\
+&=E(\sqrt{(X-{\mu})^2})\\
+&\leq \sqrt{E(X-{\mu})^2}=\sigma .
+\end{align*}
+<Div Align="right">【解答終】</Div>
+
+<hr>
+
+
+
+【Further Reading】<br>
+Harold Hotelling, Leonard M. Solomons, The Limits of a Measure of Skewness, Ann. Math. Statist. 3(2): 141-142 (May, 1932). 
+
+<hr>
+
+
+<A HREF="./supplement.html">ふろく（２）応用問題 一覧へ</A>
+
+
+</BODY>
+
+
+
+</HTML>
+
+
